@@ -153,9 +153,9 @@
 	icon_state = "demon_heart-on"
 	decay_factor = 0
 
-/obj/item/organ/internal/heart/demon/ComponentInitialize()
-	. = ..()
+/obj/item/organ/internal/heart/demon/Initialize(mapload)
 	AddElement(/datum/element/update_icon_blocker)
+	return ..()
 
 /obj/item/organ/internal/heart/demon/attack(mob/M, mob/living/carbon/user, obj/target)
 	if(M != user)
@@ -184,7 +184,7 @@
 	var/datum/action/cooldown/spell/jaunt/bloodcrawl/crawl = new(M)
 	crawl.Grant(M)
 
-/obj/item/organ/internal/heart/demon/Remove(mob/living/carbon/M, special = FALSE, drop_if_replaced = TRUE)
+/obj/item/organ/internal/heart/demon/Remove(mob/living/carbon/M, special = FALSE)
 	..()
 	var/datum/action/cooldown/spell/jaunt/bloodcrawl/crawl = locate() in M.actions
 	qdel(crawl)
