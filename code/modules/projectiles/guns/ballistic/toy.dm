@@ -18,12 +18,38 @@
 /obj/item/gun/ballistic/automatic/toy/unrestricted
 	pin = /obj/item/firing_pin
 
+/obj/item/gun/ballistic/automatic/toy/unrestricted/riot
+	mag_type = /obj/item/ammo_box/magazine/toy/smg/riot
+
 /obj/item/gun/ballistic/automatic/pistol/toy
 	name = "foam force pistol"
 	desc = "A small, easily concealable toy handgun. Ages 8 and up."
 	mag_type = /obj/item/ammo_box/magazine/toy/pistol
 	fire_sound = 'sound/items/syringeproj.ogg'
 	gun_flags = TOY_FIREARM_OVERLAY | NOT_A_REAL_GUN
+	unique_reskin = list("Command" = "toypistol_cmd",
+						"Service" = "toypistol_srv",
+						"Support" = "toypistol_spt")
+
+/obj/item/gun/ballistic/automatic/pistol/toy/reskin_obj(mob/M)
+	..()
+	switch(icon_state)
+		if("toypistol_cmd")
+			inhand_icon_state = "toypistol_cmd"
+		if("toypistol_srv")
+			inhand_icon_state = "toypistol_srv"
+		if("toypistol_spt")
+			inhand_icon_state = "toypistol_spt"
+	M.update_inv_hands()
+	/*to_chat(M, span_notice("As you reskin [src] to [icon_state], it switches to inhand state [inhand_icon_state]."))*/
+
+/obj/item/gun/ballistic/automatic/pistol/toy/AltClick(mob/user)
+	if(unique_reskin && !current_skin && user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
+		reskin_obj(user)
+		update_overlays()
+	reskin_obj(user)
+	..update_overlays()
+	/*to_chat(user, span_notice("As you reskin [src], it became icon state [inhand_icon_state]."))*/
 
 /obj/item/gun/ballistic/automatic/pistol/toy/riot
 	mag_type = /obj/item/ammo_box/magazine/toy/pistol/riot
@@ -78,6 +104,28 @@
 	casing_ejector = FALSE
 	clumsy_check = FALSE
 	gun_flags = TOY_FIREARM_OVERLAY | NOT_A_REAL_GUN
+	unique_reskin = list("Command" = "c20r_cmd",
+						"Service" = "c20r_srv",
+						"Support" = "c20r_spt")
+
+/obj/item/gun/ballistic/automatic/c20r/toy/reskin_obj(mob/M)
+	..()
+	switch(icon_state)
+		if("c20r_cmd")
+			inhand_icon_state = "c20r_cmd"
+		if("c20r_srv")
+			inhand_icon_state = "c20r_srv"
+		if("c20r_spt")
+			inhand_icon_state = "c20r_spt"
+	M.update_inv_hands()
+
+/obj/item/gun/ballistic/automatic/c20r/toy/AltClick(mob/user)
+	if(unique_reskin && !current_skin && user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
+		reskin_obj(user)
+		update_overlays()
+	reskin_obj(user)
+	..update_overlays()
+	/*to_chat(user, span_notice("As you reskin [src], it became icon state [inhand_icon_state]."))*/
 
 /obj/item/gun/ballistic/automatic/c20r/toy/unrestricted //Use this for actual toys
 	pin = /obj/item/firing_pin

@@ -53,6 +53,12 @@
 /mob/living/carbon/alien/handle_environment(datum/gas_mixture/environment, delta_time, times_fired)
 	// Run base mob body temperature proc before taking damage
 	// this balances body temp to the environment and natural stabilization
+	
+	if(istype(loc, /mob/))
+		environment = new()
+		environment.parse_gas_string("o2=22;n2=82;TEMP=293.15")
+		dna.species.handle_environment(src, environment, delta_time, times_fired)
+	
 	. = ..()
 
 	if(bodytemperature > BODYTEMP_HEAT_DAMAGE_LIMIT)

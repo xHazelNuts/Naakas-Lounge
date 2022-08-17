@@ -96,8 +96,16 @@
 // Base mob environment handler for body temperature
 /mob/living/proc/handle_environment(datum/gas_mixture/environment, delta_time, times_fired)
 	var/loc_temp = get_temperature(environment)
+	
+	//if(loc_temp < 250)
+		//message_admins("Screaming for [src], current loc [loc], hoping this is maybe the one.  temp [loc_temp]")
+	
+	if(istype(loc, /mob/))
+		message_admins("[src] is occupying a mob [loc], resetting to 293.15K.")
+		loc_temp = 293.15
+	
 	var/temp_delta = loc_temp - bodytemperature
-
+	
 	if(ismovable(loc))
 		var/atom/movable/occupied_space = loc
 		temp_delta *= (1 - occupied_space.contents_thermal_insulation)

@@ -86,6 +86,9 @@
 	var/datum/gas_mixture/environment
 	if(loc)
 		environment = loc.return_air()
+	if(istype(loc, /mob/))
+		var/mob/loc_as_mob_x = loc
+		environment = new(/datum/gas_mixture)
 
 	var/datum/gas_mixture/breath
 
@@ -104,13 +107,38 @@
 		if(istype(loc, /obj/))
 			var/obj/loc_as_obj = loc
 			loc_as_obj.handle_internal_lifeform(src,0)
+		if(istype(loc, /mob/))
+			message_admins("[src] is choking out attached to [loc]!")
 	else
 		//Breathe from internal
 		breath = get_breath_from_internal(BREATH_VOLUME)
 
 		if(isnull(breath)) //in case of 0 pressure internals
+			if(istype(loc, /mob/))
+				//message_admins("[src] is trying to breathe from mob [loc]!  Trying to run handle_internal_lifeform...")
+				var/mob/loc_as_mob = loc
+				//breath = loc_as_mob.handle_internal_lifeform(src, BREATH_VOLUME)  Would have to add a blank for this to baseline /mob/ and I have NO idea how
+				if(isnull(breath))
+					//message_admins("[src] couldn't breathe from [loc]!  Fabricating fake environment...")
+					var/breath_moles = 0
+					environment.parse_gas_string("o2=0.05;n2=0.1;TEMP=293.15")
+					//environment.assert_gas(/datum/gas/oxygen)
+					//environment.gases[/datum/gas/oxygen][MOLES] = (6*ONE_ATMOSPHERE)*100/(R_IDEAL_GAS_EQUATION*T20C)
+					
+					if(isnull(environment))
+						message_admins("[src]'s fabricated default-airmix environment is null aughauditbh")
+					
+					//breath_moles = environment.total_moles()*BREATH_PERCENTAGE
 
-			if(isobj(loc)) //Breathe from loc as object
+					//breath = environment.remove_air(breath_moles)
+					breath = environment
+					failed_last_breath = FALSE
+					clear_alert("not_enough_oxy")
+					//environment = 
+					//message_admins("Breath: [breath], moles [breath_moles], O2 [(breath.gases[/datum/gas/oxygen][MOLES])]mol, N2 [(breath.gases[/datum/gas/nitrogen][MOLES])]mol")
+			
+			
+			else if(isobj(loc)) //Breathe from loc as object
 				var/obj/loc_as_obj = loc
 				breath = loc_as_obj.handle_internal_lifeform(src, BREATH_VOLUME)
 
@@ -455,6 +483,8 @@
 /// Base carbon environment handler, adds natural stabilization
 /mob/living/carbon/handle_environment(datum/gas_mixture/environment, delta_time, times_fired)
 	var/areatemp = get_temperature(environment)
+	
+	//006 NOTE: This is NOT where itw as being determined?  SCREM.
 
 	if(stat != DEAD) // If you are dead your body does not stabilize naturally
 		natural_bodytemperature_stabilization(environment, delta_time, times_fired)
@@ -466,7 +496,7 @@
  * Used to stabilize the body temperature back to normal on living mobs
  *
  * Arguments:
- * - [environemnt][/datum/gas_mixture]: The environment gas mix
+ * - [enviroment][/datum/gas_mixture]: The environment gas mix
  * - delta_time: The amount of time that has elapsed since the last tick
  * - times_fired: The number of times SSmobs has ticked
  */

@@ -128,6 +128,7 @@
 	modules = list()
 	for(var/obj/item/module in basic_modules)
 		add_module(module, FALSE, FALSE)
+	add_module(/obj/item/reagent_containers/bellyhypo/medical, FALSE, FALSE)
 	if(cyborg.emagged)
 		for(var/obj/item/module in emag_modules)
 			add_module(module, FALSE, FALSE)
@@ -313,7 +314,8 @@
 		/obj/item/borg/lollipop,
 		/obj/item/picket_sign/cyborg,
 		/obj/item/reagent_containers/borghypo/clown,
-		/obj/item/extinguisher/mini)
+		/obj/item/extinguisher/mini,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	emag_modules = list(
 		/obj/item/reagent_containers/borghypo/clown/hacked,
 		/obj/item/reagent_containers/spray/waterflower/cyborg/hacked)
@@ -352,7 +354,8 @@
 		/obj/item/stack/rods/cyborg,
 		/obj/item/lightreplacer/cyborg, // Skyrat Edit - Surprised Engie borgs don't get these
 		/obj/item/stack/tile/iron/base/cyborg,
-		/obj/item/stack/cable_coil)
+		/obj/item/stack/cable_coil,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	radio_channels = list(RADIO_CHANNEL_ENGINEERING)
 	emag_modules = list(/obj/item/borg/stun)
 	cyborg_base_icon = "engineer"
@@ -376,7 +379,8 @@
 		/obj/item/paint/paint_remover,
 		/obj/item/lightreplacer/cyborg,
 		/obj/item/holosign_creator,
-		/obj/item/reagent_containers/spray/cyborg_drying)
+		/obj/item/reagent_containers/spray/cyborg_drying,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	radio_channels = list(RADIO_CHANNEL_SERVICE)
 	emag_modules = list(/obj/item/reagent_containers/spray/cyborg_lube)
 	cyborg_base_icon = "janitor"
@@ -635,7 +639,8 @@
 		/obj/item/stack/medical/gauze,
 		/obj/item/stack/medical/bone_gel,
 		/obj/item/borg/apparatus/organ_storage,
-		/obj/item/borg/lollipop)
+		/obj/item/borg/lollipop,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	radio_channels = list(RADIO_CHANNEL_MEDICAL)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/medical/hacked)
 	cyborg_base_icon = "medical"
@@ -657,7 +662,8 @@
 		/obj/item/storage/bag/sheetsnatcher/borg,
 		/obj/item/gun/energy/recharge/kinetic_accelerator/cyborg,
 		/obj/item/gps/cyborg,
-		/obj/item/stack/marker_beacon)
+		/obj/item/stack/marker_beacon,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	radio_channels = list(RADIO_CHANNEL_SCIENCE, RADIO_CHANNEL_SUPPLY)
 	emag_modules = list(/obj/item/borg/stun)
 	cyborg_base_icon = "miner"
@@ -689,7 +695,8 @@
 		/obj/item/holosign_creator/cyborg,
 		/obj/item/borg/cyborghug/peacekeeper,
 		/obj/item/extinguisher,
-		/obj/item/borg/projectile_dampen)
+		/obj/item/borg/projectile_dampen,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/peace/hacked)
 	cyborg_base_icon = "peace"
 	model_select_icon = "standard"
@@ -709,7 +716,8 @@
 		/obj/item/melee/baton/security/loaded,
 		/obj/item/gun/energy/disabler/cyborg,
 		/obj/item/clothing/mask/gas/sechailer/cyborg,
-		/obj/item/extinguisher/mini)
+		/obj/item/extinguisher/mini,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	radio_channels = list(RADIO_CHANNEL_SECURITY)
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	cyborg_base_icon = "sec"
@@ -761,7 +769,8 @@
 		/obj/item/cooking/cyborg/power, //edit
 		/obj/item/borg/lollipop,
 		/obj/item/stack/pipe_cleaner_coil/cyborg,
-		/obj/item/borg/apparatus/beaker/service)
+		/obj/item/borg/apparatus/beaker/service,
+		/obj/item/reagent_containers/bellyhypo/medical)
 	radio_channels = list(RADIO_CHANNEL_SERVICE)
 	emag_modules = list(/obj/item/reagent_containers/borghypo/borgshaker/hacked)
 	cyborg_base_icon = "service_m" // display as butlerborg for radial model selection
@@ -792,7 +801,8 @@
 		/obj/item/card/emag,
 		/obj/item/crowbar/cyborg,
 		/obj/item/extinguisher/mini,
-		/obj/item/pinpointer/syndicate_cyborg)
+		/obj/item/pinpointer/syndicate_cyborg,
+		/obj/item/reagent_containers/bellyhypo/medical)
 
 	cyborg_base_icon = "synd_sec"
 	model_select_icon = "malf"
@@ -829,7 +839,8 @@
 		/obj/item/pinpointer/syndicate_cyborg,
 		/obj/item/stack/medical/gauze,
 		/obj/item/gun/medbeam,
-		/obj/item/borg/apparatus/organ_storage)
+		/obj/item/borg/apparatus/organ_storage,
+		/obj/item/reagent_containers/bellyhypo/medical)
 
 	cyborg_base_icon = "synd_medical"
 	model_select_icon = "malf"
@@ -862,7 +873,7 @@
 		/obj/item/pinpointer/syndicate_cyborg,
 		/obj/item/borg_chameleon,
 		/obj/item/card/emag,
-		)
+		/obj/item/reagent_containers/bellyhypo/medical)
 
 	cyborg_base_icon = "synd_engi"
 	model_select_icon = "malf"

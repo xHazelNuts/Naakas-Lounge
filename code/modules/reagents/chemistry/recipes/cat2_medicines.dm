@@ -249,6 +249,28 @@
 	overheated(holder, equilibrium, TRUE)
 	clear_reactants(holder, 2)
 
+/datum/chemical_reaction/medicine/turbomelatonin
+	results = list(/datum/reagent/medicine/c2/tirimol = 5)
+	required_reagents = list(/datum/reagent/inverse/healing/tirimol = 3, /datum/reagent/toxin/teapowder = 2)
+	required_catalysts = list()
+	mix_message = "The mixture bubbles and shines green."
+	optimal_temp = 1
+	overheat_temp = 9999
+	optimal_ph_min = 1
+	optimal_ph_max = 14
+	determin_ph_range = 2
+	temp_exponent_factor = 4
+	ph_exponent_factor = 1.8
+	thermic_constant = -5
+	H_ion_release = 1
+	rate_up_lim = 50
+	purity_min = 0.1
+	reaction_flags = REACTION_PH_VOL_CONSTANT
+	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_OXY
+
+/datum/chemical_reaction/medicine/turbomelatonin/reaction_step(datum/reagents/holder, datum/equilibrium/reaction, delta_t, delta_ph, step_reaction_vol)
+	. = ..()
+
 /*****TOX*****/
 //These all care about purity in their reactions
 

@@ -30,7 +30,10 @@
 /obj/item/pillow/proc/populate_pillow_colors()
 	pillow_colors = list(
 		"pink" = image (icon = src.icon, icon_state = "pillow_pink_round"),
-		"teal" = image(icon = src.icon, icon_state = "pillow_teal_round"))
+		"teal" = image(icon = src.icon, icon_state = "pillow_teal_round"),
+		"cmd" = image(icon = src.icon, icon_state = "pillow_cmd_round"),
+		"srv" = image(icon = src.icon, icon_state = "pillow_srv_round"),
+		"spt" = image(icon = src.icon, icon_state = "pillow_spt_round"))
 
 // Create radial menu, BUT for forms. I'm smort
 /obj/item/pillow/proc/populate_pillow_forms()
@@ -50,6 +53,7 @@
 		update_icon()
 		color_changed = TRUE
 		update_icon_state()
+		to_chat(user, span_notice("As you reskin [src], it became held icon state [inhand_icon_state] and main icon state [icon_state]."))
 	if(color_changed == TRUE)
 		if(form_changed == FALSE)
 			. = ..()
@@ -61,6 +65,7 @@
 			current_form = choice
 			update_icon()
 			form_changed = TRUE
+			to_chat(user, span_notice("As you reskin [src], it became held icon state [inhand_icon_state] and main icon state [icon_state]."))
 			update_icon_state()
 	else
 		return
@@ -281,6 +286,12 @@
 		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_pink_overlay")
 	if(current_color == "teal")
 		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_teal_overlay")
+	if(current_color == "cmd")
+		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_cmd_overlay")
+	if(current_color == "srv")
+		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_srv_overlay")
+	if(current_color == "spt")
+		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_small_spt_overlay")
 
 /obj/structure/chair/pillow_small/Destroy()
 	QDEL_NULL(armrest)
@@ -409,6 +420,12 @@
 		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_pink_overlay")
 	if(current_color == "teal")
 		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_teal_overlay")
+	if(current_color == "cmd")
+		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_cmd_overlay")
+	if(current_color == "srv")
+		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_srv_overlay")
+	if(current_color == "spt")
+		return mutable_appearance('modular_skyrat/modules/modular_items/lewd_items/icons/obj/lewd_structures/pillows.dmi', "pillowpile_large_spt_overlay")
 
 /obj/structure/bed/pillow_large/Destroy()
 	QDEL_NULL(armrest)

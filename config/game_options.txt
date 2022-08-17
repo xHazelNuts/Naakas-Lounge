@@ -21,7 +21,7 @@ EMOJIS
 
 ## HEART COMMENDATIONS ###
 ## Uncomment this if you'd like to enable commendation pollings for this percentage of players near the end of the round (5% suggested)
-COMMENDATION_PERCENT_POLL 0.05
+COMMENDATION_PERCENT_POLL 0.1
 
 ## MOB MOVEMENT ###
 
@@ -70,12 +70,21 @@ HUMANS_NEED_SURNAMES
 
 
 ## ALERT LEVELS ###
-ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
-ALERT_BLUE_UPTO The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted.
-ALERT_BLUE_DOWNTO The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed.
-ALERT_RED_UPTO There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised. Additionally, access requirements on some doors have been lifted.
-ALERT_RED_DOWNTO The station's destruction has been averted. There is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised.
-ALERT_DELTA Destruction of the station is imminent. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.
+#ALERT_GREEN All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced.
+#ALERT_BLUE_UPTO The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted.
+#ALERT_BLUE_DOWNTO The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed.
+#ALERT_RED_UPTO There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised. Additionally, access requirements on some doors have been lifted.
+#ALERT_RED_DOWNTO The station's destruction has been averted. There is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised.
+#ALERT_DELTA Destruction of the station is imminent. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.
+
+ALERT_GREEN All threats to the station have been resolved.  Security may not display weaponry, and privacy laws are in full effect.
+ALERT_BLUE_UPTO Command staff believe there may be hostile activity on-station.  Security may display weapons, and random searches are permitted within reason.
+ALERT_BLUE_DOWNTO The immediate threat has been resolved, but the station is not yet in the clear.  Security may still display weapons, but may not have them drawn at all times.  Random saerches are still permitted within reason.
+ALERT_RED_UPTO The station is in immediate and serious danger.  Security may keep weapons drawn, and random searches are fully permitted.
+ALERT_RED_DOWNTO Catastrophic station failure is no longer imminent, however it is still in immediate and serious danger.  Security may keep weapons drawn, and random searches remain fully permitted.
+ALERT_DELTA EVACUATE IMMEDIATELY.  Catastrophic station failure is imminent.  Obey all orders given by heads of staff.  THIS IS NOT A DRILL.  EVACUATE IMMEDIATELY.
+ALERT_DELTA_DOWNTO EVACUATE IMMEDIATELY.  Catastrophic station failure remains imminent, however the ZK-Class Reality Failure Scenario has been averted.  Continue to obey all orders given by heads of staff.  THIS IS NOT A DRILL.  EVACUATE IMMEDIATELY.
+ALERT_GAMMA O5 command has placed this system under Gamma Alert status.  This system is facing a ZK-Class Reality Failure Scenario. Security and Command personnel are authorised to use any means necessary to avert the system's total destruction, and failing that, to save as many lives as possible.
 
 ## The total weight of station goals possible for a round (allows multiple goals)
 STATION_GOAL_BUDGET 1
@@ -177,7 +186,7 @@ CONFIG_GATEWAY_CHANCE 0
 ## If the number of players ready at round starts exceeds this threshold, JOBS_HAVE_MINIMAL_ACCESS will automatically be enabled. Otherwise, it will be disabled.
 ## This is useful for accomodating both low and high population rounds on the same server.
 ## Comment this out or set to 0 to disable this automatic toggle.
-MINIMAL_ACCESS_THRESHOLD 20
+MINIMAL_ACCESS_THRESHOLD 0
 
 ## Comment this out this if you wish to use the setup where jobs have more access.
 ## This is intended for servers with low populations - where there are not enough
@@ -412,7 +421,7 @@ OVERFLOW_CAP -1
 
 ## Starlight for exterior walls and breaches. Uncomment for starlight!
 ## This is disabled by default to make testing quicker, should be enabled on production servers or testing servers messing with lighting
-#STARLIGHT
+STARLIGHT
 
 ## Uncomment to bring back old grey suit assistants instead of the now default rainbow colored assistants.
 #GREY_ASSISTANTS
@@ -470,7 +479,7 @@ ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 10
+MICE_ROUNDSTART 0
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2

@@ -411,6 +411,36 @@
 			inhand_icon_state = "sprayer_med_blue"
 	M.update_inv_hands()
 
+/obj/item/reagent_containers/spray/bluespace
+	name = "bluespace spray bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "sprayer_blu_cmd"
+	inhand_icon_state = "sprayer_blu_cmd"
+	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
+	volume = 400
+	amount_per_transfer_from_this = 1
+	possible_transfer_amounts = list(1,2,5,10,15,25,30,50,100,150)
+	
+	unique_reskin = list("Command" = "sprayer_blu_cmd",
+						"Service" = "sprayer_blu_srv",
+						"Support" = "sprayer_blu_spt")
+
+/obj/item/reagent_containers/spray/bluespace/AltClick(mob/user)
+	if(unique_reskin && !current_skin && user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
+		reskin_obj(user)
+
+/obj/item/reagent_containers/spray/bluespace/reskin_obj(mob/M)
+	..()
+	switch(icon_state)
+		if("sprayer_blu_cmd")
+			inhand_icon_state = "sprayer_blu_cmd"
+		if("sprayer_blu_srv")
+			inhand_icon_state = "sprayer_blu_srv"
+		if("sprayer_blu_spt")
+			inhand_icon_state = "sprayer_blu_spt"
+	M.update_inv_hands()
+
 /obj/item/reagent_containers/spray/hercuri
 	name = "medical spray (hercuri)"
 	desc = "A medical spray bottle.This one contains hercuri, a medicine used to negate the effects of dangerous high-temperature environments. Careful not to freeze the patient!"

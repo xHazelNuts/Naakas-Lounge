@@ -253,11 +253,48 @@
 
 	if(nutrition < NUTRITION_LEVEL_STARVING - 50)
 		msg += "[t_He] [t_is] severely malnourished.\n"
+	else if(nutrition >= NUTRITION_LEVEL_FAT * 2.5)
+		msg += "[t_He] [t_is] a butterball.\n"
+	else if(nutrition >= NUTRITION_LEVEL_FAT * 2)
+		msg += "[t_He] [t_is] overly chubby.\n"
+	else if(nutrition >= NUTRITION_LEVEL_FAT * 1.5)
+		msg += "[t_He] [t_is] quite chubby.\n"
+	else if(nutrition >= NUTRITION_LEVEL_FAT * 1.25)
+		msg += "[t_He] [t_is] chubby.\n"
+	else if(nutrition >= NUTRITION_LEVEL_FAT * 1.1)
+		msg += "[t_He] [t_is] chumby.\n"
 	else if(nutrition >= NUTRITION_LEVEL_FAT)
-		if(user.nutrition < NUTRITION_LEVEL_STARVING - 50)
-			msg += "[t_He] [t_is] plump and delicious looking - Like a fat little piggy. A tasty piggy.\n"
-		else
-			msg += "[t_He] [t_is] quite chubby.\n"
+		msg += "[t_He] [t_is] a bit chumby.\n"
+	else if(nutrition >= NUTRITION_LEVEL_FULL)
+		msg += "[t_He] [t_is] well fed.\n"
+	
+	//bwa bwa bwa.  here be 006's note that it's disappointing the game doesn't actually track fullness and fatness separately.  GET ON OUR LEVEL SS13 TEAM
+	
+	var/full_tmp = get_fullness() - (nutrition/4.0)
+	
+	if(full_tmp == 0)
+		msg += "[t_He] look[p_s()] hungry.\n"
+	else if(full_tmp > 200)
+		msg += "[t_He] look[p_s()] well-fed.\n"
+	else if(full_tmp > 300)
+		msg += "[t_He] look[p_s()] stuffed.\n"
+	else if(full_tmp > 400)
+		msg += "[t_He] look[p_s()] more stuffed.\n"
+	else if(full_tmp > 500)
+		msg += "[t_He] look[p_s()] visibly stuffed, an obvious bump in [t_his] belly.\n"
+	else if(full_tmp > 600)
+		msg += "[t_He] look[p_s()] visibly stuffed, [t_his] belly is noticably distended.\n"
+	else if(full_tmp > 700)
+		msg += "[t_He] look[p_s()] visibly very stuffed, [t_his] belly is noticably quite distended.\n"
+	else if(full_tmp > 800)
+		msg += "[t_He] look[p_s()] visibly very stuffed, [t_his] belly is distended enough to look pregnant!\n"
+	else if(full_tmp > 900)
+		msg += "[t_He] look[p_s()] visibly extremely stuffed, [t_his] belly is distended enough to look pregnant!\n"
+	else if(full_tmp > 1000)
+		msg += "[t_He] look[p_s()] visibly extremely stuffed, [t_his] belly is distended enough to look pregnant, maybe with twins!\n"
+	
+	//here's our updated news- it DOES track fullness separately, but only for a select few situations and nowhere near our usual level of detail.  STILL.  it's enough to make it possible for gluttons like us to have some teasy fun
+	
 	switch(disgust)
 		if(DISGUST_LEVEL_GROSS to DISGUST_LEVEL_VERYGROSS)
 			msg += "[t_He] look[p_s()] a bit grossed out.\n"

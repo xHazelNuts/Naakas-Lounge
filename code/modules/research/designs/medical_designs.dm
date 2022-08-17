@@ -279,6 +279,16 @@
 	build_path = /obj/item/reagent_containers/spray/medical
 	category = list("Medical Designs")
 
+/datum/design/bluespace_spray_bottle
+	name = "Bluespace Spray Bottle"
+	desc = "Merging a Bluespace Beaker with a spray bottle vastly increases its capacity and pressure without much impact to weight."
+	id = "blu_spray_bottle"
+	build_type = PROTOLATHE | AWAY_LATHE
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_SERVICE | DEPARTMENT_BITFLAG_ENGINEERING
+	materials = list(/datum/material/glass = 5000, /datum/material/plastic = 5000, /datum/material/diamond = 1000, /datum/material/bluespace = 1000)
+	build_path = /obj/item/reagent_containers/spray/bluespace
+	category = list("Tool Designs")
+
 /datum/design/chem_pack
 	name = "Intravenous Medicine Bag"
 	desc = "A plastic pressure bag for IV administration of drugs."

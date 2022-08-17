@@ -477,6 +477,19 @@
 			M.adjustToxLoss(1 * (current_cycle - 50) * REM * delta_time, 0)
 	return ..()
 
+/datum/reagent/toxin/turbomelatonin //naaka's secret recipe
+	name = "Turbo Melatonin"
+	description = "Instant sleep, and then some!"
+	color = "#AAFF00" // rgb: 127, 255, 0
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	taste_description = "green tea"
+	ph = 7
+	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_NO_RANDOM_RECIPE
+
+/datum/reagent/toxin/turbomelatonin/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
+	M.Sleeping(100 * REM * delta_time)
+	return ..()
+
 /datum/reagent/toxin/coffeepowder
 	name = "Coffee Grounds"
 	description = "Finely ground coffee beans, used to make coffee."

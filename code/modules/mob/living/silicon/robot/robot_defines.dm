@@ -53,6 +53,12 @@
 	var/lamp_intensity = 3
 
 	var/mutable_appearance/eye_lights
+	var/mutable_appearance/sleeper_icon
+	var/mutable_appearance/sleeper_icon_big
+	
+	///var/mob/living/occupant = null
+	
+	var/list/occupants = list()
 
 // ------------------------------------------ Hud
 	var/atom/movable/screen/inv1 = null

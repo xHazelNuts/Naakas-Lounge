@@ -146,6 +146,7 @@
 	QDEL_NULL(wires)
 	QDEL_NULL(model)
 	QDEL_NULL(eye_lights)
+	QDEL_NULL(sleeper_icon)
 	QDEL_NULL(inv1)
 	QDEL_NULL(inv2)
 	QDEL_NULL(inv3)
@@ -292,6 +293,18 @@
 			. += "[st.name]: [st.energy]/[st.max_energy]"
 	if(connected_ai)
 		. += "Master AI: [connected_ai.name]"
+	if(length(occupants) > 0)
+		for(var/i in occupants)
+			var/mob/living/occupant = i
+			. += "Occupant: [occupant.name], [occupant.health]/[occupant.maxHealth]"
+			. += "Damage types: [occupant.getBruteLoss()] brute, [occupant.getFireLoss()] burn, [occupant.getToxLoss()] toxin, [occupant.getOxyLoss()] suffocation"
+			if(occupant.health < 0)
+				. += "ALERT!  [occupant.name] is in crit - apply treatment immediately!"
+			if(occupant.health < -occupant.maxHealth/2)
+				. += "ALERT!  ALERT!  [occupant.name] is in hard crit - provide IMMEDIATE stabilizing agents!"
+			if(occupant.stat == DEAD)
+				. += "ALERT!  ALERT!  [occupant.name] has suffered medical death!  Provide immediate treatment and resuccitation!"
+			. += "Special types: [occupant.getCloneLoss()] clone/cell, [occupant.getOrganLoss(ORGAN_SLOT_BRAIN)] brain"
 
 /mob/living/silicon/robot/proc/alarm_triggered(datum/source, alarm_type, area/source_area)
 	SIGNAL_HANDLER
@@ -313,6 +326,11 @@
 	if(hat)
 		hat.forceMove(drop_location())
 	unbuckle_all_mobs()
+	for(var/i in occupants)
+		var/mob/living/occupant = i
+		SEND_SIGNAL(src, COMSIG_MACHINERY_SET_OCCUPANT, null)
+		occupant.forceMove(drop_location())
+	update_icons()
 
 ///For any special cases for robots after being righted.
 /mob/living/silicon/robot/proc/after_righted(mob/user)
@@ -359,6 +377,20 @@
 	cut_overlays()
 	SSvis_overlays.remove_vis_overlay(src, managed_vis_overlays)
 	icon_state = model.cyborg_base_icon
+	
+	if(length(occupants) > 1)
+		if(!sleeper_icon_big)
+			sleeper_icon_big = new()
+			sleeper_icon_big.icon_state = "[model.cyborg_base_icon]sleeper_g"
+		sleeper_icon_big.icon = icon
+		add_overlay(sleeper_icon_big)
+	else if(length(occupants) > 0)
+		if(!sleeper_icon)
+			sleeper_icon = new()
+			sleeper_icon.icon_state = "[model.cyborg_base_icon]sleeper_r"
+		sleeper_icon.icon = icon
+		add_overlay(sleeper_icon)
+	
 	if(stat != DEAD && !(HAS_TRAIT(src, TRAIT_KNOCKEDOUT) || IsStun() || IsParalyzed() || low_power_mode)) //Not dead, not stunned.
 		if(!eye_lights)
 			eye_lights = new()
@@ -930,8 +962,16 @@
 
 /mob/living/silicon/robot/mouse_buckle_handling(mob/living/M, mob/living/user)
 	//Don't try buckling on INTENT_HARM so that silicons can search people's inventories without loading them
-	if(can_buckle && isliving(user) && isliving(M) && !(M in buckled_mobs) && ((user != src) || (!combat_mode)))
-		return user_buckle_mob(M, user, check_loc = FALSE)
+	if(can_buckle && isliving(user) && isliving(M) && ((user != src) || (!combat_mode)))
+		if(!(M in buckled_mobs))
+			return user_buckle_mob(M, user, check_loc = FALSE)
+		else if(M in buckled_mobs)
+			M.visible_message("[src] gulps down [M]!")
+			occupants += M
+			SEND_SIGNAL(src, COMSIG_MACHINERY_SET_OCCUPANT, M)
+			M.forceMove(src)
+			update_icons()
+			return user_buckle_mob(M, user, force = TRUE, check_loc = FALSE)
 
 /mob/living/silicon/robot/buckle_mob(mob/living/M, force = FALSE, check_loc = TRUE, buckle_mob_flags= RIDER_NEEDS_ARM)
 	if(!is_type_in_typecache(M, can_ride_typecache))
@@ -949,6 +989,12 @@
 
 /mob/living/silicon/robot/resist()
 	. = ..()
+	SEND_SIGNAL(src, COMSIG_MACHINERY_SET_OCCUPANT, null)
+	for(var/i in occupants)
+		var/mob/living/occupant = i
+		occupant.forceMove(drop_location())
+		occupants -= i
+	update_icons()
 	if(!has_buckled_mobs())
 		return
 	for(var/i in buckled_mobs)

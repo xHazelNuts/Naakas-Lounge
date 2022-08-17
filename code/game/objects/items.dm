@@ -1044,6 +1044,12 @@ GLOBAL_DATUM_INIT(welding_sparks, /mutable_appearance, mutable_appearance('icons
 				outline_color = COLOR_THEME_CLOCKWORK //if you want free gbp go fix the fact that clockwork's tooltip css is glass'
 			if("glass")
 				outline_color = COLOR_THEME_GLASS
+			if("command") //we're adding new colorschemes now, this fork is going to stray far from SR isn't it
+				outline_color = COLOR_THEME_COMMAND
+			if("service")
+				outline_color = COLOR_THEME_SERVICE
+			if("support")
+				outline_color = COLOR_THEME_SUPPORT
 			else //this should never happen, hopefully
 				outline_color = COLOR_WHITE
 	if(color)

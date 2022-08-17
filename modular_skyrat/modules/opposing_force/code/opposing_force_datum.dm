@@ -479,7 +479,7 @@
 
 	for(var/client/staff as anything in GLOB.admins)
 		if(staff?.prefs?.toggles & SOUND_ADMINHELP)
-			SEND_SOUND(staff, sound('sound/effects/adminhelp.ogg'))
+			SEND_SOUND(staff, sound('sound/effects/adminshelp.ogg'))
 		window_flash(staff)
 
 	COOLDOWN_START(src, request_update_cooldown, OPFOR_REQUEST_UPDATE_COOLDOWN)
@@ -500,7 +500,7 @@
 
 	for(var/client/staff as anything in GLOB.admins)
 		if(staff?.prefs?.toggles & SOUND_ADMINHELP)
-			SEND_SOUND(staff, sound('sound/effects/adminhelp.ogg'))
+			SEND_SOUND(staff, sound('sound/effects/adminshelp.ogg'))
 		window_flash(staff, ignorepref = TRUE)
 
 	addtimer(CALLBACK(src, .proc/add_to_ping_ss), 3 MINUTES)

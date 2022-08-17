@@ -9,10 +9,12 @@
 	circuit = /obj/item/circuitboard/machine/vending/syndicatedonksofttoyvendor
 	products = list(
 		/obj/item/gun/ballistic/automatic/toy/unrestricted = 10,
+		/obj/item/ammo_box/magazine/toy/smg = 30,
 		/obj/item/gun/ballistic/automatic/pistol/toy = 10,
+		/obj/item/ammo_box/magazine/toy/pistol = 30,
 		/obj/item/gun/ballistic/shotgun/toy/unrestricted = 10,
 		/obj/item/toy/sword = 10,
-		/obj/item/ammo_box/foambox = 20,
+		/obj/item/ammo_box/foambox = 50,
 		/obj/item/toy/foamblade = 10,
 		/obj/item/toy/balloon/syndicate = 10,
 		/obj/item/clothing/suit/syndicatefake = 5,
@@ -20,9 +22,14 @@
 	)
 	contraband = list(
 		/obj/item/gun/ballistic/shotgun/toy/crossbow = 10,   //Congrats, you unlocked the +18 setting!
+		/obj/item/gun/ballistic/automatic/pistol/toy/riot = 10,
 		/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted/riot = 10,
-		/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted/riot = 10,
-		/obj/item/ammo_box/foambox/riot = 20,
+		/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted/riot = 5,
+		/obj/item/ammo_box/magazine/toy/smgm45/riot = 30,
+		/obj/item/ammo_box/magazine/toy/m762/riot = 15,
+		/obj/item/ammo_box/magazine/toy/smg/riot = 30,
+		/obj/item/ammo_box/magazine/toy/pistol/riot = 30,
+		/obj/item/ammo_box/foambox/riot = 50,
 		/obj/item/toy/katana = 10,
 		/obj/item/dualsaber/toy = 5,
 		/obj/item/toy/cards/deck/syndicate = 10, //Gambling and it hurts, making it a +18 item

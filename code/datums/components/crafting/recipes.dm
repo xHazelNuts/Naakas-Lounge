@@ -480,6 +480,17 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+/datum/crafting_recipe/bluespace_spray_bottle_generic
+	name = "Bluespace Spraybottle"
+	result = /obj/item/reagent_containers/spray/bluespace
+	reqs = list(/obj/item/reagent_containers/spray = 1,
+				/obj/item/reagent_containers/glass/beaker/bluespace = 1)
+	parts = list(/obj/item/reagent_containers/spray = 1,
+				/obj/item/reagent_containers/glass/beaker/bluespace = 1)
+	tool_behaviors = null
+	time = 5
+	category = CAT_MISC
+
 /datum/crafting_recipe/meteorslug
 	name = "Meteorslug Shell"
 	result = /obj/item/ammo_casing/shotgun/meteorslug
