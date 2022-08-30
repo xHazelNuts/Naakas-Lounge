@@ -49,8 +49,8 @@
 		return
 	var/client/C
 	if(istext(whom))
-		if(whom[1] == "@")
-			whom = findStealthKey(whom)
+		//if(whom[1] == "@")
+		//	whom = findStealthKey(whom)
 		C = GLOB.directory[whom]
 	else if(istype(whom, /client))
 		C = whom
@@ -122,8 +122,8 @@
 	var/datum/admin_help/recipient_ticket // Stored in case client is deleted between this and after the message is input
 	var/external = 0
 	if(istext(whom))
-		if(whom[1] == "@")
-			whom = findStealthKey(whom)
+		//if(whom[1] == "@")
+		//	whom = findStealthKey(whom)
 		if(whom == "IRCKEY")
 			external = 1
 		else

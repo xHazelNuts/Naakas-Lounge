@@ -141,3 +141,37 @@
 /obj/structure/sign/plaques/kiddie/gameoflife
 	name = "\improper Conway's The Game Of Life plaque"
 	desc = "A plaque detailing the historical significance of The Game Of Life in the field of computer science, and that the mural underfoot is a representation of the game in action."
+
+
+//For all of CliffracerX's maps, in-world likely at least partially built by Naaka Ko.  This plaque is a dedication to the people she knows who have, for IC or OOC reasons, vanished from the server.
+//Some she assumes outright dead, like Tenn and Dr. Heinrich because the player behind was banned under iffy circumstances.  Others are MIA, if in some false hope they might one day return, like Sulfur.
+
+/obj/structure/plaque/static_plaque/to_absent_friends_naakako
+	name = "\improper Memento to Friends Absent, by Naaka Ko"
+	desc = "A plaque in faded greenish bronze with an icon depicting three feathers, one chartreuse, one orange, one golden, and a list of names & mementos to the lost.\n\n\
+===Memento to Friends Absent===\n\
+Here will always be a home for you, the lost and beloved.  Know that this place of warmth is always here for you in this world of redstone dust.\n\
+-Naaka\n\
+\n\
+=Lyra Nailan: MIA, 23XX-23??=\n\
+Starry eyes clouded by apathetic surroundings and inner fears.\n\
+I'm lost without you.  Come back to us, hon.\n\
+\n\
+=Sulfur: MIA, 23XX-23??=\n\
+A golden spirit tarnished by a cruel world.  Sister from another mother.  Kindred spirit in nom momitude, not to mention a fellow conniseur of caramel.  I miss you, goober.  We all do.  Please come back to us one day.\n\
+\n\
+=Dizzy: Assumed KIA, 23XX-23??=\n\
+Entrapped by justice turned just-us, lost to the meatgrinder of the Syndicate's machinations.  Your life was worth more than they ever gave you credit for.  Your death will not be in vain.  I'll make sure of it.\n\
+\n\
+=Sordessen Bjorns: Assumed KIA, 23XX-23??=\n\
+Goddamnit, you stupid, overgrown rat.  In spite of everything, I miss you, you dumb motherfucker.  No amount of hilarity was worth losing your antics and guarding presence.\n\
+\n\
+=Tennesee: Executed by Centcom, assumed DNR or on the run, 23XX-23??=\n\
+I don't know what compelled Centcom to stab you in the back for doing your job, and what convinced them Dr. Heinrich was collateral, but I'm going to get to the bottom of it, and I'm going to make them pay.\n\
+\n\
+=Dr. Felix Heinrich: Executed by Centcom, assumed DNR or on the run, 23XX-23??=\n\
+For all your troubled history, I cannot fathom why Centcom decided you and Tenn were going to be the fall guys at fatal consequence.  I'm going to get to the bottom of their bullshit, and I'm going to make them pay.\n\
+\n\
+=Timmy, Honkmother's Finest: Executed by Blueshield and NRI, 23XX-23??=\n\
+You were gonna be a goddamn hero, Timmy.  The best, most literate, and funniest of all the Honkmother's children.  And then a couple of actual manchildren ended it all far too fucking soon.\n\
+You live on in the hearts and souls of those worthy of the golden light of Honk, and stand as a monument to what all clowns should aspire to, alongside Pogo.  Togther, the two of you could change the world."

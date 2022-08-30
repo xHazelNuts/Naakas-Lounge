@@ -4,8 +4,22 @@
 #Ranks will match to those with the same name in admin_ranks.txt, if a match isn't found the user won't be adminned.
 #If SQL-based admin loading is enabled, admins listed here will always be loaded first and will override any duplicate entries in the database.
 
-CliffracerX = Host #also me
-Katty Kat = Game Master #sulfur
-NaakaKo6 = Host #me
-Hauptmann_Meade = Game Master #haki
-SomeRandomOwl = Game Master #owl
+CliffracerX = Host
+#^me
+Katty Kat = Game Master
+#^sulfur, bless her.
+NaakaKo6 = Host
+#^also me
+Hauptmann_Meade = Game Master
+#^haki
+SomeRandomOwl = Game Master
+#^owl
+Mahalia = Game Master
+#^Alara/Hush/the void raptor creator, hemkin nerd
+Lia526 = Game Master
+#^Tchiko
+Tennessee = Game Master
+#^Tenn/Felix
+
+#Naaka, do not under any circumstances add Fluffy-Kun (aka Chi'Lu/Karrim/oh god no) to this list
+#You are going to regret it in ways that make Owl's annoyances look positively energizing by comparison

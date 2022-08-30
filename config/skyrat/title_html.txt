@@ -80,29 +80,14 @@
 					background-color: #ff7f00;
 				}
 
-				@keyframes looping_sub_pattern {
-					from {
-						background-position: 0px 0px;
-					}
+				@keyframes fade_out {
 					to {
-						background-position: 11.3137px 0px;
+						opacity: 0;
 					}
 				}
 
-				.sub_progress_bar {
-					width: 0%;
-					height: 100%;
-					float: right;
-					background-color: lime;
-					background-image: repeating-linear-gradient(
-						-45deg,
-						green,
-						green 7px,
-						black 7px,
-						black 8px
-					);
-					background-attachment: fixed;
-					animation: looping_sub_pattern 1s linear infinite;
+				.fade_out {
+					animation: fade_out 2s both;
 				}
 
 				.container_nav {

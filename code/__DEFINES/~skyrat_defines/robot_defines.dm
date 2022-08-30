@@ -64,5 +64,7 @@
 #define CYBORG_ICON_NINJA 'modular_skyrat/modules/altborgs/icons/robots_ninja.dmi'
 #define CYBORG_ICON_NINJA_TALL 'modular_skyrat/modules/altborgs/icons/tallborg/tallrobot_ninja.dmi'
 
+#define CYBORG_ICON_CUSTOM_WIDE 'modular_skyrat/modules/altborgs/icons/widerobot_customs.dmi'
+
 /// Module is compatible with Cargo Cyborg model
 #define BORG_MODEL_CARGO (BORG_MODEL_ENGINEERING<<1)

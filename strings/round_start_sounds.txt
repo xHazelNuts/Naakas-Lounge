@@ -1,4 +1,3 @@
-sound/ambience/title1.mod
-sound/ambience/title2.ogg
-sound/ambience/title3.ogg
-sound/ambience/clown.ogg
+config/title_music/sounds/Peaceful.ogg
+config/title_music/sounds/Naakastation+splash.ogg
+config/title_music/sounds/Naakastation+alt.ogg

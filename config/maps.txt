@@ -33,10 +33,10 @@ endmap
 #	votable
 #endmap
 
-#map icebox
-#	minplayers 25
-#	votable
-#endmap
+map icebox
+	minplayers 25
+	votable
+endmap
 
 #map tramstation
 #	minplayers 35

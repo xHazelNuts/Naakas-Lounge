@@ -129,7 +129,7 @@
 		return
 	if(length(borg.occupants) == 1)
 		selected_occupant = 1
-		balloon_alert(user, "Trying for base occ!")
+		//balloon_alert(user, "Trying for base occ!")
 
 	var/mob/living/carbon/injectee = borg.occupants[selected_occupant]
 

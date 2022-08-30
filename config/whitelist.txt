@@ -7,6 +7,7 @@
 #Iamgoofball
 #Rshoe95
 #That one penguin who became an admin
+#Xyelgazel is the one we want to watch out for.  Do not let them get into the erver.
 
 #CliffracerX = us
 #SpaghettiBirb = Uko
@@ -16,6 +17,9 @@
 #Katty Kat = Eerie, aka Sulfur.  sadge lack of snug hours
 #Hauptmann_Meade = Haki, aka NAAKA WE NEED TO COOK
 #RikuuTheRiolu = Rhy, aka OH MY GOD IS THIS ANOTHER NOM MOM
+#Fluffy-Kun = Karrim/Chi'Lu, aka Uko's gremlin boyfriend and ALSO UHGHGH
+#TerinDragon = Terin & Ruby, Duhh
+#Mahalia = Void Raptor dev, purple brib
 
 CliffracerX
 SpaghettiBirb
@@ -25,3 +29,6 @@ ELia526
 Katty Kat
 Hauptmann_Meade
 RikuuTheRiolu
+Fluffy-Kun
+TerinDragon
+Mahalia
