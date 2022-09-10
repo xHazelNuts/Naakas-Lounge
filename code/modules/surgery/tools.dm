@@ -1,7 +1,7 @@
 /obj/item/retractor
 	name = "retractor"
 	desc = "Retracts stuff."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "retractor"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -21,7 +21,7 @@
 /obj/item/hemostat
 	name = "hemostat"
 	desc = "You think you have seen this before."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "hemostat"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -43,7 +43,7 @@
 /obj/item/cautery
 	name = "cautery"
 	desc = "This stops bleeding."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "cautery"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -67,7 +67,7 @@
 /obj/item/cautery/advanced
 	name = "searing tool"
 	desc = "It projects a high power laser used for medical applications."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "e_cautery"
 	custom_materials = list(/datum/material/iron = 4000, /datum/material/glass = 2000, /datum/material/plasma = 2000, /datum/material/uranium = 3000, /datum/material/titanium = 3000)
 	hitsound = 'sound/items/welder.ogg'
@@ -75,7 +75,7 @@
 	toolspeed = 0.7
 	light_system = MOVABLE_LIGHT
 	light_range = 1
-	light_color = COLOR_SOFT_RED
+	light_color = LIGHT_COLOR_NORANGE
 
 /obj/item/cautery/advanced/Initialize(mapload)
 	. = ..()
@@ -94,6 +94,11 @@
  */
 /obj/item/cautery/advanced/proc/on_transform(obj/item/source, mob/user, active)
 	SIGNAL_HANDLER
+	
+	if(active)
+		set_light_color(LIGHT_COLOR_NVIOLET)
+	else
+		set_light_color(LIGHT_COLOR_NORANGE)
 
 	tool_behaviour = (active ? TOOL_DRILL : TOOL_CAUTERY)
 	balloon_alert(user, "lenses set to [active ? "drill" : "mend"]")
@@ -107,7 +112,7 @@
 /obj/item/surgicaldrill
 	name = "surgical drill"
 	desc = "You can drill using this item. You dig?"
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "drill"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
@@ -147,7 +152,7 @@
 /obj/item/scalpel
 	name = "scalpel"
 	desc = "Cut, cut, and once more cut."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "scalpel"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -191,7 +196,7 @@
 /obj/item/circular_saw
 	name = "circular saw"
 	desc = "For heavy duty cutting."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "saw"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -232,7 +237,7 @@
 /obj/item/surgical_drapes
 	name = "surgical drapes"
 	desc = "Nanotrasen brand surgical drapes provide optimal safety and infection control."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "surgical_drapes"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -275,7 +280,7 @@
 /obj/item/scalpel/advanced
 	name = "laser scalpel"
 	desc = "An advanced scalpel which uses laser technology to cut."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "e_scalpel"
 	custom_materials = list(/datum/material/iron = 6000, /datum/material/glass = 1500, /datum/material/silver = 2000, /datum/material/gold = 1500, /datum/material/diamond = 200, /datum/material/titanium = 4000)
 	hitsound = 'sound/weapons/blade1.ogg'
@@ -283,8 +288,8 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	toolspeed = 0.7
 	light_system = MOVABLE_LIGHT
-	light_range = 1
-	light_color = LIGHT_COLOR_GREEN
+	light_range = 2
+	light_color = LIGHT_COLOR_NLIME
 	sharpness = SHARP_EDGED
 
 /obj/item/scalpel/advanced/Initialize(mapload)
@@ -309,10 +314,10 @@
 
 	if(active)
 		tool_behaviour = TOOL_SAW
-		set_light_range(2)
+		set_light_color(LIGHT_COLOR_NORANGE)
 	else
 		tool_behaviour = TOOL_SCALPEL
-		set_light_range(1)
+		set_light_color(LIGHT_COLOR_NLIME)
 
 	balloon_alert(user, "[active ? "enabled" : "disabled"] bone-cutting mode")
 	playsound(user ? user : src, 'sound/machines/click.ogg', 50, TRUE)
@@ -325,7 +330,7 @@
 /obj/item/retractor/advanced
 	name = "mechanical pinches"
 	desc = "An agglomerate of rods and gears."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	custom_materials = list(/datum/material/iron = 12000, /datum/material/glass = 4000, /datum/material/silver = 4000, /datum/material/titanium = 5000)
 	icon_state = "adv_retractor"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -361,7 +366,7 @@
 /obj/item/shears
 	name = "amputation shears"
 	desc = "A type of heavy duty surgical shears used for achieving a clean separation between limb and patient. Keeping the patient still is imperative to be able to secure and align the shears."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "shears"
 	flags_1 = CONDUCT_1
 	item_flags = SURGICAL_TOOL
@@ -441,7 +446,7 @@
 /obj/item/bonesetter
 	name = "bonesetter"
 	desc = "For setting things right."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "bone setter"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
@@ -457,7 +462,7 @@
 /obj/item/blood_filter
 	name = "blood filter"
 	desc = "For filtering the blood."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "bloodfilter"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'

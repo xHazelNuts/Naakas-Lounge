@@ -484,9 +484,9 @@
 	name = "Bluespace Spraybottle"
 	result = /obj/item/reagent_containers/spray/bluespace
 	reqs = list(/obj/item/reagent_containers/spray = 1,
-				/obj/item/reagent_containers/glass/beaker/bluespace = 1)
+				/obj/item/reagent_containers/cup/beaker/bluespace = 1)
 	parts = list(/obj/item/reagent_containers/spray = 1,
-				/obj/item/reagent_containers/glass/beaker/bluespace = 1)
+				/obj/item/reagent_containers/cup/beaker/bluespace = 1)
 	tool_behaviors = null
 	time = 5
 	category = CAT_MISC

@@ -40,7 +40,7 @@
 			inhand_icon_state = "toypistol_srv"
 		if("toypistol_spt")
 			inhand_icon_state = "toypistol_spt"
-	M.update_inv_hands()
+	M.update_held_items()
 	/*to_chat(M, span_notice("As you reskin [src] to [icon_state], it switches to inhand state [inhand_icon_state]."))*/
 
 /obj/item/gun/ballistic/automatic/pistol/toy/AltClick(mob/user)
@@ -117,7 +117,7 @@
 			inhand_icon_state = "c20r_srv"
 		if("c20r_spt")
 			inhand_icon_state = "c20r_spt"
-	M.update_inv_hands()
+	M.update_held_items()
 
 /obj/item/gun/ballistic/automatic/c20r/toy/AltClick(mob/user)
 	if(unique_reskin && !current_skin && user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))

@@ -205,8 +205,8 @@
 					text-decoration: none;
 					width: 100%;
 					text-align: left;
-					color: red;
-					text-shadow: 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black, 2px 0px black, -2px 0px black, 0px 2px black, 0px -2px black;
+					color: #7FFF00;
+					text-shadow: 1px 0px #FF7F00, -1px 0px #FF7F00, 0px 1px #FF7F00, 0px -1px #FF7F00, 2px 0px #FF7F00, -2px 0px #FF7F00, 0px 2px #FF7F00, 0px -2px #FF7F00;
 					margin-right: 0%;
 					margin-top: 0px;
 					font-size: 3vmin;

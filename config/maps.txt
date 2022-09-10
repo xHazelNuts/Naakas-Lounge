@@ -34,7 +34,12 @@ endmap
 #endmap
 
 map icebox
-	minplayers 25
+	minplayers 10
+	votable
+endmap
+
+map voidraptor
+	minplayers 5
 	votable
 endmap
 

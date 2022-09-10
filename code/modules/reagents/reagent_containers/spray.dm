@@ -413,7 +413,7 @@
 
 /obj/item/reagent_containers/spray/bluespace
 	name = "bluespace spray bottle"
-	icon = 'icons/obj/chemical.dmi'
+	icon = 'icons/obj/medical/chemical.dmi'
 	icon_state = "sprayer_blu_cmd"
 	inhand_icon_state = "sprayer_blu_cmd"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
@@ -439,7 +439,7 @@
 			inhand_icon_state = "sprayer_blu_srv"
 		if("sprayer_blu_spt")
 			inhand_icon_state = "sprayer_blu_spt"
-	M.update_inv_hands()
+	M.update_held_items()
 
 /obj/item/reagent_containers/spray/hercuri
 	name = "medical spray (hercuri)"

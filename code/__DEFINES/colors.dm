@@ -197,6 +197,14 @@
 /// deep crimson
 #define LIGHT_COLOR_BLOOD_MAGIC "#D00000"
 
+//NAAKA'S OUTPOST COLORS
+/// Bright fucking burn-yer-eyes-out chartreuse.  rgb(127, 255, 0)
+#define LIGHT_COLOR_NLIME      "#7FFF00"
+/// The most hazardous orange.  rgb(255, 127, 0)
+#define LIGHT_COLOR_NORANGE    "#FF7F00"
+/// A deep violet that tends to vanish against dark backgrounds.  rgb(127, 0, 255)
+#define LIGHT_COLOR_NVIOLET    "#7F00FF"
+
 /* These ones aren't a direct colour like the ones above, because nothing would fit */
 /// Warm orange color, leaning strongly towards yellow. rgb(250, 160, 25)
 #define LIGHT_COLOR_FIRE       "#FAA019"

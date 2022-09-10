@@ -20,7 +20,7 @@
 /obj/item/reagent_containers/bellyhypo
 	name = "cyborg belly hypo"
 	desc = "For borgs with sleeper modules, this allows direct application of treatment to the module's occupant using a number of powerful, life-saving medications.  (Use in-hand to inject occupant, alt-click to change injection amount, ctrl-click to open reagent menu.)"
-	icon = 'icons/obj/syringe.dmi'
+	icon = 'icons/obj/medical/syringe.dmi'
 	inhand_icon_state = "hypo"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
