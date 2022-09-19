@@ -20,6 +20,10 @@ Lia526 = Game Master
 #^Tchiko
 Tennessee = Game Master
 #^Tenn/Felix
+NekoSam = Game Master
+#^Any.  going to regret this later aren't i
+Lyralin = Game Master
+#^<3
 
 #Naaka, do not under any circumstances add Fluffy-Kun (aka Chi'Lu/Karrim/oh god no) to this list
 #You are going to regret it in ways that make Owl's annoyances look positively energizing by comparison

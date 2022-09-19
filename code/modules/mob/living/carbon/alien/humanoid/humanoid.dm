@@ -23,12 +23,19 @@
 		/obj/item/bodypart/l_leg/alien,
 		)
 
+//TODO: this is the beginning of making it so xenos can slap the shit out of you with gloves of the north star whilst wearing a ya-yoinked captain's hat
+
 GLOBAL_LIST_INIT(strippable_alien_humanoid_items, create_strippable_list(list(
 	/datum/strippable_item/hand/left,
 	/datum/strippable_item/hand/right,
+	/datum/strippable_item/mob_item_slot/head,
+	/datum/strippable_item/mob_item_slot/gloves,
 	/datum/strippable_item/mob_item_slot/handcuffs,
 	/datum/strippable_item/mob_item_slot/legcuffs,
 )))
+
+/mob/living/carbon/alien/humanoid/can_equip(obj/item/I, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)
+	return TRUE //todo oh god we need to pull over an equivlanet to /datum/species/proc/can_equip just for GLOVES??
 
 /mob/living/carbon/alien/humanoid/Initialize(mapload)
 	. = ..()

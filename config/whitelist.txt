@@ -20,6 +20,10 @@
 #Fluffy-Kun = Karrim/Chi'Lu, aka Uko's gremlin boyfriend and ALSO UHGHGH
 #TerinDragon = Terin & Ruby, Duhh
 #Mahalia = Void Raptor dev, purple brib
+#NekoSam = Anyachi
+#IncorrigibleNan = Ru, purble sofft brib
+#Scarflix = Nono, radioactive therapist extroidinairre
+#Lyralin = <3
 
 CliffracerX
 SpaghettiBirb
@@ -32,3 +36,7 @@ RikuuTheRiolu
 Fluffy-Kun
 TerinDragon
 Mahalia
+NekoSam
+IncorrigibleNan
+Scarflix
+Lyralin

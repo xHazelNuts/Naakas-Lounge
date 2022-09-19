@@ -743,6 +743,7 @@ GLOBAL_DATUM_INIT(welding_sparks, /mutable_appearance, mutable_appearance('icons
  */
 /obj/item/proc/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)
 	if(!M)
+		to_chat(span_danger("That's not right, [equipper] tried to put [src] on something that doesn't exist, in the [slot]."))
 		return FALSE
 
 	return M.can_equip(src, slot, disable_warning, bypass_equip_delay_self)

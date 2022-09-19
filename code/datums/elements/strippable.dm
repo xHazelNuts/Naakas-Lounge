@@ -239,7 +239,7 @@
 		disable_warning = TRUE,
 		bypass_equip_delay_self = TRUE,
 	))
-		to_chat(user, span_warning("\The [equipping] doesn't fit in that place!"))
+		to_chat(user, span_warning("\[equipping] couldn't fit in [source]'s [item_slot], despite [user]'s best efforts!"))
 		return FALSE
 
 	return TRUE

@@ -192,7 +192,7 @@
 
 /datum/reagent/toxin/minttoxin
 	name = "Mint Toxin"
-	description = "Useful for dealing with undesirable customers."
+	description = "A dangerous, ghetto alternative to Liplocide.  Tastes good in chocolate, though."
 	color = "#CF3600" // rgb: 207, 54, 0
 	toxpwr = 0
 	taste_description = "mint"
@@ -201,8 +201,18 @@
 
 /datum/reagent/toxin/minttoxin/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
 	if(HAS_TRAIT(M, TRAIT_FAT))
-		M.inflate_gib()
+		if(rand(0.0, 100.0) <= 20) //1 in 5 chance per metabolism tick.  a mint has 2u, at 0.4u/tick as the norm that means you're probably going to take some stomach damage, if not an oof ow hurl to boot
+			to_chat(M, span_danger("You feel REALLY sick, your stomach is aching..."))
+			M.adjustOrganLoss(ORGAN_SLOT_STOMACH, 5 * REM * normalise_creation_purity(), 75)
+			if(rand(0.0, 100.0) <= 20) //1 in 25 chance ish
+				M.vomit(300, TRUE, TRUE, 2, TRUE, VOMIT_TOXIC, TRUE, FALSE, 0.25) //lose a massive amount of nutrition alongside most of your stomach contents
+	M.adjust_nutrition(-0.25 * delta_time)
 	return ..()
+	//exploding someone who's fat with a mint is a haha funni holdover from the likes of mainline TG or Goon, and I don't think it has a place on an HRP server.
+	//that said, it's an established toxin and I don't think it should go away entirely
+	//so!  new mechanics: it is discount Liplocide that works really slowly and destroys your stomach if it stays in your system too long
+	//and rarely it'll make you Turbo Vomit and lose a huge amount of nutrition and a bit of blood, not to mention scaring the hell out of everyone around you.
+	//but popping?  that's another story.  leave that to Tribal Hunter
 
 /datum/reagent/toxin/carpotoxin
 	name = "Carpotoxin"
