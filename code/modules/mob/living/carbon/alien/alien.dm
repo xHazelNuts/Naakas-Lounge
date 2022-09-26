@@ -55,7 +55,7 @@
 	
 	if(istype(loc, /mob/))
 		environment = new()
-		environment.parse_gas_string("o2=22;n2=82;TEMP=293.15")
+		environment = SSair.parse_gas_string("o2=22;n2=82;TEMP=293.15")
 		dna.species.handle_environment(src, environment, delta_time, times_fired)
 	
 	. = ..()

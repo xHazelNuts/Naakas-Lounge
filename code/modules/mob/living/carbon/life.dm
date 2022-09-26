@@ -121,7 +121,7 @@
 				if(isnull(breath))
 					//message_admins("[src] couldn't breathe from [loc]!  Fabricating fake environment...")
 					var/breath_moles = 0
-					environment.parse_gas_string("o2=0.05;n2=0.1;TEMP=293.15")
+					environment = SSair.parse_gas_string("o2=0.05;n2=0.1;TEMP=293.15")
 					//environment.assert_gas(/datum/gas/oxygen)
 					//environment.gases[/datum/gas/oxygen][MOLES] = (6*ONE_ATMOSPHERE)*100/(R_IDEAL_GAS_EQUATION*T20C)
 					

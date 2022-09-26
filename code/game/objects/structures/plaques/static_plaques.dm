@@ -153,25 +153,24 @@
 Here will always be a home for you, the lost and beloved.  Know that this place of warmth is always here for you in this world of redstone dust.\n\
 -Naaka\n\
 \n\
-=Lyra Nailan: MIA, 23XX-23??=\n\
-Starry eyes clouded by apathetic surroundings and inner fears.\n\
-I'm lost without you.  Come back to us, hon.\n\
+=Meli Ko: Passed Peacefully, 25XX-2522=\n\
+As kind and supportive as any could ask for, validating her loved ones to her last breath.  Miss you, gran.\n\
 \n\
-=Sulfur: MIA, 23XX-23??=\n\
+=Sulfur: MIA, 25XX-2522=\n\
 A golden spirit tarnished by a cruel world.  Sister from another mother.  Kindred spirit in nom momitude, not to mention a fellow conniseur of caramel.  I miss you, goober.  We all do.  Please come back to us one day.\n\
 \n\
-=Dizzy: Assumed KIA, 23XX-23??=\n\
+=Dizzy: Assumed KIA, 25XX-2522=\n\
 Entrapped by justice turned just-us, lost to the meatgrinder of the Syndicate's machinations.  Your life was worth more than they ever gave you credit for.  Your death will not be in vain.  I'll make sure of it.\n\
 \n\
-=Sordessen Bjorns: Assumed KIA, 23XX-23??=\n\
+=Sordessen Bjorns: Assumed KIA, 25XX-2522=\n\
 Goddamnit, you stupid, overgrown rat.  In spite of everything, I miss you, you dumb motherfucker.  No amount of hilarity was worth losing your antics and guarding presence.\n\
 \n\
-=Tennesee: Executed by Centcom, assumed DNR or on the run, 23XX-23??=\n\
+=Tennesee: 'Executed' by Centcom, assumed on the run, 25XX-2522=\n\
 I don't know what compelled Centcom to stab you in the back for doing your job, and what convinced them Dr. Heinrich was collateral, but I'm going to get to the bottom of it, and I'm going to make them pay.\n\
 \n\
-=Dr. Felix Heinrich: Executed by Centcom, assumed DNR or on the run, 23XX-23??=\n\
+=Dr. Felix Heinrich: 'Executed' by Centcom, assumed on the run, 25XX-2522=\n\
 For all your troubled history, I cannot fathom why Centcom decided you and Tenn were going to be the fall guys at fatal consequence.  I'm going to get to the bottom of their bullshit, and I'm going to make them pay.\n\
 \n\
-=Timmy, Honkmother's Finest: Executed by Blueshield and NRI, 23XX-23??=\n\
+=Timmy, Honkmother's Finest: Executed by Blueshield and NRI, 25XX-2522=\n\
 You were gonna be a goddamn hero, Timmy.  The best, most literate, and funniest of all the Honkmother's children.  And then a couple of actual manchildren ended it all far too fucking soon.\n\
 You live on in the hearts and souls of those worthy of the golden light of Honk, and stand as a monument to what all clowns should aspire to, alongside Pogo.  Togther, the two of you could change the world."

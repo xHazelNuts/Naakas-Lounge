@@ -119,7 +119,7 @@
 	
 	if(istype(loc, /mob/))
 		environment = new()
-		environment.parse_gas_string("o2=50;n2=150;TEMP=293.15")
+		environment = SSair.parse_gas_string("o2=50;n2=150;TEMP=293.15")
 		dna.species.handle_environment(src, environment, delta_time*25, times_fired)
 	else
 		dna.species.handle_environment(src, environment, delta_time, times_fired)
