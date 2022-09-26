@@ -571,21 +571,16 @@
 	desc = "The plushie of a celestial in the known universe."
 	icon_state = "plushie_star"
 	gender = FEMALE
+	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/trills.ogg' = 1)
 
-/obj/item/toy/plush/skyrat/naaka
-	name = "extra-soft teshari plushie"
-	desc = "A plushie of a certain highlighter-esque mom bird.  The stitching on the side of the underbelly has a tag reading Nom Mom, and it feels of a more elastic material."
-	icon_state = "plushie_naaka"
-	inhand_icon_state = "plushie_naaka"
-	attack_verb_continuous = list("cuddles", "wurbles", "noms")
-	attack_verb_simple = list("cuddle", "wurble", "nom")
-	w_class = WEIGHT_CLASS_NORMAL
-	squeak_override = list('modular_skyrat/modules/emotes/sound/voice/wurble.ogg' = 1)
-	gender = FEMALE
-	young = TRUE //No.
-//Storage component for Naaka Plushie.  NOM MOM POWERS//
-/obj/item/toy/plush/skyrat/naaka/Initialize(mapload)
-	. = ..()
+// Donation reward for SRQ
+/obj/item/toy/plush/skyrat/plushie_chiara
+	name = "commanding fox plush"
+	desc = "A large stuffed fox which radiates confidence and vigor from their emerald eyes."
+	icon_state = "plushie_chiara"
 
-	create_storage(max_slots = 7, max_specific_storage = WEIGHT_CLASS_SMALL)
-//End of storage component//
+// Donation reward for Superlagg
+/obj/item/toy/plush/skyrat/plushie_dan
+	name = "comfy fox plush"
+	desc = "A stuffed fox with an aura of endearment leaking from their soft exterior."
+	icon_state = "plushie_dan"
