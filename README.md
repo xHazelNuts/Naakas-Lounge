@@ -1,4 +1,4 @@
-## Skyrat 13 (/tg/station Downstream)
+## Naaka's Lounge (Skyrat Downstream, a /tg/station Downstream)
 
 [![CI Suite](https://github.com/Skyrat-SS13/Skyrat-tg/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/Skyrat-SS13/Skyrat-tg/actions/workflows/ci_suite.yml)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/Skyrat-SS13/Skyrat-tg.svg)](https://isitmaintained.com/project/Skyrat-SS13/Skyrat-tg "Percentage of issues still open")
@@ -16,7 +16,8 @@
 * **Skyrat 13 Discord:** https://discord.com/invite/hGpZ4Z3
 * **Coderbus Discord:** https://discord.gg/Vh8TJp9
 
-This is Skyrat's downstream fork of /tg/station created in byond.
+This is a fork of Skyrat Station, itself a fork of /tg/station, made using BYOND and suffering.
+It is _not_ meant to create a large-scale server similar to Skyrat itself - it is simply an offshoot and a glorified testbed for making things to eventually contrib back to mainline Skyrat, with a side of just being a place to hang out without the shenanigans associated with a real shift.  If you want the good stuff, go work on skyrat-tg!
 
 **Please note that this repository contains sexually explicit content and is not suitable for those under the age of 18.**
 
