@@ -165,7 +165,9 @@
 	})
 "aE" = (
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "aF" = (
 /obj/structure/deployable_barricade/snow{
 	dir = 1;
@@ -932,7 +934,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "df" = (
 /obj/machinery/door/airlock/security/glass{
 	name = "Equipment Room"
@@ -1263,6 +1267,14 @@
 /area/station/command/bridge{
 	has_gravity = 1
 	})
+"eo" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/mine/lobby{
+	name = "Birdhouse Entry Hall"
+	})
 "ep" = (
 /obj/machinery/holopad,
 /obj/structure/cable,
@@ -1438,7 +1450,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood/large,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "eT" = (
 /obj/effect/landmark/start/quartermaster,
 /obj/machinery/holopad,
@@ -1632,7 +1646,9 @@
 /area/mine/medical)
 "fz" = (
 /turf/closed/wall/mineral/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "fA" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 10
@@ -1759,7 +1775,9 @@
 	pixel_x = 4
 	},
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "fV" = (
 /obj/effect/landmark/start/security_officer,
 /turf/open/floor/iron/red/side{
@@ -1823,12 +1841,6 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
-"gh" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/wood,
-/area/mine/cafeteria)
 "gi" = (
 /obj/machinery/light/directional/east,
 /obj/structure/cable,
@@ -2329,7 +2341,9 @@
 	pixel_x = -1
 	},
 /turf/closed/wall/mineral/wood,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "hN" = (
 /obj/machinery/computer/security/mining,
 /turf/open/floor/iron,
@@ -2540,7 +2554,9 @@
 	})
 "iC" = (
 /turf/closed/wall/mineral/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "iD" = (
 /obj/effect/landmark/start/cook,
 /turf/open/floor/iron/kitchen/diagonal,
@@ -2587,7 +2603,9 @@
 "iJ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "iK" = (
 /obj/machinery/atmospherics/components/binary/volume_pump/layer2{
 	dir = 8;
@@ -2806,8 +2824,11 @@
 /area/station/commons/dorms)
 "ju" = (
 /obj/machinery/light/directional/north,
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
 /turf/open/floor/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "jv" = (
 /obj/structure/railing/corner{
 	dir = 1
@@ -3194,7 +3215,13 @@
 "kJ" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
+"kK" = (
+/obj/structure/fans/tiny,
+/turf/open/floor/engine,
+/area/station/science/research)
 "kL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -3415,7 +3442,9 @@
 "lu" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "lw" = (
 /turf/closed/wall,
 /area/station/command/heads_quarters/rd)
@@ -3671,7 +3700,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/sink/directional/west,
 /turf/open/floor/iron/checker,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "mj" = (
 /obj/structure/chair{
 	dir = 1
@@ -3785,7 +3816,9 @@
 /area/mine/medical)
 "mE" = (
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "mH" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/o2{
 	dir = 8;
@@ -3798,7 +3831,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "mL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4369,6 +4404,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/purple,
 /area/station/commons/dorms)
+"oq" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/wood,
+/area/mine/living_quarters)
 "os" = (
 /obj/machinery/power/terminal,
 /obj/structure/cable,
@@ -4603,6 +4642,12 @@
 	},
 /turf/open/misc/sandy_dirt/icemoon,
 /area/ruin/unpowered/ash_walkers)
+"pk" = (
+/obj/machinery/rnd/production/protolathe/department/science,
+/turf/open/floor/wood,
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "pl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/thermomachine/heater/on,
@@ -4714,7 +4759,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Birdhouse Snuggle Room"
+	})
 "pL" = (
 /obj/machinery/power/apc/auto_name/directional/west{
 	arc_shielded = 1
@@ -4854,7 +4901,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "qo" = (
 /turf/closed/wall/ice,
 /area/icemoon/underground/explored)
@@ -4958,17 +5007,6 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"qG" = (
-/obj/docking_port/stationary{
-	dir = 8;
-	dwidth = 1;
-	height = 13;
-	shuttle_id = "arrivals_stationary";
-	name = "arrivals";
-	width = 5
-	},
-/turf/closed/wall,
-/area/station/common/pool)
 "qH" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
 	dir = 8;
@@ -5026,7 +5064,9 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/oven,
 /turf/open/floor/iron/checker,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "qS" = (
 /obj/machinery/light_switch/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -5081,7 +5121,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "ri" = (
 /obj/machinery/biogenerator,
 /turf/closed/wall,
@@ -5449,7 +5491,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/checker,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "sn" = (
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/machinery/status_display/evac/directional/north,
@@ -5706,10 +5750,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"tg" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/wood,
-/area/mine/living_quarters)
 "tj" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
 	dir = 8
@@ -6062,7 +6102,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "uu" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -6381,6 +6423,12 @@
 /turf/open/floor/iron/green,
 /area/station/engineering/atmos{
 	has_gravity = 1
+	})
+"vy" = (
+/obj/effect/spawner/random/engineering/material_rare,
+/turf/open/floor/wood,
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
 	})
 "vz" = (
 /obj/structure/table/reinforced,
@@ -6725,7 +6773,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "wB" = (
 /obj/machinery/chem_master,
 /obj/machinery/light/directional/south,
@@ -6874,7 +6924,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "wX" = (
 /obj/machinery/vending/hydronutrients,
 /turf/open/floor/iron,
@@ -7386,8 +7438,11 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/machinery/chem_master,
 /turf/open/floor/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "yz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -7651,6 +7706,12 @@
 /obj/effect/turf_decal/siding/wood,
 /turf/open/misc/sandy_dirt/icemoon,
 /area/ruin/unpowered/ash_walkers)
+"zn" = (
+/obj/machinery/mecha_part_fabricator,
+/turf/open/floor/wood,
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "zo" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -7696,7 +7757,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/checker,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "zz" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -8054,6 +8117,12 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
+"AN" = (
+/obj/machinery/autolathe,
+/turf/open/floor/wood,
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "AO" = (
 /obj/structure/cable,
 /obj/machinery/firealarm/directional/north,
@@ -8618,7 +8687,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "Cw" = (
 /mob/living/carbon/human/species/monkey,
 /obj/structure/window/reinforced{
@@ -8758,6 +8829,15 @@
 "CS" = (
 /obj/structure/table/reinforced,
 /obj/structure/cable,
+/obj/item/food/sweet_piru_noodles,
+/obj/item/food/sweet_piru_noodles{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/food/sweet_piru_noodles{
+	pixel_x = 4;
+	pixel_y = 5
+	},
 /turf/open/floor/iron/kitchen/diagonal,
 /area/station/commons/lounge{
 	has_gravity = 1
@@ -8812,7 +8892,9 @@
 	})
 "Dd" = (
 /turf/closed/wall/mineral/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "Df" = (
 /obj/structure/statue/bone/rib,
 /obj/structure/lattice/lava,
@@ -8955,7 +9037,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "DH" = (
 /obj/effect/landmark/start/ai,
 /obj/item/radio/intercom/directional/east{
@@ -9060,7 +9144,9 @@
 "DW" = (
 /obj/structure/chair/wood,
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "DX" = (
 /obj/structure/fermenting_barrel,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -9195,7 +9281,9 @@
 /obj/structure/mineral_door/wood,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "Ev" = (
 /obj/machinery/shower{
 	dir = 8
@@ -9220,7 +9308,9 @@
 "Ey" = (
 /obj/structure/chair/comfy,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "Ez" = (
 /turf/closed/wall,
 /area/station/engineering/atmos{
@@ -9613,8 +9703,11 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
+/obj/machinery/chem_heater/withbuffer,
 /turf/open/floor/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "FK" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
 	dir = 1
@@ -9763,7 +9856,9 @@
 "Ge" = (
 /obj/machinery/griddle,
 /turf/open/floor/iron/checker,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "Gg" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -10255,7 +10350,9 @@
 /area/mine/lobby)
 "HI" = (
 /turf/closed/wall/mineral/wood,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "HK" = (
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible,
 /turf/closed/wall/r_wall,
@@ -10342,6 +10439,12 @@
 	},
 /area/station/medical/pharmacy{
 	has_gravity = 1
+	})
+"HX" = (
+/obj/machinery/chem_dispenser,
+/turf/open/floor/wood,
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
 	})
 "HY" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -10656,7 +10759,9 @@
 "IT" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/checker,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "IU" = (
 /obj/machinery/chem_master,
 /obj/machinery/light_switch/directional/east,
@@ -10765,24 +10870,20 @@
 /obj/structure/desk_bell{
 	pixel_y = 10
 	},
-/obj/item/food/omelette{
-	pixel_x = 6
-	},
-/obj/item/food/omelette{
+/obj/item/food/caramel_jelly_toast{
 	pixel_x = 6;
-	pixel_y = -4
+	pixel_y = 4
 	},
-/obj/item/food/omelette{
-	pixel_x = 6;
-	pixel_y = -4
+/obj/item/food/caramel_jelly_toast,
+/obj/item/food/caramel_jelly_toast{
+	pixel_x = 5
 	},
-/obj/item/food/omelette,
-/obj/item/food/omelette{
-	pixel_y = -7;
-	pixel_x = -5
+/obj/item/food/caramel_jelly_toast{
+	pixel_x = -6;
+	pixel_y = 4
 	},
-/obj/item/food/omelette{
-	pixel_y = -7
+/obj/item/food/caramel_jelly_toast{
+	pixel_x = -6
 	},
 /turf/open/floor/iron/kitchen/diagonal,
 /area/station/commons/lounge{
@@ -11348,13 +11449,13 @@
 	has_gravity = 1
 	})
 "KY" = (
-/mob/living/silicon/robot/shell,
-/obj/item/microfusion_cell_attachment/selfcharging,
-/obj/item/microfusion_cell_attachment/stabiliser,
-/obj/item/microfusion_cell_attachment/overcapacity,
-/obj/item/stock_parts/cell/microfusion/bluespace,
-/turf/open/floor/circuit,
-/area/station/ai_monitored/turret_protected/ai)
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "KZ" = (
 /obj/machinery/status_display/evac/directional/south,
 /turf/open/floor/carpet/orange,
@@ -11629,10 +11730,6 @@
 "LT" = (
 /turf/closed/wall/r_wall,
 /area/station/science/genetics)
-"LU" = (
-/obj/structure/fans/tiny,
-/turf/open/floor/engine,
-/area/station/science/research)
 "LV" = (
 /obj/machinery/firealarm/directional/east,
 /obj/structure/table,
@@ -12333,13 +12430,17 @@
 "On" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "Oo" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "Op" = (
 /obj/structure/table,
 /obj/item/kitchen/rollingpin,
@@ -12530,6 +12631,8 @@
 /obj/item/seeds/poppy/lily/trumpet,
 /obj/item/seeds/tower/steel,
 /obj/item/seeds/tower,
+/obj/item/seeds/piru,
+/obj/item/seeds/kiri,
 /turf/open/floor/iron,
 /area/station/service/hydroponics{
 	has_gravity = 1
@@ -12723,11 +12826,6 @@
 	id = "AI"
 	},
 /obj/machinery/airalarm/directional/north,
-/mob/living/silicon/robot/shell,
-/obj/item/microfusion_cell_attachment/selfcharging,
-/obj/item/microfusion_cell_attachment/stabiliser,
-/obj/item/microfusion_cell_attachment/overcapacity,
-/obj/item/stock_parts/cell/microfusion/bluespace,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
 "PK" = (
@@ -13167,7 +13265,9 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "Rd" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -13522,7 +13622,9 @@
 /obj/structure/cable,
 /obj/machinery/light/directional/north,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "Sm" = (
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron/dark/blue,
@@ -13711,7 +13813,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "SR" = (
 /obj/effect/turf_decal/siding/wideplating/dark/corner{
 	dir = 8
@@ -13973,7 +14077,9 @@
 "TE" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "TF" = (
 /turf/open/floor/iron,
 /area/station/medical{
@@ -14321,7 +14427,9 @@
 /area/mine/medical)
 "UJ" = (
 /turf/open/floor/wood,
-/area/mine/storage)
+/area/mine/storage{
+	name = "Birdhouse Tech Storage"
+	})
 "UK" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /turf/open/floor/carpet/green,
@@ -14359,7 +14467,9 @@
 	layer = 3.5
 	},
 /turf/open/floor/iron/checker,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "UR" = (
 /obj/machinery/atmospherics/components/trinary/mixer{
 	dir = 8
@@ -14468,7 +14578,9 @@
 /obj/machinery/shower,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/checker,
-/area/mine/maintenance)
+/area/mine/maintenance{
+	name = "Birdhouse Showers"
+	})
 "Vf" = (
 /obj/structure/cable,
 /obj/machinery/power/solar{
@@ -14501,7 +14613,9 @@
 "Vi" = (
 /obj/structure/table/wood,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "Vj" = (
 /obj/structure/sign/warning/gas_mask,
 /turf/closed/wall,
@@ -15267,7 +15381,9 @@
 "XA" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood,
-/area/mine/lounge)
+/area/mine/lounge{
+	name = "Birdhouse Lounge"
+	})
 "XB" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
 	dir = 5
@@ -15361,6 +15477,17 @@
 	initial_gas_mix = "o2=22;n2=82;TEMP=180"
 	},
 /area/ruin/unpowered/ash_walkers)
+"XM" = (
+/obj/docking_port/stationary{
+	dir = 8;
+	dwidth = 1;
+	height = 13;
+	shuttle_id = "arrivals_stationary";
+	name = "arrivals";
+	width = 5
+	},
+/turf/closed/wall,
+/area/station/common/pool)
 "XN" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -15958,7 +16085,9 @@
 "ZG" = (
 /obj/structure/cable,
 /turf/open/floor/iron/checker,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "ZL" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
@@ -16010,7 +16139,9 @@
 /area/station/science/cytology)
 "ZP" = (
 /turf/open/floor/iron/checker,
-/area/mine/cafeteria)
+/area/mine/cafeteria{
+	name = "Birdhouse Kitchen"
+	})
 "ZR" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -24331,7 +24462,7 @@ eY
 Lq
 yp
 LQ
-LU
+kK
 jK
 fn
 BT
@@ -25607,9 +25738,9 @@ JR
 KC
 JR
 fJ
-KY
+GH
 Dm
-KY
+GH
 PD
 rr
 IB
@@ -25864,7 +25995,7 @@ JR
 kj
 JR
 iB
-KY
+GH
 DH
 GH
 NF
@@ -27637,7 +27768,7 @@ IK
 eh
 QY
 QY
-qG
+XM
 QY
 UY
 Wx
@@ -28378,7 +28509,7 @@ Vq
 "}
 (49,1,1) = {"
 iC
-UJ
+AN
 UJ
 yy
 iC
@@ -28635,11 +28766,11 @@ Vq
 "}
 (50,1,1) = {"
 lu
-UJ
-UJ
+pk
+vy
 wW
 SQ
-Gq
+eo
 Mi
 fz
 Rc
@@ -28892,7 +29023,7 @@ Vq
 "}
 (51,1,1) = {"
 lu
-UJ
+zn
 UJ
 FJ
 iC
@@ -29151,7 +29282,7 @@ Vq
 iC
 ju
 UJ
-UJ
+HX
 iC
 uB
 Gq
@@ -29664,14 +29795,14 @@ Vq
 (54,1,1) = {"
 sT
 Uc
-tg
+oq
 pK
 Od
 rm
 Gq
 DG
 Cv
-gh
+KY
 mE
 TE
 Dd
