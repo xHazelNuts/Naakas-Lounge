@@ -234,10 +234,6 @@ GLOBAL_LIST_INIT(loadout_toys, generate_loadout_items(/datum/loadout_item/toys))
 	name = "Huggable Bee Plushie"
 	item_path = /obj/item/toy/plush/skyrat/rubi
 
-/datum/loadout_item/toys/naaka
-	name = "Extra-Soft Teshari Plushie"
-	item_path = /obj/item/toy/plush/skyrat/naaka
-
 /*
 *	CARDS
 */
