@@ -24,36 +24,29 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"af" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "ag" = (
 /turf/closed/wall/r_wall,
 /area/station/cargo/miningoffice)
 "ah" = (
 /obj/structure/dresser,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
-"ai" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/snow/corner{
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
+"ak" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
-"ak" = (
-/obj/item/shovel,
-/turf/open/misc/asteroid/basalt{
-	initial_gas_mix = "ICEMOON_ATMOS"
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Door Airlock"
 	},
-/area/ruin/unpowered/ash_walkers)
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/cargo/storage{
+	has_gravity = 1
+	})
 "al" = (
 /obj/machinery/button/door/directional/north{
 	id = "Skynet_launch";
@@ -169,15 +162,11 @@
 	name = "Birdhouse Lounge"
 	})
 "aF" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 1;
-	pixel_y = 10
-	},
-/obj/structure/flora/grass/both/style_random,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/aquarium/prefilled,
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "aG" = (
 /turf/closed/wall,
 /area/station/commons/dorms)
@@ -190,7 +179,6 @@
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Power Storage"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/green,
@@ -215,10 +203,11 @@
 /turf/open/floor/plating,
 /area/station/commons/dorms)
 "aM" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/space_heater/constructed,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/flora/bush/flowers_pp/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "aN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -231,20 +220,6 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"aQ" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/turf/open/floor/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
 "aS" = (
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry{
@@ -278,11 +253,13 @@
 	has_gravity = 1
 	})
 "aW" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output{
-	dir = 1
-	},
-/turf/open/floor/engine/o2,
-/area/mine/medical)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/tile,
+/area/mine/maintenance{
+	name = "Tchiko's Castle Janitorial"
+	})
 "aX" = (
 /obj/structure/plasticflaps,
 /obj/machinery/conveyor{
@@ -299,13 +276,6 @@
 /area/station/tcommsat/server{
 	has_gravity = 1
 	})
-"ba" = (
-/obj/structure/cable,
-/obj/structure/sign/nanotrasen{
-	pixel_y = -32
-	},
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
 "bb" = (
 /obj/effect/landmark/start/depsec/medical,
 /turf/open/floor/iron,
@@ -339,18 +309,16 @@
 	has_gravity = 1
 	})
 "bj" = (
-/mob/living/simple_animal/hostile/asteroid/gutlunch/gubbuck,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/closed/wall/mineral/stone,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "bl" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/nospawn)
 "bn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -367,11 +335,6 @@
 /area/station/command/heads_quarters/qm{
 	has_gravity = 1
 	})
-"bq" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/structure/table/optable,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "br" = (
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -427,13 +390,14 @@
 	has_gravity = 1
 	})
 "bA" = (
-/obj/structure/flora/grass/both/style_random,
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "bB" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
@@ -463,12 +427,6 @@
 /area/station/command/heads_quarters/hos{
 	has_gravity = 1
 	})
-"bH" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 6
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "bI" = (
 /obj/structure/closet/secure_closet/engineering_chief,
 /obj/machinery/power/apc/sm_apc/directional/east{
@@ -497,31 +455,26 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "bN" = (
-/obj/machinery/light_switch/directional/north,
-/obj/structure/table/reinforced/rglass,
-/obj/item/reagent_containers/spray/bluespace{
-	icon_state = "sprayer_blu_spt";
-	inhand_icon_state = "sprayer_blu_spt";
-	list_reagents = list(/datum/reagent/space_cleaner=400);
-	current_skin = sprayer_blu_spt;
-	pixel_y = 12;
-	pixel_x = 8
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/reagentgrinder{
+	pixel_x = -7;
+	pixel_y = 13
 	},
-/obj/item/storage/medkit/fire{
-	pixel_x = -6;
-	pixel_y = 11
-	},
-/obj/item/storage/medkit/fire{
-	pixel_x = -1;
-	pixel_y = 1
-	},
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "bO" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "bQ" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -559,17 +512,6 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"bV" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787"
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "bW" = (
 /obj/machinery/door/airlock/virology/glass{
 	name = "Isolation B"
@@ -615,24 +557,14 @@
 	dir = 8
 	},
 /area/station/commons/dorms)
-"cd" = (
-/obj/machinery/door/airlock/external{
-	name = "Internal Airlock"
-	},
-/obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "ce" = (
-/obj/structure/reagent_forge{
-	primitive = 1
+/obj/structure/fence{
+	dir = 4
 	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/misc/dirt/jungle,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "cf" = (
 /obj/structure/rack,
 /obj/item/pickaxe{
@@ -650,17 +582,18 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "ch" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
+/obj/machinery/oven,
+/obj/machinery/microwave{
+	pixel_y = 18;
+	pixel_x = -2
 	},
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "ci" = (
 /obj/structure/sink/directional/north,
 /turf/open/floor/iron/dark/blue,
@@ -671,13 +604,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/science/research)
-"ck" = (
-/obj/structure/flora/grass/both/style_random,
-/obj/structure/deployable_barricade/snow,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "cl" = (
 /turf/open/floor/iron/red,
 /area/station/security{
@@ -707,7 +633,6 @@
 /obj/machinery/door/airlock/atmos/glass{
 	name = "Atmospherics Monitoring"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -715,16 +640,6 @@
 /area/station/engineering/storage/tech{
 	has_gravity = 1
 	})
-"cq" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/structure/flora/ash/chilly,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "cs" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
@@ -777,7 +692,6 @@
 /obj/machinery/door/airlock/atmos{
 	name = "Atmospherics"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -882,16 +796,6 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
-"cS" = (
-/obj/structure/curtain/bounty,
-/obj/structure/bed/maint,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "cU" = (
 /turf/open/floor/plating/snowed,
 /area/station/engineering/supermatter/room{
@@ -961,13 +865,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"di" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "dj" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -981,12 +878,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
-"do" = (
-/mob/living/simple_animal/hostile/asteroid/gutlunch,
-/turf/open/misc/asteroid/basalt{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/unpowered/ash_walkers)
 "dp" = (
 /turf/closed/wall,
 /area/station/service/chapel)
@@ -1006,11 +897,6 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/station/command/heads_quarters/captain/private)
-"ds" = (
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/icemoon/surface/outdoors/nospawn)
 "dt" = (
 /obj/structure/table,
 /obj/item/ceramic/bowl,
@@ -1019,23 +905,13 @@
 	has_gravity = 1
 	})
 "du" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 1
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"dx" = (
-/obj/structure/cable,
-/obj/machinery/power/tracker{
-	id = "outpostsolar"
-	},
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "dy" = (
 /obj/structure/chair/sofa/corp/right,
 /turf/open/floor/iron,
@@ -1095,17 +971,33 @@
 	has_gravity = 1
 	})
 "dL" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
+/obj/structure/bed/dogbed,
+/obj/structure/chair/pillow_small{
+	icon_state = "pillowpile_small_spt";
+	pillow1_color_changed = 1;
+	pillow2_color_changed = 1;
+	current_color = "spt";
+	pillow1_color = "spt";
+	pillow2_color = "spt";
+	transform = matrix(0.75, 0, 0, 0, 0.75, 0, 0, 0, 1)
 	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
+/obj/item/toy/plush/skyrat/borbplushie{
+	attack_verb_simple = list("peep");
+	attack_verb_continuous = list("peeps");
+	name = "A Leathery Egg";
+	icon = 'icons/obj/food/egg.dmi';
+	icon_state = "egg";
+	inhand_icon_state = null;
+	lefthand_file = 'icons/mob/inhands/items/food_lefthand.dmi';
+	righthand_file = 'icons/mob/inhands/items/food_righthand.dmi';
+	color = "#91593b";
+	transform = matrix(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1);
+	desc = "A large, leathery egg.  You feel like its occupant is peeping at you, faintly."
 	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "dN" = (
 /obj/effect/landmark/start/atmospheric_technician,
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2{
@@ -1123,11 +1015,6 @@
 /area/station/medical/virology{
 	has_gravity = 1
 	})
-"dP" = (
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "dQ" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
 	dir = 8;
@@ -1182,13 +1069,6 @@
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
-"eb" = (
-/obj/item/soap/homemade,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "ec" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/turf_decal/box,
@@ -1221,7 +1101,9 @@
 "ej" = (
 /obj/structure/cable,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "ek" = (
 /obj/structure/table,
 /obj/item/storage/pill_bottle/mutadone{
@@ -1230,25 +1112,6 @@
 /obj/item/toy/figure/geneticist,
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
-"el" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/obj/structure/table/reinforced/rglass,
-/obj/item/reagent_containers/cup/beaker/large{
-	pixel_x = -3;
-	pixel_y = 9
-	},
-/obj/item/reagent_containers/cup/beaker/large{
-	pixel_x = -5
-	},
-/obj/machinery/reagentgrinder{
-	pixel_x = 5;
-	pixel_y = 3
-	},
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "em" = (
 /obj/machinery/door/airlock{
 	name = "Kitchen Access"
@@ -1301,13 +1164,6 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"ev" = (
-/obj/structure/chair/wood{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "ew" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/grass,
@@ -1397,33 +1253,6 @@
 	},
 /turf/open/floor/iron/dark/blue,
 /area/station/commons/toilet/locker)
-"eN" = (
-/obj/structure/closet/crate/wooden,
-/obj/item/hemostat/ashwalker,
-/obj/item/retractor/ashwalker{
-	pixel_y = -9
-	},
-/obj/item/scalpel/ashwalker{
-	pixel_y = -4
-	},
-/obj/item/surgicaldrill/ashwalker,
-/obj/item/circular_saw/ashwalker,
-/obj/item/cautery/ashwalker,
-/obj/effect/turf_decal/siding/wideplating/dark/corner,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"eO" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "eQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -1503,38 +1332,20 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "fc" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "fd" = (
-/turf/closed/indestructible/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
-"fe" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 4
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"ff" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/bush/jungle/b,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "fg" = (
 /obj/machinery/atmospherics/pipe/color_adapter{
 	dir = 8
@@ -1565,14 +1376,6 @@
 "fn" = (
 /turf/closed/wall/r_wall,
 /area/station/science/research)
-"fo" = (
-/obj/structure/stone_tile/center,
-/obj/structure/stone_tile/surrounding_tile,
-/obj/structure/stone_tile/surrounding/cracked,
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "fq" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1638,32 +1441,11 @@
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
-"fw" = (
-/obj/machinery/chem_master,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "fz" = (
 /turf/closed/wall/mineral/wood,
 /area/mine/lounge{
 	name = "Birdhouse Lounge"
 	})
-"fA" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/obj/item/screwdriver/ashwalker,
-/obj/item/crowbar/ashwalker,
-/obj/item/wrench/ashwalker,
-/obj/item/wirecutters/ashwalker,
-/obj/structure/closet/crate/wooden,
-/obj/item/hatchet/wooden,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "fB" = (
 /obj/structure/cable,
 /turf/open/floor/iron/green,
@@ -1757,10 +1539,6 @@
 /area/station/security{
 	has_gravity = 1
 	})
-"fR" = (
-/obj/machinery/chem_dispenser,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "fT" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/heater/on,
 /turf/open/floor/iron,
@@ -1904,22 +1682,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"gr" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 9
-	},
-/obj/effect/turf_decal/siding/wood/corner,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
-"gs" = (
-/obj/structure/fermenting_barrel,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "gt" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1957,18 +1719,6 @@
 /obj/structure/railing,
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
-"gy" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "gA" = (
 /obj/structure/toilet{
 	dir = 1
@@ -2106,15 +1856,11 @@
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
 "gX" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 9
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/nospawn)
 "gY" = (
 /obj/machinery/door/airlock{
 	name = "Dormitories"
@@ -2142,14 +1888,11 @@
 	has_gravity = 1
 	})
 "hd" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/rock/pile/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "he" = (
 /turf/open/genturf{
 	planetary_atmos = 1
@@ -2194,10 +1937,13 @@
 /turf/open/floor/carpet/green,
 /area/station/commons/dorms)
 "ho" = (
-/obj/structure/cable,
-/obj/item/stack/cable_coil,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "hp" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -2256,14 +2002,10 @@
 	has_gravity = 1
 	})
 "hz" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/structure/closet/xenoarch/ashwalker_version,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/closed/wall/mineral/stone,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "hB" = (
 /obj/structure/flora/tree/dead/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
@@ -2281,58 +2023,28 @@
 	has_gravity = 1
 	})
 "hG" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/structure/decorative/shelf,
-/obj/item/bedsheet/black{
-	pixel_x = 5
-	},
-/obj/item/bedsheet/black{
-	pixel_x = 5;
-	pixel_y = 4
-	},
-/obj/item/bedsheet/black{
-	pixel_x = 5;
-	pixel_y = 8
-	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "hI" = (
-/obj/machinery/power/apc/auto_name/directional/north{
-	locked = 0;
-	coverlocked = 0;
-	arc_shielded = 1
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/nospawn)
 "hJ" = (
 /obj/machinery/mineral/ore_redemption,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningoffice)
 "hK" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/bush/jungle,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "hL" = (
 /obj/machinery/microwave{
 	pixel_y = -2;
@@ -2352,15 +2064,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"hQ" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "hR" = (
 /obj/machinery/atmospherics/components/unary/cryo_cell{
 	dir = 1
@@ -2381,12 +2084,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
-"hT" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "hV" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -2452,11 +2149,6 @@
 /area/station/engineering/engine_smes{
 	name = "\improper Supermatter Coolant Chamber"
 	})
-"ij" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/supply/visible,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "ik" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -2483,19 +2175,6 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"ir" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/iron/stairs/medium{
-	color = "#878787";
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/unpowered/ash_walkers)
 "is" = (
 /obj/machinery/light_switch/directional/east,
 /obj/structure/cable,
@@ -2605,12 +2284,13 @@
 	name = "Birdhouse Lounge"
 	})
 "iK" = (
-/obj/machinery/atmospherics/components/binary/volume_pump/layer2{
-	dir = 8;
-	on = 1
+/obj/structure/fence/corner{
+	dir = 1
 	},
-/turf/closed/wall/r_wall,
-/area/mine/medical)
+/turf/open/misc/dirt/jungle,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "iL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -2670,14 +2350,6 @@
 /area/station/engineering/engine_smes{
 	name = "\improper Supermatter Coolant Chamber"
 	})
-"iV" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "iW" = (
 /obj/item/multitool{
 	pixel_y = 10
@@ -2732,10 +2404,6 @@
 /area/station/hallway/primary/fore{
 	has_gravity = 1
 	})
-"jf" = (
-/obj/machinery/stasis,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "jg" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 10
@@ -2743,8 +2411,11 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "jh" = (
-/turf/closed/wall/mineral/snow,
-/area/ruin/unpowered/ash_walkers)
+/obj/machinery/griddle,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "ji" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -2756,7 +2427,9 @@
 "jl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "jm" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
@@ -2882,11 +2555,11 @@
 /turf/open/floor/iron/dark,
 /area/station/commons/dorms)
 "jC" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/tree/jungle/style_random,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "jD" = (
 /obj/machinery/computer/security/qm{
 	dir = 1
@@ -2916,12 +2589,6 @@
 /area/station/commons/lounge{
 	has_gravity = 1
 	})
-"jI" = (
-/obj/machinery/vending/ashclothingvendor,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "jK" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/engine,
@@ -3018,16 +2685,6 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"kd" = (
-/obj/item/flashlight/flare/torch{
-	on = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/indestructible/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
 "ke" = (
 /obj/machinery/modular_computer/console/preset/id,
 /obj/machinery/light/directional/east,
@@ -3112,6 +2769,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/cargo/storage{
 	has_gravity = 1
@@ -3133,20 +2792,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"kx" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "ky" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3194,18 +2839,6 @@
 /area/station/security{
 	has_gravity = 1
 	})
-"kG" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 1;
-	pixel_y = 10
-	},
-/obj/structure/deployable_barricade/snow{
-	dir = 8
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "kI" = (
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/white,
@@ -3253,44 +2886,25 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "kT" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 1
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
-"kV" = (
-/obj/machinery/door/airlock/external{
-	name = "External Airlock"
-	},
-/obj/structure/cable,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/mineral_door/wood,
+/turf/open/floor/carpet/royalblack,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "kW" = (
 /obj/machinery/modular_computer/console/preset/research{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
 /area/station/command/heads_quarters/rd)
-"kX" = (
-/obj/structure/deployable_barricade/snow,
-/obj/structure/deployable_barricade/snow{
-	dir = 8
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "kY" = (
-/obj/structure/reagent_water_basin,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
+/obj/structure/chair/sofa/corp{
+	dir = 1
 	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "la" = (
 /obj/structure/cable,
 /obj/machinery/power/solar{
@@ -3589,15 +3203,14 @@
 /turf/open/floor/engine,
 /area/station/science/research)
 "lU" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
+/obj/structure/table/wood/fancy/red,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
 	},
-/obj/structure/bed/maint,
-/obj/structure/curtain/bounty,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "lV" = (
 /turf/open/floor/iron/dark/red,
 /area/station/commons/dorms)
@@ -3619,20 +3232,14 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "lY" = (
-/obj/structure/stone_tile/center,
-/obj/structure/stone_tile/surrounding_tile{
-	dir = 4
-	},
-/obj/structure/stone_tile/surrounding/cracked{
-	dir = 1
-	},
-/obj/structure/stone_tile/surrounding_tile/cracked{
-	dir = 8
-	},
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/machinery/smartfridge/food,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "lZ" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden{
 	dir = 4
@@ -3646,14 +3253,11 @@
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
 "mb" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 1;
-	pixel_y = 10
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "mc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/warm/directional/west,
@@ -3754,11 +3358,11 @@
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "mu" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 6
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/tree/jungle/small/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "mv" = (
 /obj/structure/cable,
 /obj/effect/landmark/start/roboticist,
@@ -3787,15 +3391,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"mz" = (
-/obj/structure/statue/bone/rib{
-	dir = 1
-	},
-/obj/structure/lattice/lava,
-/turf/open/lava/plasma/ice_moon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "mA" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/green,
@@ -3804,22 +3399,11 @@
 /obj/structure/dresser,
 /turf/open/floor/carpet/orange,
 /area/station/commons/dorms)
-"mD" = (
-/obj/structure/cable,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "mE" = (
 /turf/open/floor/wood,
 /area/mine/cafeteria{
 	name = "Birdhouse Kitchen"
 	})
-"mH" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/o2{
-	dir = 8;
-	piping_layer = 2
-	},
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "mK" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
@@ -3873,11 +3457,10 @@
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
 "mS" = (
-/obj/item/flashlight/flare/torch{
-	on = 1
-	},
-/turf/closed/wall/mineral/wood/nonmetal,
-/area/ruin/unpowered/ash_walkers)
+/turf/closed/wall/mineral/stone,
+/area/mine/maintenance{
+	name = "Tchiko's Castle Janitorial"
+	})
 "mT" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/iron/dark,
@@ -3954,11 +3537,14 @@
 	has_gravity = 1
 	})
 "ni" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
+/obj/structure/drain,
+/obj/machinery/shower{
+	pixel_y = 16
 	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "nj" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -4020,25 +3606,12 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
-"nr" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/obj/item/candle/infinite,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "ns" = (
-/obj/effect/turf_decal/siding/wood,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/fence/corner,
+/turf/open/misc/dirt/jungle,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "nt" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /obj/machinery/meter,
@@ -4055,20 +3628,22 @@
 	has_gravity = 1
 	})
 "nv" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+/obj/structure/chair/sofa/corp{
+	dir = 8
 	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "ny" = (
-/turf/closed/wall/mineral/wood/nonmetal,
-/area/ruin/unpowered/ash_walkers)
-"nz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/public/glass{
+	name = "Tchiko's Outpost"
+	},
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "nA" = (
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron,
@@ -4136,31 +3711,6 @@
 /area/station/medical/virology{
 	has_gravity = 1
 	})
-"nK" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/ore_sensor{
-	pixel_x = 6;
-	pixel_y = 5
-	},
-/obj/item/ore_sensor,
-/obj/item/ore_sensor{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "nL" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -4239,15 +3789,6 @@
 /area/station/engineering/storage/tech{
 	has_gravity = 1
 	})
-"nW" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 2
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "nX" = (
 /obj/structure/table,
 /obj/item/computer_hardware/hard_drive/portable{
@@ -4316,42 +3857,17 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "od" = (
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/bush/jungle/b/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "of" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer4{
 	dir = 1
 	},
 /turf/open/floor/plating/snowed,
 /area/icemoon/surface/outdoors/nospawn)
-"og" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 4;
-	pixel_y = 18
-	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 8;
-	pixel_y = 18
-	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 8;
-	pixel_y = -4
-	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 4;
-	pixel_y = -4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "oi" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/warm/directional/east,
@@ -4368,7 +3884,9 @@
 /area/station/science/ordnance)
 "ol" = (
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "on" = (
 /obj/machinery/telecomms/processor/preset_two,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -4595,24 +4113,18 @@
 	dir = 4
 	},
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "pe" = (
-/obj/structure/closet/crate/wooden,
-/obj/item/stack/sheet/leather{
-	amount = 35
-	},
-/obj/item/stack/sheet/leather{
-	amount = 35
-	},
-/obj/item/stack/sheet/cloth/ten,
-/obj/item/stack/sheet/cloth/ten,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/tile,
+/area/mine/maintenance{
+	name = "Tchiko's Castle Janitorial"
+	})
 "pf" = (
 /obj/effect/landmark/start/detective,
 /turf/open/floor/iron,
@@ -4626,17 +4138,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/hidden,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
-"pi" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "pl" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/unary/thermomachine/heater/on,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/flora/tree/jungle/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "pm" = (
 /obj/machinery/modular_computer/console/preset/cargochat/science,
 /turf/open/floor/iron/white,
@@ -4657,9 +4164,19 @@
 	has_gravity = 1
 	})
 "pp" = (
-/obj/structure/closet/emcloset/wall,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Door Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/cargo/storage{
+	has_gravity = 1
+	})
 "pr" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Server Room"
@@ -4765,12 +4282,6 @@
 	dir = 1
 	},
 /area/station/command/heads_quarters/rd)
-"pN" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/item/stock_parts/cell/crank,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "pP" = (
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
@@ -4846,17 +4357,10 @@
 	has_gravity = 1
 	})
 "qf" = (
-/obj/structure/chair/wood{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "qh" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	volume_rate = 200
@@ -4866,12 +4370,6 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
-"qk" = (
-/obj/structure/deployable_barricade/wooden,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "qm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /obj/structure/cable,
@@ -4962,13 +4460,12 @@
 	has_gravity = 1
 	})
 "qy" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/bed/double,
+/obj/item/bedsheet/green/double,
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "qB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4991,13 +4488,6 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"qH" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
-	dir = 8;
-	piping_layer = 2
-	},
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "qI" = (
 /turf/open/floor/carpet/orange,
 /area/station/commons/dorms)
@@ -5126,24 +4616,41 @@
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
 "rl" = (
+/obj/item/mop/advanced,
+/obj/structure/mopbucket,
+/obj/item/soap{
+	pixel_y = 10
+	},
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/airalarm/directional/west,
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/snowed,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/tile,
+/area/mine/maintenance{
+	name = "Tchiko's Castle Janitorial"
+	})
 "rm" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "rp" = (
 /turf/closed/wall/r_wall,
 /area/station/ai_monitored/turret_protected/ai)
 "rq" = (
-/obj/structure/water_source/puddle,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/royalblack,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "rr" = (
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -5333,12 +4840,6 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
-"rR" = (
-/obj/structure/stone_tile/block,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "rS" = (
 /obj/machinery/door/airlock/virology/glass{
 	name = "Test Subject Cell"
@@ -5427,17 +4928,14 @@
 	has_gravity = 1
 	})
 "sf" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/structure/table/reinforced/plasmarglass,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "sg" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
 	dir = 1;
@@ -5462,18 +4960,6 @@
 /area/station/hallway/secondary/command{
 	has_gravity = 1
 	})
-"sl" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "sm" = (
 /obj/machinery/airalarm/directional/east,
 /obj/structure/toilet{
@@ -5492,39 +4978,31 @@
 	has_gravity = 1
 	})
 "so" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber{
-	dir = 8
-	},
-/turf/open/floor/plating/snowed,
-/area/mine/medical)
-"sp" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/storage/bag/ore{
-	pixel_y = 3
-	},
-/obj/item/storage/bag/ore,
-/obj/item/pickaxe/mini{
-	pixel_y = 5
-	},
-/obj/item/pickaxe/mini,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/plating,
+/area/station/cargo/storage{
+	has_gravity = 1
+	})
 "sq" = (
-/obj/structure/flora/ash/chilly,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/structure/sink/kitchen/directional/south,
+/obj/item/food/sweet_piru_noodles{
+	pixel_x = 4;
+	pixel_y = 5
 	},
-/area/ruin/unpowered/ash_walkers)
+/obj/item/food/sweet_piru_noodles{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/food/sweet_piru_noodles,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "sr" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
@@ -5561,8 +5039,8 @@
 /area/station/cargo/miningoffice)
 "sv" = (
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sink/directional/north,
 /obj/machinery/light/directional/south,
+/obj/structure/sink/kitchen/directional/north,
 /turf/open/floor/iron/kitchen/diagonal,
 /area/station/service/kitchen{
 	has_gravity = 1
@@ -5582,10 +5060,6 @@
 /area/station/medical/chemistry{
 	has_gravity = 1
 	})
-"sz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "sA" = (
 /turf/closed/wall,
 /area/station/science/robotics/mechbay)
@@ -5600,7 +5074,6 @@
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Engineering Storage"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /turf/open/floor/iron/green,
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
@@ -5619,13 +5092,8 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "sK" = (
-/obj/structure/deployable_barricade/wooden,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "sM" = (
 /obj/structure/cable,
 /obj/machinery/piratepad/civilian,
@@ -5653,14 +5121,13 @@
 	has_gravity = 1
 	})
 "sP" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+/obj/structure/chair/sofa/corp/corner{
+	dir = 8
 	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "sQ" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5681,7 +5148,9 @@
 /area/station/science/cytology)
 "sT" = (
 /turf/closed/wall/mineral/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "sU" = (
 /obj/machinery/door/window/left/directional/north{
 	dir = 1;
@@ -5702,20 +5171,17 @@
 	},
 /turf/open/floor/plating,
 /area/station/commons/dorms)
-"sY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "sZ" = (
-/turf/open/lava/plasma/ice_moon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "ta" = (
-/turf/closed/mineral/snowmountain/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/icemoon/surface/outdoors/nospawn)
+/obj/structure/flora/biolumi,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "tb" = (
 /obj/effect/landmark/start/chief_engineer,
 /obj/machinery/holopad,
@@ -5740,12 +5206,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"tj" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
-	dir = 8
-	},
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "tk" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
 	dir = 4
@@ -5773,13 +5233,14 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "tp" = (
-/obj/item/flashlight/flare/torch{
-	on = 1
+/obj/structure/drain,
+/obj/structure/fence{
+	dir = 4
 	},
-/turf/closed/indestructible/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/misc/dirt/jungle,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "tr" = (
 /obj/machinery/computer/cargo/request{
 	dir = 8
@@ -5803,16 +5264,6 @@
 /area/station/security{
 	has_gravity = 1
 	})
-"tw" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "tx" = (
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -5842,20 +5293,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/kitchen/herringbone,
 /area/station/service/hydroponics/garden)
-"tE" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/gun/ballistic/tribalbow,
-/obj/item/storage/bag/quiver,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "tF" = (
 /obj/effect/mapping_helpers/airlock/access/all/command/captain,
 /obj/structure/cable,
@@ -6021,12 +5458,9 @@
 	has_gravity = 1
 	})
 "uj" = (
-/obj/machinery/atmospherics/components/unary/thermomachine/heater/on{
-	dir = 8
-	},
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/marker_beacon/lime,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "uk" = (
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -6095,18 +5529,6 @@
 /area/mine/lounge{
 	name = "Birdhouse Lounge"
 	})
-"uu" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "uv" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -6151,51 +5573,16 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
-"uA" = (
-/obj/structure/closet/crate/wooden,
-/obj/item/storage/bag/plants/portaseeder{
-	pixel_y = 4
-	},
-/obj/item/storage/bag/plants/portaseeder,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "uB" = (
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "uC" = (
-/obj/structure/decorative/shelf,
-/obj/item/secateurs,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/obj/item/hatchet/wooden,
-/obj/item/hatchet/wooden,
-/obj/item/hatchet/wooden,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"uD" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "uE" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/pool,
@@ -6259,15 +5646,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
-"uV" = (
-/obj/structure/decorative/shelf,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 5
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "uW" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6350,13 +5728,10 @@
 /turf/open/floor/carpet/purple,
 /area/station/command/heads_quarters/captain/private)
 "vp" = (
-/obj/structure/flora/ash/chilly,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "vq" = (
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
@@ -6499,22 +5874,14 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/freezerchamber)
 "vJ" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/machinery/portable_atmospherics/scrubber/huge/movable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/tile,
+/area/mine/maintenance{
+	name = "Tchiko's Castle Janitorial"
+	})
 "vK" = (
 /obj/machinery/shower{
 	dir = 8
@@ -6523,16 +5890,6 @@
 /area/station/command/heads_quarters/hos{
 	has_gravity = 1
 	})
-"vM" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 1;
-	pixel_y = 10
-	},
-/obj/structure/flora/ash/chilly,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "vN" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/components/trinary/filter{
@@ -6550,19 +5907,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/blue/corner,
 /area/station/commons/dorms)
-"vR" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 1;
-	pixel_y = 10
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/obj/structure/deployable_barricade/snow{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "vS" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -6574,19 +5918,6 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
-"vU" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark/corner,
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "vV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible/layer4,
 /obj/machinery/meter/layer4,
@@ -6595,15 +5926,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"vX" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "vZ" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6664,15 +5986,11 @@
 /turf/open/floor/engine/vacuum,
 /area/station/science/ordnance)
 "wi" = (
-/obj/structure/decorative/shelf,
-/obj/item/forging/billow/primitive,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/item/storage/box/matches,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/rock/pile/jungle/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "wl" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6683,18 +6001,6 @@
 /area/station/engineering/storage/tech{
 	has_gravity = 1
 	})
-"wm" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "wo" = (
 /obj/machinery/computer/monitor{
 	name = "Bridge Power Monitoring Console"
@@ -6808,16 +6114,17 @@
 	has_gravity = 1
 	})
 "wG" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787"
+/obj/structure/railing{
+	dir = 8
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/rack/shelf,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/airalarm/directional/east,
+/obj/structure/cable,
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "wH" = (
 /obj/machinery/igniter/incinerator_ordmix,
 /turf/open/floor/engine/vacuum,
@@ -6860,26 +6167,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"wQ" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"wR" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "wS" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -6926,17 +6213,10 @@
 	shuttle_id = "cargo_home";
 	width = 12
 	},
-/turf/open/misc/asteroid/snow/icemoon,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed/smoothed,
 /area/icemoon/surface/outdoors/nospawn)
-"xc" = (
-/obj/structure/chair/wood{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "xd" = (
 /obj/machinery/modular_computer/console/preset/engineering,
 /turf/open/floor/engine,
@@ -7024,18 +6304,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/mine/living_quarters)
-"xq" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "xt" = (
 /obj/structure/table/reinforced/rglass,
 /obj/machinery/cell_charger,
@@ -7047,7 +6318,6 @@
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Power Storage"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
@@ -7127,14 +6397,6 @@
 "xI" = (
 /turf/closed/wall,
 /area/station/commons/toilet/locker)
-"xJ" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 5
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "xL" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -7260,17 +6522,11 @@
 	has_gravity = 1
 	})
 "yg" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/biolumi/mine,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "yh" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7367,14 +6623,17 @@
 /turf/open/floor/iron,
 /area/station/science/research)
 "ys" = (
-/obj/structure/lattice/lava,
-/obj/structure/statue/bone/rib,
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/public/glass{
+	name = "Tchiko's Outpost"
+	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/lava/plasma/ice_moon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "yt" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron,
@@ -7392,21 +6651,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"yv" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "yw" = (
 /obj/machinery/stasis,
 /turf/open/floor/iron,
@@ -7463,18 +6707,6 @@
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
-"yE" = (
-/obj/machinery/smartfridge/drying_rack{
-	idle_power_usage = 0;
-	use_power = 0
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "yF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible/layer4,
 /turf/open/floor/plating/snowed,
@@ -7535,12 +6767,12 @@
 /turf/open/floor/carpet/purple,
 /area/station/commons/dorms)
 "yO" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/snow/corner,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/sink/directional/west,
+/obj/structure/cable,
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "yP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7574,15 +6806,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"yU" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "yX" = (
 /obj/machinery/computer/shuttle/arrivals/recall{
 	dir = 4
@@ -7606,20 +6829,14 @@
 	has_gravity = 1
 	})
 "za" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 9
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
 	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
-"zb" = (
-/obj/structure/stone_tile/block{
-	dir = 1
-	},
-/obj/structure/stone_tile/block/cracked,
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "zc" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 8
@@ -7643,22 +6860,6 @@
 /area/station/command/heads_quarters/hop{
 	has_gravity = 1
 	})
-"zf" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
 "zg" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/sign/warning/cold_temp,
@@ -7679,17 +6880,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"zk" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "zo" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -7701,13 +6891,11 @@
 /turf/open/floor/iron/white,
 /area/station/science/robotics/mechbay)
 "zr" = (
-/obj/structure/decorative/shelf,
-/obj/effect/turf_decal/siding/wideplating/dark,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/rock/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "zs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -7849,10 +7037,19 @@
 /turf/open/floor/engine/vacuum,
 /area/station/science/ordnance/burnchamber)
 "Ac" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/closet/cabinet,
+/obj/item/storage/medkit/surgery,
+/obj/item/storage/toolbox/mechanical,
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/airalarm/directional/west,
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Ad" = (
 /turf/closed/wall,
 /area/station/cargo/miningoffice)
@@ -7871,14 +7068,16 @@
 	has_gravity = 1
 	})
 "Ah" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
-/obj/item/candle/infinite,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Aj" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -8025,13 +7224,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"AD" = (
-/obj/machinery/vending/ashclothingvendor,
-/obj/effect/turf_decal/siding/wideplating/dark,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "AE" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -8067,14 +7259,6 @@
 /area/station/service/bar/atrium{
 	has_gravity = 1
 	})
-"AK" = (
-/obj/machinery/power/port_gen/pacman{
-	anchored = 1
-	},
-/obj/structure/cable,
-/obj/item/stack/sheet/mineral/plasma/thirty,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "AL" = (
 /obj/machinery/autolathe/hacked,
 /turf/open/floor/iron,
@@ -8095,15 +7279,6 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
-"AO" = (
-/obj/structure/cable,
-/obj/machinery/firealarm/directional/north,
-/obj/machinery/power/solar_control{
-	id = "outpostsolar";
-	name = "Outpost Solar Panel Control"
-	},
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "AT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -8113,22 +7288,12 @@
 	has_gravity = 1
 	})
 "AU" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"AV" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/flora/biolumi,
+/obj/structure/flora/bush/flowers_yw/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "AW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/blue/side{
@@ -8149,14 +7314,13 @@
 	},
 /area/station/commons/dorms)
 "AZ" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/obj/structure/fermenting_barrel,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Ba" = (
 /obj/structure/table,
 /obj/structure/bedsheetbin,
@@ -8175,7 +7339,6 @@
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Engineering Storage"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8183,10 +7346,6 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
-"Bd" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "Bf" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
 	dir = 4
@@ -8247,12 +7406,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"Bn" = (
-/turf/open/floor/iron/stairs/medium{
-	color = "#878787";
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Bp" = (
 /obj/structure/closet/radiation,
 /turf/open/floor/engine,
@@ -8282,30 +7435,12 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"Bu" = (
-/obj/structure/stone_tile/block{
-	dir = 8
-	},
-/obj/structure/stone_tile/block/cracked{
-	dir = 4
-	},
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Bv" = (
 /obj/machinery/computer/atmos_alert,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"Bw" = (
-/obj/structure/table/wood,
-/obj/effect/turf_decal/siding/wood,
-/obj/item/paper_bin/bundlenatural,
-/obj/item/pen/charcoal,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Bx" = (
 /turf/open/floor/iron,
 /area/station/cargo/storage{
@@ -8344,11 +7479,11 @@
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "BC" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/bush/ferny/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "BG" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8394,11 +7529,11 @@
 	has_gravity = 1
 	})
 "BO" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/nitrogen_input{
-	piping_layer = 2
-	},
-/turf/open/floor/engine/n2,
-/area/mine/medical)
+/obj/structure/fermenting_barrel,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "BP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -8500,13 +7635,6 @@
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"Cd" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/indestructible/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Cf" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -8520,17 +7648,11 @@
 	has_gravity = 1
 	})
 "Cg" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 5
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/marker_beacon/lime,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "Ch" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
@@ -8647,13 +7769,6 @@
 /area/station/commons/lounge{
 	has_gravity = 1
 	})
-"Cu" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wood,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Cv" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8678,14 +7793,6 @@
 /area/station/medical/pharmacy{
 	has_gravity = 1
 	})
-"Cy" = (
-/obj/machinery/power/solar{
-	id = "outpostsolar";
-	name = "Outpost Solar Array"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
 "Cz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/purple/corner{
@@ -8699,17 +7806,11 @@
 	has_gravity = 1
 	})
 "CB" = (
-/obj/structure/bonfire/dense,
-/obj/item/stack/rods{
-	amount = 5
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/bush/reed/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "CC" = (
 /obj/machinery/light/floor,
 /obj/structure/cable,
@@ -8763,12 +7864,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
-"CK" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "CL" = (
 /turf/closed/wall,
 /area/station/service/kitchen{
@@ -8801,7 +7896,9 @@
 "CR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "CS" = (
 /obj/structure/table/reinforced,
 /obj/structure/cable,
@@ -8822,12 +7919,6 @@
 /obj/machinery/portable_atmospherics/canister/water_vapor,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
-"CV" = (
-/obj/structure/deployable_barricade/snow,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "CW" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -8845,12 +7936,6 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"CY" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input{
-	piping_layer = 2
-	},
-/turf/open/floor/engine/o2,
-/area/mine/medical)
 "CZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8871,13 +7956,6 @@
 /area/mine/cafeteria{
 	name = "Birdhouse Kitchen"
 	})
-"Df" = (
-/obj/structure/statue/bone/rib,
-/obj/structure/lattice/lava,
-/turf/open/lava/plasma/ice_moon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Dh" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -8926,19 +8004,10 @@
 	has_gravity = 1
 	})
 "Dr" = (
-/obj/structure/decorative/shelf,
-/obj/item/stack/rods/fifty,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"Ds" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/closed/wall/mineral/stone,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Dt" = (
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
@@ -9071,18 +8140,6 @@
 /area/station/service/bar/backroom{
 	has_gravity = 1
 	})
-"DP" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "DQ" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 8
@@ -9123,20 +8180,6 @@
 /area/mine/cafeteria{
 	name = "Birdhouse Kitchen"
 	})
-"DX" = (
-/obj/structure/fermenting_barrel,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"DY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/mineral/snow,
-/area/ruin/unpowered/ash_walkers)
 "DZ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Escape"
@@ -9231,15 +8274,6 @@
 /area/station/medical/medbay/lobby{
 	has_gravity = 1
 	})
-"Er" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 4
-	},
-/obj/structure/deployable_barricade/wooden,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Es" = (
 /obj/machinery/chem_master/condimaster{
 	desc = "Looks like a knock-off chem-master. Perhaps useful for separating liquids when mixing drinks precisely. Also dispenses condiments.";
@@ -9269,11 +8303,8 @@
 	has_gravity = 1
 	})
 "Ew" = (
-/obj/machinery/atmospherics/components/unary/passive_vent/layer2{
-	dir = 4
-	},
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "Ex" = (
 /obj/machinery/rnd/production/techfab/department/cargo,
 /obj/machinery/light_switch/directional/east,
@@ -9346,13 +8377,6 @@
 /area/station/service/hydroponics{
 	has_gravity = 1
 	})
-"EG" = (
-/obj/machinery/iv_drip,
-/obj/effect/turf_decal/siding/wideplating/dark,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "EI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /turf/closed/wall/r_wall,
@@ -9366,13 +8390,6 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
-"EL" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "EN" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Telecommunications"
@@ -9435,26 +8452,6 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"EW" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"EX" = (
-/obj/structure/table/wood,
-/obj/item/candle/infinite{
-	pixel_x = -7
-	},
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "EY" = (
 /obj/machinery/vending/wallmed/directional/south,
 /obj/machinery/vending/wardrobe/medi_wardrobe,
@@ -9533,25 +8530,13 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "Fp" = (
-/obj/structure/table/wood,
-/obj/item/forging/billow/primitive,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 9
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"Fq" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Fr" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/closed/wall/r_wall,
@@ -9605,18 +8590,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"FA" = (
-/obj/structure/reagent_forge{
-	primitive = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "FB" = (
 /obj/machinery/light_switch/directional/east,
 /obj/machinery/keycard_auth/directional/south,
@@ -9626,15 +8599,6 @@
 /area/station/command/heads_quarters/hos{
 	has_gravity = 1
 	})
-"FD" = (
-/obj/structure/closet/crate/miningcar,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/obj/item/stack/sheet/mineral/coal/ten,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "FE" = (
 /obj/machinery/telecomms/server/presets/science,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -9648,21 +8612,6 @@
 /area/station/tcommsat/computer{
 	has_gravity = 1
 	})
-"FG" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "FH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /turf/open/floor/iron,
@@ -9696,18 +8645,6 @@
 /area/station/engineering/engine_smes{
 	name = "\improper Supermatter Coolant Chamber"
 	})
-"FL" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "FM" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -9723,14 +8660,13 @@
 	has_gravity = 1
 	})
 "FQ" = (
-/mob/living/simple_animal/hostile/asteroid/gutlunch/guthen,
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "FR" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -9790,37 +8726,6 @@
 /area/station/tcommsat/server{
 	has_gravity = 1
 	})
-"FX" = (
-/obj/machinery/power/smes/engineering,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
-"FZ" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/spear/bonespear{
-	pixel_y = 7
-	},
-/obj/item/spear/bonespear,
-/obj/item/claymore/bone{
-	pixel_x = 5;
-	pixel_y = -4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/item/hatchet/wooden,
-/obj/item/hatchet/wooden{
-	pixel_y = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Ga" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron/dark/red,
@@ -9844,13 +8749,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"Gi" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Gj" = (
 /obj/machinery/door/airlock/research/glass{
 	name = "Robotics Lab"
@@ -9872,10 +8770,11 @@
 	has_gravity = 1
 	})
 "Gl" = (
-/obj/structure/bed/double,
-/obj/item/bedsheet/green/double,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/flora/grass/jungle/a/style_random,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Gm" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
@@ -9922,7 +8821,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Gr" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Showers"
@@ -10015,20 +8916,10 @@
 	has_gravity = 1
 	})
 "GK" = (
-/turf/open/misc/asteroid/basalt{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/unpowered/ash_walkers)
-"GL" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "GO" = (
 /obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -10087,10 +8978,11 @@
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
 "Hb" = (
-/obj/machinery/computer/operating,
-/obj/item/storage/backpack/duffelbag/med/surgery,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/machinery/processor,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Hc" = (
 /obj/structure/cable,
 /turf/open/floor/iron/green/side{
@@ -10104,23 +8996,12 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/green,
 /area/station/command/heads_quarters/rd)
-"He" = (
-/obj/effect/turf_decal/siding/wood/end,
-/obj/structure/table/wood,
-/obj/item/candle/infinite,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Hf" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
-	},
-/obj/structure/flora/ash/chilly,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/bookcase/random/adult,
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Hg" = (
 /obj/structure/cable,
 /obj/structure/closet/firecloset/full,
@@ -10164,7 +9045,8 @@
 /area/station/science/research)
 "Hj" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
-	dir = 1
+	dir = 1;
+	piping_layer = 2
 	},
 /obj/machinery/button/ignition{
 	id = "Xenobio";
@@ -10214,21 +9096,6 @@
 "Hr" = (
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
-"Hs" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Ht" = (
 /obj/machinery/computer/telecomms/server,
 /turf/open/floor/iron,
@@ -10323,7 +9190,9 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "HI" = (
 /turf/closed/wall/mineral/wood,
 /area/mine/maintenance{
@@ -10353,16 +9222,11 @@
 	has_gravity = 1
 	})
 "HN" = (
-/obj/structure/table/wood,
-/obj/item/candle/infinite,
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "HO" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /turf/open/floor/iron/dark,
@@ -10378,10 +9242,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"HQ" = (
-/obj/structure/closet/firecloset/wall,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "HS" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 2
@@ -10430,13 +9290,10 @@
 	has_gravity = 1
 	})
 "HZ" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 9
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "Ic" = (
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/computer/crew,
@@ -10473,17 +9330,11 @@
 	has_gravity = 1
 	})
 "Ig" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/fence,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle Gardens"
+	})
 "Ih" = (
 /obj/machinery/button/door{
 	id = "xenobio1";
@@ -10580,12 +9431,6 @@
 /obj/machinery/mineral/equipment_vendor,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
-"Ix" = (
-/obj/machinery/atmospherics/components/trinary/mixer/airmix{
-	dir = 4
-	},
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "Iy" = (
 /obj/structure/table,
 /obj/item/transfer_valve,
@@ -10624,15 +9469,6 @@
 	},
 /turf/open/floor/engine,
 /area/station/science/research)
-"IF" = (
-/obj/structure/flora/grass/both/style_random,
-/obj/structure/deployable_barricade/snow{
-	dir = 4
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "IG" = (
 /obj/effect/spawner/random/medical/two_percent_xeno_egg_spawner,
 /turf/open/floor/engine,
@@ -10718,14 +9554,10 @@
 /turf/open/floor/engine,
 /area/station/science/research)
 "IS" = (
-/obj/structure/table/wood,
-/obj/item/kitchen/rollingpin,
-/obj/item/knife/hunting,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/closed/wall/mineral/stone,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "IT" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/checker,
@@ -10748,14 +9580,6 @@
 /area/station/service/bar/backroom{
 	has_gravity = 1
 	})
-"IX" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
-/obj/structure/closet/secure_closet/medical2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "IY" = (
 /obj/machinery/vending/tool,
 /turf/open/floor/iron,
@@ -10814,21 +9638,14 @@
 /turf/closed/wall/r_wall,
 /area/station/science/research)
 "Jh" = (
-/obj/structure/statue/bone/rib{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark/end,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+/obj/structure/dresser,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "Ji" = (
 /obj/machinery/rnd/production/techfab/department/engineering,
 /turf/open/floor/iron,
@@ -10880,19 +9697,6 @@
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/dark/blue,
 /area/station/commons/toilet/locker)
-"Jr" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
-	},
-/obj/structure/deployable_barricade/wooden,
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 10
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Jt" = (
 /obj/machinery/pdapainter/research,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -10921,14 +9725,6 @@
 /area/station/commons/lounge{
 	has_gravity = 1
 	})
-"Jz" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "JA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/window/reinforced{
@@ -10964,45 +9760,12 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/burnchamber)
-"JF" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"JH" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/structure/fermenting_barrel,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "JI" = (
 /obj/structure/sign/warning/gas_mask,
 /turf/closed/wall,
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"JJ" = (
-/obj/structure/stone_tile/block,
-/obj/structure/stone_tile/block/cracked{
-	dir = 1
-	},
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "JK" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -11099,17 +9862,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"Ka" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Kb" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -11185,15 +9937,6 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"Km" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 8
-	},
-/obj/structure/deployable_barricade/snow,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Kn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -11296,11 +10039,13 @@
 /turf/open/floor/iron/white,
 /area/station/science/robotics/mechbay)
 "KE" = (
-/obj/item/flashlight/flare/torch{
-	on = 1
+/obj/structure/fence/door{
+	dir = 4
 	},
-/turf/closed/wall/mineral/snow,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "KF" = (
 /obj/machinery/chem_dispenser{
 	layer = 2.7
@@ -11322,17 +10067,6 @@
 /area/station/medical/virology{
 	has_gravity = 1
 	})
-"KI" = (
-/obj/effect/turf_decal/siding/wood/end{
-	dir = 8
-	},
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/knife/combat/bone,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "KK" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/reagent_containers/cup/beaker/large{
@@ -11362,22 +10096,6 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"KR" = (
-/obj/structure/reagent_anvil{
-	primitive = 1
-	},
-/obj/item/forging/hammer/primitive,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "KS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /obj/machinery/power/emitter/welded{
@@ -11396,12 +10114,6 @@
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
-"KU" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "KV" = (
 /obj/machinery/conveyor_switch/oneway{
 	dir = 8;
@@ -11410,6 +10122,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/green/side{
 	dir = 4
 	},
@@ -11446,15 +10160,6 @@
 /obj/machinery/smartfridge/extract/preloaded,
 /turf/closed/wall/r_wall,
 /area/station/science/research)
-"Lg" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Lh" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
 	dir = 10
@@ -11477,31 +10182,11 @@
 	has_gravity = 1
 	})
 "Ll" = (
-/obj/item/reagent_containers/blood/lizard{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/blood/lizard{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/blood/lizard{
-	pixel_x = 5;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/blood/lizard{
-	pixel_x = -4;
-	pixel_y = 4
-	},
-/obj/structure/closet/crate/wooden,
-/obj/item/stack/sheet/cloth/ten,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/biolumi/flower,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Lm" = (
 /obj/machinery/firealarm/directional/west,
 /obj/structure/cable,
@@ -11548,10 +10233,6 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"Lt" = (
-/obj/structure/sink/fuel_well,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Lv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -11561,14 +10242,6 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
-"Lx" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Ly" = (
 /obj/machinery/light/directional/north,
 /obj/machinery/ammo_workbench/unlocked,
@@ -11580,17 +10253,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/green,
 /area/station/command/heads_quarters/ce)
-"LC" = (
-/obj/structure/stone_tile/block{
-	dir = 4
-	},
-/obj/structure/stone_tile/block/cracked{
-	dir = 8
-	},
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "LE" = (
 /obj/machinery/autolathe/hacked,
 /obj/machinery/power/apc/auto_name/directional/north{
@@ -11774,20 +10436,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Mj" = (
 /obj/machinery/modular_computer/console/preset/command,
 /turf/open/floor/iron,
 /area/station/command/bridge{
 	has_gravity = 1
 	})
-"Mk" = (
-/obj/machinery/atmospherics/components/binary/volume_pump{
-	dir = 8;
-	on = 1
-	},
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "Ml" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11948,10 +10605,6 @@
 /area/station/medical/cryo{
 	has_gravity = 1
 	})
-"MQ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "MR" = (
 /turf/closed/wall,
 /area/station/medical/chemistry{
@@ -12014,9 +10667,14 @@
 	has_gravity = 1
 	})
 "Nc" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Nd" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/sm_apc/directional/north{
@@ -12029,14 +10687,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"Nf" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 4
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Ni" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/iron,
@@ -12051,20 +10701,13 @@
 	has_gravity = 1
 	})
 "Nl" = (
-/obj/structure/table/wood,
-/obj/item/storage/bag/tray,
-/obj/item/food/rootdough{
-	pixel_x = 3;
-	pixel_y = 2
-	},
-/obj/item/food/rootdough{
-	pixel_x = -3
-	},
-/obj/effect/turf_decal/siding/wood{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "No" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -12080,7 +10723,9 @@
 	},
 /obj/item/bedsheet/purple/double,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Nv" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -12201,36 +10846,9 @@
 "NI" = (
 /turf/closed/wall/r_wall,
 /area/station/science/cytology)
-"NJ" = (
-/obj/structure/stone_tile/center,
-/obj/structure/stone_tile/surrounding_tile{
-	dir = 1
-	},
-/obj/structure/stone_tile/surrounding/cracked{
-	dir = 8
-	},
-/obj/structure/stone_tile/surrounding_tile/cracked,
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "NK" = (
 /turf/open/floor/engine/vacuum,
 /area/station/science/ordnance/burnchamber)
-"NL" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/structure/mineral_door/dungeon{
-	color = "#878787"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone{
-	color = "#878787"
-	},
-/area/ruin/unpowered/ash_walkers)
 "NN" = (
 /obj/machinery/power/apc/auto_name/directional/north{
 	arc_shielded = 1
@@ -12262,15 +10880,6 @@
 /obj/machinery/portable_atmospherics/pump,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"NT" = (
-/obj/structure/decorative/shelf,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "NU" = (
 /obj/machinery/door/airlock/research{
 	name = "Ordnance Lab"
@@ -12323,7 +10932,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Oe" = (
 /obj/machinery/light_switch/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -12338,17 +10949,6 @@
 /area/station/command/meeting_room{
 	has_gravity = 1
 	})
-"Og" = (
-/obj/structure/table/wood,
-/obj/item/food/rootroll{
-	pixel_x = 4;
-	pixel_y = 6
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Oh" = (
 /obj/effect/mapping_helpers/airlock/access/all/security/hos,
 /obj/machinery/door/airlock/command/glass{
@@ -12465,19 +11065,6 @@
 /area/station/service/bar/atrium{
 	has_gravity = 1
 	})
-"Oz" = (
-/obj/structure/closet/crate/wooden,
-/obj/item/stack/sheet/mineral/sandstone/thirty,
-/obj/item/stack/sheet/iron/twenty,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "OB" = (
 /turf/open/floor/engine,
 /area/station/science/cytology)
@@ -12542,11 +11129,9 @@
 	has_gravity = 1
 	})
 "OO" = (
-/obj/structure/fermenting_barrel,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "OP" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/grass/green/style_random,
@@ -12573,22 +11158,22 @@
 	has_gravity = 1
 	})
 "OU" = (
-/obj/structure/lavaland/ash_walker,
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+/obj/structure/fence/door{
+	dir = 4
 	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "OV" = (
-/obj/structure/closet/crate/wooden,
-/obj/item/grown/cotton,
-/obj/item/grown/cotton,
-/obj/item/food/grown/cannabis,
-/obj/item/food/grown/korta_nut/sweet,
-/obj/item/food/grown/korta_nut/sweet,
-/turf/open/misc/asteroid/basalt{
-	initial_gas_mix = "ICEMOON_ATMOS"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "OW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -12622,8 +11207,13 @@
 /turf/open/floor/plating/snowed,
 /area/icemoon/surface/outdoors/nospawn)
 "OZ" = (
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/carpet/royalblack,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Pa" = (
 /obj/structure/table,
 /obj/item/storage/box/monkeycubes{
@@ -12682,18 +11272,6 @@
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
-"Pl" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Pm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -12701,9 +11279,11 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "Po" = (
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/chair/comfy/black,
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Pu" = (
 /obj/structure/flora/tree/pine/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
@@ -12722,14 +11302,11 @@
 	has_gravity = 1
 	})
 "Px" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/fence,
+/turf/open/floor/grass,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Py" = (
 /obj/machinery/door/airlock/medical{
 	name = "Medbay"
@@ -12764,10 +11341,6 @@
 /area/station/service/bar/atrium{
 	has_gravity = 1
 	})
-"PC" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "PD" = (
 /obj/structure/sign/directions/upload{
 	dir = 1
@@ -12863,21 +11436,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
-"PV" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/item/screwdriver/ashwalker,
-/obj/item/crowbar/ashwalker,
-/obj/item/wrench/ashwalker,
-/obj/item/wirecutters/ashwalker,
-/obj/item/hatchet/wooden,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "PY" = (
 /obj/effect/turf_decal/tile/green/full,
 /obj/effect/spawner/random/engineering/tracking_beacon,
@@ -12916,16 +11474,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/station/commons/dorms)
-"Qd" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/obj/machinery/power/solar{
-	id = "outpostsolar";
-	name = "Outpost Solar Array"
-	},
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
 "Qe" = (
 /obj/structure/marker_beacon/burgundy,
 /turf/open/misc/asteroid/snow/icemoon,
@@ -12984,15 +11532,6 @@
 /area/station/tcommsat/server{
 	has_gravity = 1
 	})
-"Qm" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Qn" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -13004,20 +11543,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"Qo" = (
-/obj/structure/table/wood,
-/obj/item/reagent_containers/syringe/crude{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/syringe/crude{
-	pixel_x = 1
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Qp" = (
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge{
@@ -13132,15 +11657,6 @@
 /area/station/command/bridge{
 	has_gravity = 1
 	})
-"QJ" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "QK" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector{
 	dir = 1
@@ -13352,17 +11868,6 @@
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
-"Rs" = (
-/obj/structure/lattice/lava,
-/obj/structure/statue/bone/rib{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/lava/plasma/ice_moon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Ru" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2,
@@ -13429,12 +11934,6 @@
 /obj/effect/landmark/blobstart,
 /turf/open/floor/iron/dark/blue,
 /area/station/commons/toilet/restrooms)
-"RE" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "RG" = (
 /obj/machinery/door/airlock/research{
 	name = "Research Access"
@@ -13468,16 +11967,6 @@
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
-"RJ" = (
-/obj/effect/turf_decal/weather/snow/corner,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "RK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -13485,9 +11974,12 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "RL" = (
-/obj/machinery/rnd/production/techfab,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "RM" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -13542,14 +12034,15 @@
 	has_gravity = 1
 	})
 "RX" = (
-/obj/structure/decorative/shelf,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
+/obj/item/flashlight/lamp{
+	pixel_y = 8;
+	layer = 4
 	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/table/wood/fancy/green,
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "RZ" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
@@ -13558,11 +12051,14 @@
 /turf/open/floor/carpet/purple,
 /area/station/command/heads_quarters/captain/private)
 "Sb" = (
-/obj/structure/flora/grass/both/style_random,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/machinery/airalarm/directional/north,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Sc" = (
 /obj/structure/closet/secure_closet/evidence,
 /turf/open/floor/iron/red,
@@ -13595,13 +12091,6 @@
 /obj/machinery/holopad,
 /turf/open/floor/iron/white,
 /area/station/science/robotics/mechbay)
-"Si" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/light/directional/east,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "Sj" = (
 /obj/machinery/power/apc/auto_name/directional/west{
 	arc_shielded = 1
@@ -13804,16 +12293,6 @@
 /area/mine/storage{
 	name = "Birdhouse Tech Storage"
 	})
-"SR" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "SS" = (
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/iron,
@@ -13835,52 +12314,10 @@
 /area/station/medical/virology{
 	has_gravity = 1
 	})
-"SY" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "SZ" = (
 /obj/machinery/atmospherics/components/tank,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
-"Tb" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/flashlight/flare/torch{
-	on = 1;
-	pixel_x = 12
-	},
-/obj/item/flashlight/flare/torch{
-	on = 1;
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/flashlight/flare/torch{
-	on = 1;
-	pixel_x = -4;
-	pixel_y = 7
-	},
-/obj/item/flashlight/flare/torch{
-	on = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark/end,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Td" = (
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/carpet/orange,
@@ -13908,23 +12345,9 @@
 	},
 /obj/item/bedsheet/orange/double,
 /turf/open/floor/wood,
-/area/mine/living_quarters)
-"Th" = (
-/obj/structure/reagent_crafting_bench,
-/obj/item/forging/tongs/primitive,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Ti" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -13989,29 +12412,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"Ts" = (
-/obj/structure/rack/shelf{
-	icon = 'modular_skyrat/modules/mapping/icons/unique/furniture.dmi';
-	icon_state = "empty_shelf_1"
-	},
-/obj/item/restraints/handcuffs/cable/sinew,
-/obj/item/restraints/handcuffs/cable/sinew{
-	pixel_y = 4
-	},
-/obj/item/knife/combat/bone{
-	pixel_y = -5
-	},
-/obj/item/knife/combat/bone,
-/obj/item/knife/combat/bone{
-	pixel_y = 5
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Tt" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -14101,23 +12501,15 @@
 	has_gravity = 1
 	})
 "TM" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
-	dir = 8
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "TN" = (
-/obj/structure/sign/nanotrasen{
-	pixel_x = 32;
-	pixel_y = 32
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/marker_beacon/bronze,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "TO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -14140,7 +12532,9 @@
 /area/station/science/research)
 "TS" = (
 /turf/closed/wall/mineral/wood,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "TT" = (
 /obj/machinery/computer/robotics{
 	dir = 8
@@ -14218,7 +12612,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/mine/living_quarters)
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Ud" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -14249,12 +12645,6 @@
 /area/station/commons/lounge{
 	has_gravity = 1
 	})
-"Uk" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 10
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Ul" = (
 /obj/structure/cable,
 /obj/effect/spawner/random/engineering/tracking_beacon,
@@ -14308,24 +12698,12 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
-"Ut" = (
-/obj/structure/bonfire/dense,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
-"Uu" = (
-/obj/structure/sign/nanotrasen{
-	pixel_x = -32;
-	pixel_y = 32
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Uv" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/chem_heater/withbuffer,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "Uw" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/screwdriver{
@@ -14390,37 +12768,12 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/landmark/navigate_destination/cargo,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/green,
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"UG" = (
-/obj/structure/stone_tile/center,
-/obj/structure/stone_tile/surrounding_tile{
-	dir = 8
-	},
-/obj/structure/stone_tile/surrounding/cracked{
-	dir = 4
-	},
-/turf/open/indestructible/necropolis{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"UH" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
-	},
-/obj/structure/deployable_barricade/wooden,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"UI" = (
-/turf/closed/wall/r_wall,
-/area/mine/medical)
 "UJ" = (
 /turf/open/floor/wood,
 /area/mine/storage{
@@ -14619,15 +12972,13 @@
 	has_gravity = 1
 	})
 "Vk" = (
-/obj/structure/cable,
-/obj/machinery/power/terminal,
-/obj/machinery/airalarm/directional/north{
-	locked = 0
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "Vm" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -14637,28 +12988,39 @@
 	has_gravity = 1
 	})
 "Vn" = (
-/obj/effect/ash_rune,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
+/obj/structure/railing{
+	dir = 1
 	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/iron/white/small,
+/area/mine/medical{
+	name = "Tchiko's Castle Restrooms"
+	})
 "Vo" = (
 /turf/closed/wall,
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
 "Vp" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
+/obj/structure/bed/pillow_large{
+	pillow1_color = "teal";
+	pillow2_color = "teal";
+	pillow3_color = "teal";
+	pillow1_color_changed = 1;
+	pillow1_form_changed = 1;
+	pillow2_color_changed = 1;
+	pillow2_form_changed = 1;
+	pillow3_color_changed = 1;
+	pillow3_form_changed = 1;
+	icon_state = "pillowpile_large_teal";
+	current_color = "teal"
 	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 10
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 4
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Vq" = (
 /turf/open/genturf{
 	planetary_atmos = 1
@@ -14671,15 +13033,9 @@
 	has_gravity = 1
 	})
 "Vt" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/wideplating/dark,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/marker_beacon/burgundy,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "Vu" = (
 /obj/structure/table,
 /obj/item/assembly/timer,
@@ -14719,7 +13075,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/fans/tiny,
 /turf/open/floor/wood/large,
-/area/mine/lobby)
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Vx" = (
 /obj/item/radio/intercom/directional/west,
 /obj/structure/bed/double{
@@ -14770,10 +13128,6 @@
 /area/station/medical/pharmacy{
 	has_gravity = 1
 	})
-"VF" = (
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron/green,
-/area/mine/medical)
 "VH" = (
 /obj/machinery/door/airlock/command/glass{
 	name = "Chief Engineer"
@@ -14813,18 +13167,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"VN" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "VQ" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -14864,7 +13206,6 @@
 /obj/machinery/door/airlock/atmos/glass{
 	name = "Atmospherics Monitoring"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -14895,17 +13236,12 @@
 	has_gravity = 1
 	})
 "VY" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 1;
-	pixel_y = 10
-	},
-/obj/structure/deployable_barricade/snow{
-	dir = 4
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/marker_beacon/bronze,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed,
+/area/icemoon/surface/outdoors/nospawn)
 "VZ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/mech_bay_recharge_port,
@@ -15073,14 +13409,6 @@
 	dir = 4
 	},
 /area/station/commons/dorms)
-"WC" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "WE" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -15109,14 +13437,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/carpet/green,
 /area/station/command/heads_quarters/rd)
-"WI" = (
-/obj/structure/cable,
-/obj/machinery/power/solar{
-	id = "outpostsolar";
-	name = "Outpost Solar Array"
-	},
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
 "WL" = (
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible/layer2{
 	dir = 9
@@ -15213,15 +13533,6 @@
 /area/station/tcommsat/computer{
 	has_gravity = 1
 	})
-"Xc" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8
-	},
-/obj/structure/flora/ash/chilly,
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Xd" = (
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/iron/white,
@@ -15393,16 +13704,36 @@
 	name = "\improper Supermatter Coolant Chamber"
 	})
 "XC" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 8
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/kitchen/rollingpin{
+	pixel_x = 2
 	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
+/obj/item/knife/kitchen{
+	pixel_x = 11
 	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_y = 6;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -11;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/spray/bluespace{
+	icon_state = "sprayer_blu_spt";
+	inhand_icon_state = "sprayer_blu_spt";
+	list_reagents = list(/datum/reagent/space_cleaner=400);
+	current_skin = sprayer_blu_spt;
+	pixel_x = -3;
+	pixel_y = 13
+	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "XE" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
@@ -15436,24 +13767,10 @@
 	has_gravity = 1
 	})
 "XJ" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 8;
-	pixel_y = 18
-	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 8;
-	pixel_y = -4
-	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 4;
-	pixel_y = 18
-	},
-/obj/structure/deployable_barricade/wooden{
-	dir = 4;
-	pixel_y = -4
-	},
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/turf/open/floor/wood/large,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "XK" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15462,17 +13779,6 @@
 /area/station/security{
 	has_gravity = 1
 	})
-"XL" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 1
-	},
-/obj/item/candle/infinite,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "XN" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -15482,16 +13788,11 @@
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
 "XR" = (
-/obj/structure/destructible/cult/pants_altar,
-/obj/item/knife/combat/bone,
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/plating/snowed,
+/area/icemoon/surface/outdoors/nospawn)
 "XS" = (
 /turf/open/floor/iron,
 /area/station/medical/treatment_center{
@@ -15536,18 +13837,6 @@
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
-"XY" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "XZ" = (
 /obj/structure/fans/tiny,
 /turf/open/floor/engine,
@@ -15602,13 +13891,6 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"Yi" = (
-/mob/living/simple_animal/hostile/asteroid/gutlunch/grublunch,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Yl" = (
 /obj/effect/landmark/start/security_medic,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -15654,11 +13936,12 @@
 	has_gravity = 1
 	})
 "Yu" = (
-/obj/structure/table/wood,
-/obj/item/pestle,
-/obj/effect/turf_decal/siding/wood,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/bed/double,
+/obj/item/bedsheet/red/double,
+/turf/open/floor/wood/large,
+/area/mine/living_quarters{
+	name = "Tchiko's Castle Quarters"
+	})
 "Yv" = (
 /obj/machinery/portable_atmospherics/canister,
 /turf/open/floor/iron/white,
@@ -15684,10 +13967,14 @@
 	has_gravity = 1
 	})
 "Yz" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/item/stock_parts/cell/crank,
-/turf/open/floor/iron/green,
-/area/mine/medical)
+/obj/structure/reagent_dispensers/watertank/high,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/mine/maintenance{
+	name = "Tchiko's Castle Janitorial"
+	})
 "YA" = (
 /obj/machinery/suit_storage_unit/hos,
 /obj/machinery/airalarm/directional/north,
@@ -15706,20 +13993,11 @@
 	has_gravity = 1
 	})
 "YC" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 10
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/table/rolling,
+/turf/open/floor/iron/kitchen,
+/area/mine/lounge{
+	name = "Tchiko's Castle Lounge"
+	})
 "YE" = (
 /obj/machinery/power/apc/auto_name/directional/north{
 	arc_shielded = 1
@@ -15730,21 +14008,6 @@
 /area/station/command/heads_quarters/hop{
 	has_gravity = 1
 	})
-"YF" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 9
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "YG" = (
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
 /obj/structure/window/reinforced/plasma{
@@ -15792,15 +14055,6 @@
 /area/station/service/bar/backroom{
 	has_gravity = 1
 	})
-"YO" = (
-/obj/machinery/iv_drip,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 6
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "YQ" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -15829,18 +14083,13 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "YT" = (
-/obj/structure/deployable_barricade/wooden{
-	dir = 1;
-	pixel_y = 23
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "YU" = (
 /obj/structure/cable,
 /obj/structure/cable,
@@ -15886,13 +14135,11 @@
 	has_gravity = 1
 	})
 "Zf" = (
-/obj/structure/deployable_barricade/snow{
-	dir = 8
-	},
-/turf/open/misc/asteroid/snow/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/fence,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Zg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -15930,37 +14177,6 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"Zp" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 4
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
-	},
-/turf/open/floor/stone/icemoon{
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
-"Zq" = (
-/obj/structure/deployable_barricade/metal{
-	color = "#878787";
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/turf/open/floor/iron/stairs/medium{
-	color = "#878787";
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/unpowered/ash_walkers)
 "Zr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -15986,40 +14202,20 @@
 /obj/structure/table,
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
-"Zu" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/structure/closet/crate/wooden,
-/obj/item/grown/log,
-/obj/item/grown/log,
-/obj/item/grown/log,
-/obj/item/food/grown/ambrosia/vulgaris,
-/obj/item/food/grown/korta_nut,
-/obj/item/food/grown/korta_nut,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/misc/sandy_dirt/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "Zv" = (
-/obj/item/cultivator/rake,
-/turf/open/misc/asteroid/basalt{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/unpowered/ash_walkers)
+/obj/structure/flora/biolumi,
+/obj/machinery/airalarm/directional/south,
+/obj/structure/cable,
+/turf/open/floor/grass/fairy,
+/area/mine/lobby{
+	name = "Tchiko's Castle: Garden"
+	})
 "Zw" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/iron,
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
-"Zx" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
-	dir = 8
-	},
-/turf/open/floor/engine/n2,
-/area/mine/medical)
 "Zy" = (
 /obj/structure/sign/directions/supply{
 	pixel_y = 8;
@@ -16054,17 +14250,6 @@
 /area/station/command/heads_quarters/hos{
 	has_gravity = 1
 	})
-"ZE" = (
-/obj/effect/turf_decal/siding/wideplating/dark/end{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/stone/icemoon{
-	color = "#878787";
-	initial_gas_mix = "o2=22;n2=82;TEMP=180"
-	},
-/area/ruin/unpowered/ash_walkers)
 "ZF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron,
@@ -16077,18 +14262,6 @@
 /area/mine/cafeteria{
 	name = "Birdhouse Kitchen"
 	})
-"ZL" = (
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 5
-	},
-/obj/structure/table/wood,
-/obj/item/paper_bin/bundlenatural,
-/obj/item/pen/charcoal,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/ash_walkers)
 "ZM" = (
 /obj/structure/cable,
 /obj/structure/cable,
@@ -16231,28 +14404,28 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -16488,29 +14661,29 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
+BT
+BT
+BT
+BT
+BT
+BT
+mS
+mS
+mS
+mS
+Dr
+Dr
+Dr
+Dr
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -16744,30 +14917,30 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-fd
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+mS
+rl
+aW
+pe
+FQ
+ho
+sZ
+BO
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -17001,31 +15174,31 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-fd
-tp
-fd
-jh
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 mS
-jh
-jh
-ta
-jh
-jh
-jh
-jh
-ta
-ta
-fd
-ta
-fd
-ta
-ta
-ta
-ta
-ta
+vJ
+Yz
+mS
+lY
+Nl
+sZ
+Hb
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -17258,31 +15431,31 @@ BT
 BT
 BT
 BT
-ta
-ta
-fd
-fd
-uA
-gr
-yg
-QJ
-Jr
-jh
-jh
-jh
-ck
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+ch
+sZ
 sZ
 jh
-jh
-fd
-fd
-fd
-fd
-fd
-ta
-ta
-ta
-ta
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -17515,31 +15688,31 @@ BT
 BT
 BT
 BT
-ta
-fd
-tp
+bj
+pl
+uC
 zr
-gr
+bj
 mu
-GK
-GK
+wi
+bj
 jC
 yg
-Vp
-Sb
-CV
+bj
+bN
+sZ
 sZ
 mb
-fd
-tp
-eN
-cS
-NT
-tp
-fd
-ta
-ta
-ta
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -17733,15 +15906,15 @@ Wx
 ay
 Wx
 Wx
+TN
+Wx
+uj
 Wx
 Wx
 Wx
+OO
 Wx
-Wx
-Wx
-PK
-Wx
-Wx
+TN
 ay
 Wx
 Wx
@@ -17772,31 +15945,31 @@ BT
 BT
 BT
 BT
-ta
-ta
-fd
+bj
 uC
-Cu
-ak
-GK
-GK
-GK
-GK
-di
-sq
-YF
-Ig
-YC
-fd
+hd
+uC
+bj
+ta
+uC
+bj
 Ll
-YO
-od
-RE
-bO
-fd
-fd
-ta
-ta
+RL
+bj
+sq
+sZ
+sZ
+YC
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -18006,54 +16179,54 @@ Wx
 Wx
 Wx
 Wx
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+bj
 ta
-ta
-jh
-gX
-ns
-GK
-do
-GK
-GK
+uC
+uC
+tp
+uC
+uC
+tp
+Vp
 Zv
-WC
+bj
 XC
-kx
-SY
-yU
-NL
-nv
-nv
-nv
-hd
-Bw
-fd
-ta
-ta
-ta
+sZ
+sZ
+sZ
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -18249,11 +16422,11 @@ Wx
 Wx
 Wx
 Wx
-Qe
 Wx
 Wx
 Wx
-wU
+Wx
+PK
 Wx
 Wx
 Wx
@@ -18263,54 +16436,54 @@ ay
 Wx
 Wx
 Wx
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-ta
-ta
-ta
+sK
+sK
+sK
+sK
+sK
+Ew
+Ew
+Ew
+Ew
+Ew
+Vt
+sK
+sK
+sK
+sK
+sK
+sK
+Vt
+sK
+sK
+sK
+sK
+sK
+bj
+Px
 KE
 Px
 ns
-Zv
-GK
-GK
-GK
-GK
-RJ
+KE
+Px
+ns
+Zf
+OU
+bj
 Sb
-sq
-Zp
-hK
-fd
-hG
-lU
-nv
-Qo
-Yu
-fd
-fd
-ta
-ta
+XJ
+XJ
+XJ
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -18520,54 +16693,54 @@ Wx
 Wx
 Wx
 Wx
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-ta
-ta
-ta
-jh
-jh
-zk
+Vt
+Ew
+Ew
+Ew
+Ew
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+sK
+sK
+sK
+Ew
+Ew
+Ew
+Ew
+Ew
+Ew
+ny
+du
+OV
 GK
 GK
-ak
+GK
+GK
+GK
 OV
 za
 kT
-Uk
-CV
-sZ
+OZ
+XJ
+XJ
 aF
-fd
-tp
-EG
-nv
-gs
-tp
-fd
-ta
-ta
-ta
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -18770,61 +16943,61 @@ Wx
 PK
 Wx
 Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-ta
-ta
-ta
-ta
-jh
+hI
+hI
+hI
+hI
+hI
+hI
+hI
+HN
+HN
+HN
+HN
+HN
+HN
+sK
+sK
+sK
+sK
+Ew
+Ew
+Ew
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+HN
+ys
 YT
-Zu
-CK
-hQ
-hQ
-kT
+YT
+YT
+YT
+YT
+YT
+YT
+YT
+YT
 rq
 OZ
-ai
 XJ
-wR
-Uk
-fd
-fd
-zf
-fd
-fd
-jh
-jh
-ta
-ta
+XJ
+aF
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -19020,68 +17193,68 @@ Wx
 Wx
 Wx
 Wx
-wU
-Wx
-Wx
-Wx
-Qe
+PK
 Wx
 Wx
 Wx
 Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-ta
-ta
-ta
-ta
-jh
-fd
-fd
-yv
-fd
-fd
-hT
-pi
+hI
+bl
+gX
+bl
+bl
+bl
+bl
+bl
+bl
+HN
+sK
+sK
+sK
+sK
+Vt
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+Ew
+Ew
+Ew
+Ew
+Ew
+sK
+sK
+sK
+Vt
+sK
+bj
+Px
+KE
+Ig
+iK
+KE
+Px
+iK
+Px
+KE
+bj
 Nc
-CV
-sZ
-sZ
-vR
-DP
-Lg
-Lx
-Uk
-Sb
-UH
-jh
-ta
-ta
+XJ
+XJ
+XJ
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -19282,63 +17455,63 @@ Wx
 Wx
 Wx
 PK
+hI
+bl
+hI
+Qe
 Wx
+hI
+hI
+hI
 Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-ta
-ta
-ta
-ta
-fd
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+Vt
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+sK
+bj
+uC
+hK
+aM
 tp
 wi
 od
-uV
 tp
-fd
-Sb
-hT
-Uk
-Km
-sZ
-sZ
-sZ
-VY
-bA
-hT
-Uk
-qk
-jh
-jh
-ta
+uC
+CB
+bj
+Fp
+XJ
+XJ
+XJ
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -19535,12 +17708,12 @@ Ow
 Wx
 Wx
 Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+hI
+hI
+hI
+hI
+hI
+bl
 Wx
 ay
 Wx
@@ -19570,33 +17743,33 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
+BT
+bj
+AU
 fd
-fd
+uC
 ce
 BC
-eb
-xc
-ev
-fd
-FD
-dP
-yO
-sq
-Zf
-kX
-sZ
-sZ
-kd
-sq
-yO
-Sb
-Xc
-ny
-dP
-ds
+ta
+ce
+ta
+Gl
+bj
+Fp
+XJ
+XJ
+XJ
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -19791,16 +17964,16 @@ fO
 Ow
 Wx
 Wx
-wU
+PK
+hI
+hI
+hI
+hI
+hI
+bl
 Wx
 Wx
 Wx
-Qe
-Wx
-Wx
-Wx
-Wx
-Wx
 Wx
 Wx
 Wx
@@ -19827,33 +18000,33 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-fd
-CB
+BT
 bj
-od
-Og
-EX
-jh
-vX
-Sb
-wm
-KR
-tp
-fd
-fd
-fd
-Cd
-FG
-fd
-fd
-qk
-jh
-dP
-ds
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+Fp
+XJ
+TM
+Vk
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -20046,15 +18219,15 @@ sg
 pP
 Xt
 Ow
+TN
 Wx
-Wx
-PK
-Wx
-Wx
+OO
+hI
+hI
 wZ
-PK
-Wx
-Ob
+Cg
+HZ
+VY
 Wx
 Wx
 Wx
@@ -20084,33 +18257,33 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-fd
-tp
+BT
+hz
+Uv
+Vn
+Jh
 IS
 Ac
-nv
+dL
 qf
 Po
-jh
-cq
+lU
+IS
 Fp
 sf
 TM
 kY
-fd
-Ka
-wG
-Rs
-Qm
-FL
-fd
-fd
-fd
-dP
-ds
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -20308,10 +18481,10 @@ KP
 JP
 NE
 KP
-NE
+ak
 nM
 KP
-Ob
+Cj
 Wx
 Wx
 Wx
@@ -20341,33 +18514,33 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-fd
+BT
+hz
+ni
+vp
+bO
 fc
-Po
-FQ
 AZ
-JH
-ny
+AZ
+AZ
+AZ
+AZ
 bA
-Th
-nv
+Fp
+Ah
 nv
 sP
-JF
-XL
-SR
-uD
-Zq
-Vt
-mz
-tp
-dP
-Uu
-ds
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -20565,10 +18738,10 @@ KP
 aX
 Su
 Vj
-Su
+so
 WM
 KP
-Ob
+Cj
 Wx
 Wx
 Wx
@@ -20598,34 +18771,34 @@ fn
 fn
 BT
 BT
-ta
-ta
-ta
-fd
-fd
-Nl
+BT
+hz
+wG
+yO
+hG
+IS
 Yu
-nv
+qy
 RX
-jh
-jh
-xq
-fd
+Hf
+IS
+IS
 Dr
-Gi
-FA
-fd
-af
-Vn
-wQ
-Bn
-vU
-VN
-ff
-rR
-dP
-ds
-ds
+Dr
+Dr
+Dr
+Dr
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -20822,7 +18995,7 @@ oH
 JP
 gP
 oH
-gP
+pp
 nM
 oH
 Cj
@@ -20855,46 +19028,46 @@ TD
 fn
 BT
 BT
-ta
-ta
-ta
-ta
-fd
-tp
-yE
-nv
-RX
-jh
-dL
-bA
-tp
-fd
-sl
-fd
-tp
-Ah
-KU
-nr
-ir
-Vt
-Df
-tp
-dP
-TN
-ds
-ds
 BT
-BT
-Cy
-Cy
-Cy
-Cy
-Cy
+hz
+hz
+hz
+hz
+IS
+IS
+IS
+IS
+IS
+IS
 BT
 BT
 BT
 BT
-Ew
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -21112,46 +19285,46 @@ TD
 fn
 BT
 BT
-ta
-ta
-ta
-ta
-jh
-fd
-fd
-vJ
-jh
-tp
-Sb
-vp
-dP
-IF
-fe
-fd
-KI
-xJ
-bV
-ys
-EW
-ch
-fd
-fd
-fd
-dP
-ds
-WI
 BT
 BT
-Cj
-Cj
-Cj
-Cj
-Cj
 BT
-UI
-UI
-UI
-iK
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -21370,45 +19543,45 @@ fn
 BT
 BT
 BT
-ta
-ta
-ta
-jh
-gX
-ni
-Ds
-Hf
-HZ
-qy
-iV
-CV
-sZ
-sZ
-fd
-ZL
-He
-fd
-Cd
-FG
-fd
-fd
-qk
-jh
-dP
-ds
-WI
-Cj
-Cj
-Cy
-Cy
-Cy
-Cy
-Cy
 BT
-PC
-aW
-CY
-mH
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -21627,45 +19800,45 @@ fn
 BT
 BT
 BT
-ta
-ta
-ta
-jh
-Px
-Lt
-OZ
-ni
-OZ
-Ut
-nW
-ck
-sZ
-kG
-fd
-fd
-fd
-tp
-HZ
-bH
-tp
-Sb
-Er
-jh
-dP
-ds
-WI
-Cj
-UI
-UI
-UI
-UI
-UI
-UI
-UI
-Ix
-sz
-UI
-nz
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -21884,45 +20057,45 @@ fn
 fn
 fn
 fn
-ta
-ta
-ta
-jh
-jh
-GL
-pi
-OZ
-pi
-pi
-pi
-tw
-og
-uu
-Lg
-Lg
-Lg
-ni
-Jz
-bA
-vp
-sK
-DY
-DY
-rl
-cb
-Qd
-As
-UI
-Vk
-FX
-AK
-aM
-ij
-el
-sY
-Zx
-BO
-qH
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -22141,45 +20314,45 @@ QU
 Tu
 jK
 fn
-ta
-ta
-ta
-ta
-jh
-fd
-fd
-yv
-fd
-fd
-Sb
-CV
-sZ
-mb
-Sb
-fd
-fd
-aQ
-Cd
-fd
-Sb
-Nf
-ny
-ta
-ta
 BT
-WI
-Cj
-UI
-hI
-Si
-Fq
-pN
-Yz
-uj
-nz
-nz
-nz
-nz
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -22398,42 +20571,42 @@ ra
 xe
 xe
 fn
-ta
-ta
-ta
-ta
-fd
-tp
-Qm
-EL
-mz
-tp
-fd
-CV
-sZ
-mb
-fd
-tp
-AD
-od
-sp
-tp
-fd
-jh
-jh
-ta
-ta
 BT
-Cj
-ba
-UI
-UI
-UI
-AO
-MQ
-bl
-fR
-nz
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -22656,41 +20829,41 @@ lT
 lT
 fn
 BT
-ta
-ta
-fd
-fd
-HN
-lY
-Bu
-UG
-Jh
-fd
-AU
-Ig
-Pl
-fd
-FZ
-Ts
-od
-eO
-jI
-fd
-fd
-ta
-ta
-ta
 BT
-dx
-Ob
-kV
-mD
-cd
-ho
-MQ
-bl
-Uv
-nz
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -22913,41 +21086,41 @@ Tu
 jK
 fn
 BT
-ta
-ta
-ta
-fd
-XR
-zb
-OU
-JJ
-ZE
-Hs
-du
-SY
-yU
-JF
-nv
-nv
-nv
-Oz
-DX
-fd
-ta
-ta
-ta
 BT
 BT
-Cj
-ba
-UI
-UI
-UI
-bN
-MQ
-bl
-fw
-nz
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -23170,41 +21343,41 @@ fn
 fn
 fn
 BT
-ta
-ta
-fd
-fd
-Df
-NJ
-LC
-fo
-nK
-fd
-Cg
-gy
-XY
-fd
-tE
-fA
-Yi
-hz
-OO
-fd
-fd
-ta
-ta
 BT
 BT
-WI
-Cj
-UI
-bq
-AV
-MQ
-MQ
-bl
-VF
-tj
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -23427,41 +21600,41 @@ Tu
 jK
 fn
 BT
-ta
-ta
-ta
-fd
-tp
-Df
-Qm
-Tb
-tp
-fd
-CV
-sZ
-vM
-fd
-tp
-PV
-od
-pe
-tp
-fd
-ta
-ta
-ta
 BT
 BT
-WI
-Cj
-UI
-Hb
-jf
-RL
-Gl
-pl
-IX
-Bd
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -23684,41 +21857,41 @@ Tu
 Tu
 fn
 BT
-ta
-ta
-ta
-ta
-fd
-fd
-fd
-fd
-fd
-jh
-jh
-jh
-jh
-ta
-fd
-fd
-fd
-fd
-fd
-ta
-ta
-ta
-ta
 BT
 BT
-WI
-Cj
-UI
-UI
-UI
-pp
-HQ
-UI
-Mk
-UI
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -23941,40 +22114,40 @@ fn
 fn
 fn
 BT
-ta
-ta
-ta
-ta
-ta
-fd
-ta
-fd
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-fd
-ta
-fd
-ta
-ta
-ta
-ta
-ta
 BT
 BT
-WI
-Cj
-Cj
-Cy
-Cy
-Cy
-Cy
-Cy
-so
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -24199,38 +22372,38 @@ Tu
 fn
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
 BT
 BT
-WI
 BT
 BT
-Cj
-Cj
-Cj
-Cj
-Cj
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -24456,38 +22629,38 @@ jK
 fn
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-BT
-Wx
-Wx
 BT
 BT
-Cy
-Cy
-Cy
-Cy
-Cy
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -24715,29 +22888,29 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -24972,29 +23145,29 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
-ta
 BT
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -25233,25 +23406,25 @@ BT
 BT
 BT
 BT
-ta
-ta
-ta
-ta
-ta
-BT
-BT
-BT
-ta
-ta
-ta
-ta
 BT
 BT
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -25498,8 +23671,6 @@ BT
 BT
 BT
 BT
-ta
-ta
 BT
 BT
 BT
@@ -25507,8 +23678,10 @@ BT
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -25764,8 +23937,8 @@ BT
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -26021,8 +24194,8 @@ BT
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -26278,8 +24451,8 @@ BT
 BT
 BT
 BT
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -26533,10 +24706,10 @@ BT
 BT
 BT
 BT
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -26790,10 +24963,10 @@ BT
 BT
 BT
 BT
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -27038,19 +25211,19 @@ BT
 BT
 BT
 BT
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -27295,17 +25468,17 @@ BT
 BT
 BT
 BT
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -27552,17 +25725,17 @@ BT
 BT
 BT
 BT
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -27802,24 +25975,24 @@ tI
 wC
 tm
 BT
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -27989,7 +26162,7 @@ BT
 BT
 BT
 Ob
-cb
+XR
 As
 As
 As
@@ -28059,24 +26232,24 @@ XN
 Ip
 tm
 BT
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -28316,24 +26489,24 @@ tm
 GU
 GU
 GU
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -28573,10 +26746,10 @@ eW
 JB
 zX
 Ar
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -28830,10 +27003,10 @@ eW
 GU
 GU
 GU
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -29087,10 +27260,10 @@ NP
 CJ
 Fr
 BT
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -29344,10 +27517,10 @@ Wo
 Pg
 Fr
 BT
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -29601,10 +27774,10 @@ er
 er
 er
 er
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -29858,10 +28031,10 @@ UX
 OD
 NK
 Ab
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -30115,10 +28288,10 @@ gM
 oR
 wH
 Ab
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -30372,10 +28545,10 @@ HK
 oz
 NK
 Ab
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -30629,10 +28802,10 @@ er
 er
 er
 er
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -30886,10 +29059,10 @@ CO
 CO
 FV
 pZ
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -31143,10 +29316,10 @@ Ke
 ec
 UR
 pZ
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -31400,10 +29573,10 @@ ml
 ec
 UR
 pZ
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -31657,10 +29830,10 @@ Nz
 oN
 vA
 pZ
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -31914,10 +30087,10 @@ mT
 QO
 kC
 pZ
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -32171,10 +30344,10 @@ mT
 QO
 kC
 pZ
-Wx
-Wx
-Wx
-Wx
+BT
+BT
+BT
+BT
 BT
 BT
 BT
@@ -32428,8 +30601,8 @@ kC
 kC
 CT
 pZ
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -32685,8 +30858,8 @@ mT
 Lw
 kp
 pZ
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -32942,8 +31115,8 @@ iz
 iz
 CT
 pZ
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -33199,8 +31372,8 @@ pZ
 pZ
 pZ
 pZ
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -33456,8 +31629,8 @@ Wx
 Wx
 Wx
 Wx
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -33713,8 +31886,8 @@ Wx
 Wx
 Wx
 Wx
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -33970,8 +32143,8 @@ Wx
 Wx
 Wx
 Wx
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -34227,8 +32400,8 @@ Wx
 Wx
 Wx
 Wx
-Wx
-Wx
+BT
+BT
 BT
 BT
 BT
@@ -34484,7 +32657,7 @@ Wx
 Wx
 Wx
 Wx
-Wx
+BT
 BT
 BT
 BT
@@ -34741,7 +32914,7 @@ Wx
 Wx
 Wx
 Wx
-Wx
+BT
 BT
 BT
 BT
