@@ -31,21 +31,12 @@
 /obj/structure/dresser,
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
-"ak" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/external/glass{
-	name = "Supply Door Airlock"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating,
-/area/station/cargo/storage{
-	has_gravity = 1
+"ai" = (
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "al" = (
 /obj/machinery/button/door/directional/north{
@@ -161,12 +152,6 @@
 /area/mine/lounge{
 	name = "Birdhouse Lounge"
 	})
-"aF" = (
-/obj/structure/aquarium/prefilled,
-/turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
 "aG" = (
 /turf/closed/wall,
 /area/station/commons/dorms)
@@ -202,12 +187,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/commons/dorms)
-"aM" = (
-/obj/structure/flora/bush/flowers_pp/style_random,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "aN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -254,11 +233,12 @@
 	})
 "aW" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/tile,
-/area/mine/maintenance{
-	name = "Tchiko's Castle Janitorial"
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "aX" = (
 /obj/structure/plasticflaps,
@@ -309,16 +289,12 @@
 	has_gravity = 1
 	})
 "bj" = (
-/turf/closed/wall/mineral/stone,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/obj/structure/fermenting_barrel,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
-"bl" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/snowed/smoothed,
-/area/icemoon/surface/outdoors/nospawn)
 "bn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -395,7 +371,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "bB" = (
@@ -455,25 +431,13 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "bN" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/machinery/reagentgrinder{
-	pixel_x = -7;
-	pixel_y = 13
+/obj/machinery/power/apc/auto_name/directional/south{
+	arc_shielded = 1
 	},
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
-"bO" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
+/turf/open/floor/grass/fairy,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "bQ" = (
 /obj/structure/cable,
@@ -557,14 +521,6 @@
 	dir = 8
 	},
 /area/station/commons/dorms)
-"ce" = (
-/obj/structure/fence{
-	dir = 4
-	},
-/turf/open/misc/dirt/jungle,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "cf" = (
 /obj/structure/rack,
 /obj/item/pickaxe{
@@ -582,17 +538,10 @@
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "ch" = (
-/obj/machinery/oven,
-/obj/machinery/microwave{
-	pixel_y = 18;
-	pixel_x = -2
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/obj/structure/fence,
+/turf/open/floor/grass/fairy,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "ci" = (
 /obj/structure/sink/directional/north,
@@ -878,6 +827,21 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
+"do" = (
+/mob/living/simple_animal/hostile/ooze/gelatinous{
+	desc = "The bane of every D&D party.  Can TPK beyond all but True Resurrection.";
+	aggro_vision_range = 0;
+	vision_range = 0;
+	AIStatus = 0;
+	move_force = 1;
+	move_resist = 1;
+	wander = 0;
+	can_have_ai = 0
+	},
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "dp" = (
 /turf/closed/wall,
 /area/station/service/chapel)
@@ -903,14 +867,6 @@
 /turf/open/floor/iron/kitchen/diagonal,
 /area/station/service/kitchen{
 	has_gravity = 1
-	})
-"du" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
 	})
 "dy" = (
 /obj/structure/chair/sofa/corp/right,
@@ -969,34 +925,6 @@
 /turf/open/floor/carpet/purple,
 /area/station/command/meeting_room{
 	has_gravity = 1
-	})
-"dL" = (
-/obj/structure/bed/dogbed,
-/obj/structure/chair/pillow_small{
-	icon_state = "pillowpile_small_spt";
-	pillow1_color_changed = 1;
-	pillow2_color_changed = 1;
-	current_color = "spt";
-	pillow1_color = "spt";
-	pillow2_color = "spt";
-	transform = matrix(0.75, 0, 0, 0, 0.75, 0, 0, 0, 1)
-	},
-/obj/item/toy/plush/skyrat/borbplushie{
-	attack_verb_simple = list("peep");
-	attack_verb_continuous = list("peeps");
-	name = "A Leathery Egg";
-	icon = 'icons/obj/food/egg.dmi';
-	icon_state = "egg";
-	inhand_icon_state = null;
-	lefthand_file = 'icons/mob/inhands/items/food_lefthand.dmi';
-	righthand_file = 'icons/mob/inhands/items/food_righthand.dmi';
-	color = "#91593b";
-	transform = matrix(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1);
-	desc = "A large, leathery egg.  You feel like its occupant is peeping at you, faintly."
-	},
-/turf/open/floor/wood/large,
-/area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
 	})
 "dN" = (
 /obj/effect/landmark/start/atmospheric_technician,
@@ -1069,6 +997,24 @@
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
+"eb" = (
+/obj/structure/flora/biolumi,
+/mob/living/simple_animal/hostile/asteroid/wolf{
+	dir = 8;
+	aggro_vision_range = 0;
+	vision_range = 0;
+	AIStatus = 0;
+	wander = 0;
+	can_have_ai = 0;
+	move_force = 1;
+	move_resist = 1;
+	name = "Dire Wolf";
+	desc = "Now that is a big wolf."
+	},
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "ec" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/effect/turf_decal/box,
@@ -1102,7 +1048,7 @@
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "ek" = (
 /obj/structure/table,
@@ -1163,6 +1109,12 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos{
 	has_gravity = 1
+	})
+"ev" = (
+/obj/structure/flora/biolumi,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "ew" = (
 /obj/machinery/airalarm/directional/east,
@@ -1337,14 +1289,19 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white/small,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "fd" = (
-/obj/structure/flora/bush/jungle/b,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/turf/closed/wall/mineral/stone,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
+	})
+"ff" = (
+/obj/structure/bookcase/random/adult,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/engineering{
+	name = "Tchiko's Castle Quarters"
 	})
 "fg" = (
 /obj/machinery/atmospherics/pipe/color_adapter{
@@ -1446,6 +1403,12 @@
 /area/mine/lounge{
 	name = "Birdhouse Lounge"
 	})
+"fA" = (
+/obj/structure/marker_beacon/lime,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "fB" = (
 /obj/structure/cable,
 /turf/open/floor/iron/green,
@@ -1856,11 +1819,10 @@
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
 "gX" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/plating/snowed/smoothed,
-/area/icemoon/surface/outdoors/nospawn)
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "gY" = (
 /obj/machinery/door/airlock{
 	name = "Dormitories"
@@ -1886,12 +1848,6 @@
 /turf/open/floor/iron,
 /area/station/security{
 	has_gravity = 1
-	})
-"hd" = (
-/obj/structure/flora/rock/pile/style_random,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
 	})
 "he" = (
 /turf/open/genturf{
@@ -1937,12 +1893,11 @@
 /turf/open/floor/carpet/green,
 /area/station/commons/dorms)
 "ho" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/obj/structure/sink/directional/west,
+/obj/structure/cable,
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "hp" = (
 /obj/structure/window/reinforced{
@@ -2001,11 +1956,6 @@
 /area/station/medical/medbay/lobby{
 	has_gravity = 1
 	})
-"hz" = (
-/turf/closed/wall/mineral/stone,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
-	})
 "hB" = (
 /obj/structure/flora/tree/dead/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
@@ -2022,28 +1972,16 @@
 /area/station/commons/lounge{
 	has_gravity = 1
 	})
-"hG" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
-	})
-"hI" = (
-/turf/open/floor/plating/snowed/smoothed,
-/area/icemoon/surface/outdoors/nospawn)
 "hJ" = (
 /obj/machinery/mineral/ore_redemption,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningoffice)
 "hK" = (
-/obj/structure/flora/bush/jungle,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/obj/machinery/light/directional/south,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "hL" = (
 /obj/machinery/microwave{
@@ -2064,6 +2002,9 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
+"hQ" = (
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/nospawn)
 "hR" = (
 /obj/machinery/atmospherics/components/unary/cryo_cell{
 	dir = 1
@@ -2084,6 +2025,14 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
+"hT" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "hV" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -2174,6 +2123,12 @@
 /turf/open/floor/engine/n2,
 /area/station/engineering/atmos{
 	has_gravity = 1
+	})
+"ir" = (
+/obj/structure/flora/tree/jungle/style_random,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "is" = (
 /obj/machinery/light_switch/directional/east,
@@ -2282,14 +2237,6 @@
 /turf/open/floor/plating,
 /area/mine/lounge{
 	name = "Birdhouse Lounge"
-	})
-"iK" = (
-/obj/structure/fence/corner{
-	dir = 1
-	},
-/turf/open/misc/dirt/jungle,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
 	})
 "iL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2404,6 +2351,12 @@
 /area/station/hallway/primary/fore{
 	has_gravity = 1
 	})
+"jf" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/nospawn)
 "jg" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 10
@@ -2411,10 +2364,14 @@
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
 "jh" = (
-/obj/machinery/griddle,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/obj/machinery/portable_atmospherics/scrubber/huge/movable,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/machinery/light/directional/east,
+/turf/open/floor/wood/tile,
+/area/mine/xenoarch/maintenance/west{
+	name = "Tchiko's Castle Jani Closet"
 	})
 "ji" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2428,7 +2385,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "jm" = (
 /obj/structure/cable,
@@ -2557,8 +2514,8 @@
 "jC" = (
 /obj/structure/flora/tree/jungle/style_random,
 /turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "jD" = (
 /obj/machinery/computer/security/qm{
@@ -2888,8 +2845,8 @@
 "kT" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/carpet/royalblack,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "kW" = (
 /obj/machinery/modular_computer/console/preset/research{
@@ -2901,8 +2858,9 @@
 /obj/structure/chair/sofa/corp{
 	dir = 1
 	},
+/obj/machinery/light/directional/south,
 /turf/open/floor/wood/large,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "la" = (
@@ -3202,15 +3160,6 @@
 	},
 /turf/open/floor/engine,
 /area/station/science/research)
-"lU" = (
-/obj/structure/table/wood/fancy/red,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/wood/large,
-/area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
-	})
 "lV" = (
 /turf/open/floor/iron/dark/red,
 /area/station/commons/dorms)
@@ -3231,15 +3180,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"lY" = (
-/obj/machinery/smartfridge/food,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
 "lZ" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/supply/hidden{
 	dir = 4
@@ -3255,7 +3195,7 @@
 "mb" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/open/floor/iron/kitchen,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "mc" = (
@@ -3360,8 +3300,8 @@
 "mu" = (
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "mv" = (
 /obj/structure/cable,
@@ -3458,8 +3398,8 @@
 /area/station/cargo/miningoffice)
 "mS" = (
 /turf/closed/wall/mineral/stone,
-/area/mine/maintenance{
-	name = "Tchiko's Castle Janitorial"
+/area/mine/xenoarch/maintenance/west{
+	name = "Tchiko's Castle Jani Closet"
 	})
 "mT" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -3536,15 +3476,6 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
-"ni" = (
-/obj/structure/drain,
-/obj/machinery/shower{
-	pixel_y = 16
-	},
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
-	})
 "nj" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -3609,8 +3540,8 @@
 "ns" = (
 /obj/structure/fence/corner,
 /turf/open/misc/dirt/jungle,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "nt" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
@@ -3628,22 +3559,24 @@
 	has_gravity = 1
 	})
 "nv" = (
-/obj/structure/chair/sofa/corp{
-	dir = 8
-	},
+/obj/structure/bed/double,
+/obj/item/bedsheet/green/double,
 /turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/area/mine/xenoarch/engineering{
+	name = "Tchiko's Castle Quarters"
 	})
 "ny" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/airlock/public/glass{
-	name = "Tchiko's Outpost"
-	},
-/turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/engineering{
+	name = "Tchiko's Castle Quarters"
 	})
+"nz" = (
+/obj/structure/marker_beacon/bronze,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "nA" = (
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/iron,
@@ -3859,8 +3792,8 @@
 "od" = (
 /obj/structure/flora/bush/jungle/b/style_random,
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "of" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer4{
@@ -3885,7 +3818,7 @@
 "ol" = (
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "on" = (
 /obj/machinery/telecomms/processor/preset_two,
@@ -4114,16 +4047,7 @@
 	},
 /turf/open/floor/wood/large,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
-"pe" = (
-/obj/structure/mineral_door/wood,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/tile,
-/area/mine/maintenance{
-	name = "Tchiko's Castle Janitorial"
+	name = "Birdhouse Entry Hall"
 	})
 "pf" = (
 /obj/effect/landmark/start/detective,
@@ -4138,12 +4062,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/hidden,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
-"pl" = (
-/obj/structure/flora/tree/jungle/style_random,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "pm" = (
 /obj/machinery/modular_computer/console/preset/cargochat/science,
 /turf/open/floor/iron/white,
@@ -4161,20 +4079,6 @@
 /obj/machinery/telecomms/receiver/preset_right,
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/station/tcommsat/server{
-	has_gravity = 1
-	})
-"pp" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/door/airlock/external/glass{
-	name = "Supply Door Airlock"
-	},
-/obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating,
-/area/station/cargo/storage{
 	has_gravity = 1
 	})
 "pr" = (
@@ -4358,7 +4262,7 @@
 	})
 "qf" = (
 /turf/open/floor/wood/large,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "qh" = (
@@ -4370,6 +4274,11 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/manifold/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
+"qk" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "qm" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /obj/structure/cable,
@@ -4459,13 +4368,6 @@
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
-"qy" = (
-/obj/structure/bed/double,
-/obj/item/bedsheet/green/double,
-/turf/open/floor/wood/large,
-/area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
-	})
 "qB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -4488,6 +4390,12 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
+"qH" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating/snowed/smoothed,
+/area/icemoon/surface/outdoors/nospawn)
 "qI" = (
 /turf/open/floor/carpet/orange,
 /area/station/commons/dorms)
@@ -4615,21 +4523,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
-"rl" = (
-/obj/item/mop/advanced,
-/obj/structure/mopbucket,
-/obj/item/soap{
-	pixel_y = 10
-	},
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/machinery/airalarm/directional/west,
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/tile,
-/area/mine/maintenance{
-	name = "Tchiko's Castle Janitorial"
-	})
 "rm" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -4637,7 +4530,7 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/large,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+	name = "Birdhouse Entry Hall"
 	})
 "rp" = (
 /turf/closed/wall/r_wall,
@@ -4648,8 +4541,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/royalblack,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "rr" = (
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
@@ -4933,7 +4826,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/large,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "sg" = (
@@ -4977,13 +4870,6 @@
 /area/station/service/hydroponics{
 	has_gravity = 1
 	})
-"so" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating,
-/area/station/cargo/storage{
-	has_gravity = 1
-	})
 "sq" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/structure/sink/kitchen/directional/south,
@@ -5000,7 +4886,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/kitchen,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "sr" = (
@@ -5091,9 +4977,6 @@
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"sK" = (
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "sM" = (
 /obj/structure/cable,
 /obj/machinery/piratepad/civilian,
@@ -5125,7 +5008,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "sQ" = (
@@ -5149,7 +5032,7 @@
 "sT" = (
 /turf/closed/wall/mineral/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "sU" = (
 /obj/machinery/door/window/left/directional/north{
@@ -5171,16 +5054,35 @@
 	},
 /turf/open/floor/plating,
 /area/station/commons/dorms)
+"sY" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Door Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/cargo/storage{
+	has_gravity = 1
+	})
 "sZ" = (
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/cargo/storage{
+	has_gravity = 1
 	})
 "ta" = (
-/obj/structure/flora/biolumi,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/obj/structure/drain,
+/obj/machinery/shower{
+	pixel_y = 16
+	},
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "tb" = (
 /obj/effect/landmark/start/chief_engineer,
@@ -5233,13 +5135,13 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "tp" = (
-/obj/structure/drain,
-/obj/structure/fence{
+/obj/structure/dresser,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/turf/open/misc/dirt/jungle,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "tr" = (
 /obj/machinery/computer/cargo/request{
@@ -5457,10 +5359,6 @@
 /area/station/engineering/storage/tech{
 	has_gravity = 1
 	})
-"uj" = (
-/obj/structure/marker_beacon/lime,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/nospawn)
 "uk" = (
 /obj/machinery/ntnet_relay,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -5573,15 +5471,19 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
+"uA" = (
+/obj/machinery/smartfridge/food,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "uB" = (
 /turf/open/floor/wood/large,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
-"uC" = (
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+	name = "Birdhouse Entry Hall"
 	})
 "uE" = (
 /obj/machinery/light/directional/east,
@@ -5646,6 +5548,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
+"uV" = (
+/obj/structure/drain,
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/misc/dirt/jungle,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "uW" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5727,11 +5638,6 @@
 /obj/effect/landmark/start/captain,
 /turf/open/floor/carpet/purple,
 /area/station/command/heads_quarters/captain/private)
-"vp" = (
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
-	})
 "vq" = (
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
@@ -5873,15 +5779,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/freezerchamber)
-"vJ" = (
-/obj/machinery/portable_atmospherics/scrubber/huge/movable,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/floor/wood/tile,
-/area/mine/maintenance{
-	name = "Tchiko's Castle Janitorial"
-	})
 "vK" = (
 /obj/machinery/shower{
 	dir = 8
@@ -5907,6 +5804,17 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/blue/corner,
 /area/station/commons/dorms)
+"vR" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "vS" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -5925,6 +5833,14 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
+	})
+"vX" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "vZ" = (
 /obj/structure/cable,
@@ -5988,8 +5904,8 @@
 "wi" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "wl" = (
 /obj/structure/cable,
@@ -6114,16 +6030,12 @@
 	has_gravity = 1
 	})
 "wG" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/obj/structure/rack/shelf,
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/machinery/airalarm/directional/east,
 /obj/structure/cable,
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/tile,
+/area/mine/xenoarch/maintenance/west{
+	name = "Tchiko's Castle Jani Closet"
 	})
 "wH" = (
 /obj/machinery/igniter/incinerator_ordmix,
@@ -6166,6 +6078,12 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
+	})
+"wR" = (
+/obj/structure/aquarium/prefilled,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "wS" = (
 /obj/effect/turf_decal/siding/white{
@@ -6217,6 +6135,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating/snowed/smoothed,
 /area/icemoon/surface/outdoors/nospawn)
+"xc" = (
+/obj/structure/fence{
+	dir = 4
+	},
+/turf/open/misc/dirt/jungle,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "xd" = (
 /obj/machinery/modular_computer/console/preset/engineering,
 /turf/open/floor/engine,
@@ -6305,7 +6231,16 @@
 	},
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
+	})
+"xq" = (
+/obj/structure/mineral_door/wood,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/tile,
+/area/mine/xenoarch/maintenance/west{
+	name = "Tchiko's Castle Jani Closet"
 	})
 "xt" = (
 /obj/structure/table/reinforced/rglass,
@@ -6524,8 +6459,8 @@
 "yg" = (
 /obj/structure/flora/biolumi/mine,
 /turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "yh" = (
 /obj/structure/cable,
@@ -6622,18 +6557,6 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/iron,
 /area/station/science/research)
-"ys" = (
-/obj/structure/fans/tiny,
-/obj/machinery/door/airlock/public/glass{
-	name = "Tchiko's Outpost"
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "yt" = (
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron,
@@ -6767,11 +6690,22 @@
 /turf/open/floor/carpet/purple,
 /area/station/commons/dorms)
 "yO" = (
-/obj/structure/sink/directional/west,
-/obj/structure/cable,
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
+/obj/structure/flora/grass/jungle/a/style_random,
+/mob/living/simple_animal/hostile/engorge{
+	dir = 8;
+	name = "Or-Ate";
+	desc = "Hopefully you don't get or-ATE!  Get it?  ...I'll show myself out now.";
+	can_have_ai = 0;
+	move_force = 1;
+	move_resist = 1;
+	wander = 0;
+	aggro_vision_range = 0;
+	vision_range = 0;
+	AIStatus = 0
+	},
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "yP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6834,8 +6768,8 @@
 	dir = 4
 	},
 /turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "zc" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -6880,6 +6814,11 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
+"zk" = (
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "zo" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -6893,8 +6832,8 @@
 "zr" = (
 /obj/structure/flora/rock/style_random,
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "zs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7040,14 +6979,18 @@
 /obj/structure/closet/cabinet,
 /obj/item/storage/medkit/surgery,
 /obj/item/storage/toolbox/mechanical,
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north{
+	arc_shielded = 1
+	},
 /obj/machinery/airalarm/directional/west,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/item/pickaxe/drill/diamonddrill,
+/obj/item/t_scanner/adv_mining_scanner,
 /turf/open/floor/wood/large,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "Ad" = (
@@ -7066,17 +7009,6 @@
 /turf/open/floor/iron,
 /area/station/tcommsat/computer{
 	has_gravity = 1
-	})
-"Ah" = (
-/obj/structure/chair/sofa/corp/right{
-	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
-	},
-/turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
 	})
 "Aj" = (
 /obj/machinery/door/firedoor/border_only{
@@ -7224,6 +7156,15 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
+"AD" = (
+/obj/structure/reagent_dispensers/watertank/high,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/wood/tile,
+/area/mine/xenoarch/maintenance/west{
+	name = "Tchiko's Castle Jani Closet"
+	})
 "AE" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -7259,6 +7200,12 @@
 /area/station/service/bar/atrium{
 	has_gravity = 1
 	})
+"AK" = (
+/obj/structure/flora/bush/flowers_pp/style_random,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "AL" = (
 /obj/machinery/autolathe/hacked,
 /turf/open/floor/iron,
@@ -7279,6 +7226,12 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
+"AO" = (
+/obj/effect/spawner/liquids_spawner,
+/turf/open/floor/iron/pool,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
+	})
 "AT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -7286,13 +7239,6 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
-	})
-"AU" = (
-/obj/structure/flora/biolumi,
-/obj/structure/flora/bush/flowers_yw/style_random,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
 	})
 "AW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7313,14 +7259,6 @@
 	dir = 1
 	},
 /area/station/commons/dorms)
-"AZ" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/large,
-/area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
-	})
 "Ba" = (
 /obj/structure/table,
 /obj/structure/bedsheetbin,
@@ -7345,6 +7283,14 @@
 /turf/open/floor/iron/green,
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
+	})
+"Bd" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "Bf" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction{
@@ -7441,6 +7387,35 @@
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
 	})
+"Bw" = (
+/obj/structure/bed/dogbed,
+/obj/structure/chair/pillow_small{
+	icon_state = "pillowpile_small_spt";
+	pillow1_color_changed = 1;
+	pillow2_color_changed = 1;
+	current_color = "spt";
+	pillow1_color = "spt";
+	pillow2_color = "spt";
+	transform = matrix()*0.75
+	},
+/obj/item/toy/plush/skyrat/borbplushie{
+	attack_verb_simple = list("peep");
+	attack_verb_continuous = list("peeps");
+	name = "A Leathery Egg";
+	icon = 'icons/obj/food/egg.dmi';
+	icon_state = "egg";
+	inhand_icon_state = null;
+	lefthand_file = 'icons/mob/inhands/items/food_lefthand.dmi';
+	righthand_file = 'icons/mob/inhands/items/food_righthand.dmi';
+	color = "#91593b";
+	transform = matrix()*1.5;
+	desc = "A large, leathery egg.  You feel like its occupant is peeping at you, faintly."
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/engineering{
+	name = "Tchiko's Castle Quarters"
+	})
 "Bx" = (
 /turf/open/floor/iron,
 /area/station/cargo/storage{
@@ -7481,8 +7456,8 @@
 "BC" = (
 /obj/structure/flora/bush/ferny/style_random,
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "BG" = (
 /obj/structure/cable,
@@ -7529,10 +7504,10 @@
 	has_gravity = 1
 	})
 "BO" = (
-/obj/structure/fermenting_barrel,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/obj/structure/flora/bush/reed/style_random,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "BP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -7648,11 +7623,23 @@
 	has_gravity = 1
 	})
 "Cg" = (
-/obj/structure/marker_beacon/lime,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/snowed/icemoon,
-/area/icemoon/surface/outdoors/nospawn)
+/obj/structure/flora/rock/pile/style_random,
+/mob/living/simple_animal/hostile/retaliate/tegu{
+	dir = 4;
+	aggro_vision_range = 0;
+	vision_range = 0;
+	AIStatus = 0;
+	move_force = 1;
+	move_resist = 1;
+	wander = 0;
+	can_have_ai = 0;
+	name = "Sana";
+	desc = "Smol!"
+	},
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "Ch" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
@@ -7805,12 +7792,6 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"CB" = (
-/obj/structure/flora/bush/reed/style_random,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "CC" = (
 /obj/machinery/light/floor,
 /obj/structure/cable,
@@ -7864,6 +7845,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
+"CK" = (
+/obj/structure/fence/door{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/grass/fairy,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "CL" = (
 /turf/closed/wall,
 /area/station/service/kitchen{
@@ -7897,7 +7887,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "CS" = (
 /obj/structure/table/reinforced,
@@ -8004,9 +7994,21 @@
 	has_gravity = 1
 	})
 "Dr" = (
-/turf/closed/wall/mineral/stone,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/obj/item/mop/advanced,
+/obj/structure/mopbucket,
+/obj/item/soap{
+	pixel_y = 10
+	},
+/obj/machinery/power/apc/auto_name/directional/north{
+	arc_shielded = 1
+	},
+/obj/machinery/airalarm/directional/west,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood/tile,
+/area/mine/xenoarch/maintenance/west{
+	name = "Tchiko's Castle Jani Closet"
 	})
 "Dt" = (
 /turf/open/floor/iron/dark,
@@ -8180,6 +8182,19 @@
 /area/mine/cafeteria{
 	name = "Birdhouse Kitchen"
 	})
+"DX" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/machinery/reagentgrinder{
+	pixel_x = -7;
+	pixel_y = 13
+	},
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "DZ" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Escape"
@@ -8274,6 +8289,18 @@
 /area/station/medical/medbay/lobby{
 	has_gravity = 1
 	})
+"Er" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/machinery/light/directional/west,
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
+	})
 "Es" = (
 /obj/machinery/chem_master/condimaster{
 	desc = "Looks like a knock-off chem-master. Perhaps useful for separating liquids when mixing drinks precisely. Also dispenses condiments.";
@@ -8302,9 +8329,6 @@
 /area/station/command/heads_quarters/hop{
 	has_gravity = 1
 	})
-"Ew" = (
-/turf/open/floor/plating/snowed/smoothed,
-/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "Ex" = (
 /obj/machinery/rnd/production/techfab/department/cargo,
 /obj/machinery/light_switch/directional/east,
@@ -8390,6 +8414,14 @@
 /area/station/hallway/secondary/entry{
 	has_gravity = 1
 	})
+"EL" = (
+/obj/structure/chair/sofa/corp/left{
+	dir = 1
+	},
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "EN" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Telecommunications"
@@ -8451,6 +8483,19 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos{
 	has_gravity = 1
+	})
+"EW" = (
+/obj/structure/fence/corner{
+	dir = 1
+	},
+/turf/open/misc/dirt/jungle,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
+"EX" = (
+/turf/closed/wall/mineral/stone,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "EY" = (
 /obj/machinery/vending/wallmed/directional/south,
@@ -8529,14 +8574,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"Fp" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
+"Fq" = (
+/obj/structure/marker_beacon/purple,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "Fr" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/closed/wall/r_wall,
@@ -8612,6 +8653,12 @@
 /area/station/tcommsat/computer{
 	has_gravity = 1
 	})
+"FG" = (
+/obj/structure/flora/bush/jungle/b,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "FH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /turf/open/floor/iron,
@@ -8658,14 +8705,6 @@
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1
-	})
-"FQ" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
 	})
 "FR" = (
 /obj/structure/cable,
@@ -8726,6 +8765,14 @@
 /area/station/tcommsat/server{
 	has_gravity = 1
 	})
+"FX" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "Ga" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/iron/dark/red,
@@ -8769,12 +8816,6 @@
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
-"Gl" = (
-/obj/structure/flora/grass/jungle/a/style_random,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "Gm" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
@@ -8816,14 +8857,6 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/station/commons/dorms)
-"Gq" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/wood/large,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "Gr" = (
 /obj/machinery/door/airlock{
 	name = "Unisex Showers"
@@ -8916,9 +8949,24 @@
 	has_gravity = 1
 	})
 "GK" = (
-/turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/obj/structure/flora/biolumi/flower,
+/turf/open/floor/grass/fairy,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
+"GL" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "Supply Door Airlock"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating,
+/area/station/cargo/storage{
+	has_gravity = 1
 	})
 "GO" = (
 /obj/machinery/holopad,
@@ -8977,12 +9025,6 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/engine,
 /area/station/science/ordnance/burnchamber)
-"Hb" = (
-/obj/machinery/processor,
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
 "Hc" = (
 /obj/structure/cable,
 /turf/open/floor/iron/green/side{
@@ -8996,12 +9038,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/carpet/green,
 /area/station/command/heads_quarters/rd)
-"Hf" = (
-/obj/structure/bookcase/random/adult,
-/turf/open/floor/wood/large,
-/area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
-	})
 "Hg" = (
 /obj/structure/cable,
 /obj/structure/closet/firecloset/full,
@@ -9191,7 +9227,7 @@
 	},
 /turf/open/floor/wood/large,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+	name = "Birdhouse Entry Hall"
 	})
 "HI" = (
 /turf/closed/wall/mineral/wood,
@@ -9222,11 +9258,9 @@
 	has_gravity = 1
 	})
 "HN" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/snowed/smoothed,
-/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
+/obj/structure/marker_beacon/lime,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "HO" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /turf/open/floor/iron/dark,
@@ -9289,11 +9323,6 @@
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
 	})
-"HZ" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/nospawn)
 "Ic" = (
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/computer/crew,
@@ -9328,12 +9357,6 @@
 /turf/open/floor/iron,
 /area/station/medical/chemistry{
 	has_gravity = 1
-	})
-"Ig" = (
-/obj/structure/fence,
-/turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle Gardens"
 	})
 "Ih" = (
 /obj/machinery/button/door{
@@ -9553,11 +9576,6 @@
 	},
 /turf/open/floor/engine,
 /area/station/science/research)
-"IS" = (
-/turf/closed/wall/mineral/stone,
-/area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
-	})
 "IT" = (
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/checker,
@@ -9638,13 +9656,10 @@
 /turf/closed/wall/r_wall,
 /area/station/science/research)
 "Jh" = (
-/obj/structure/dresser,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
+/obj/machinery/griddle,
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "Ji" = (
 /obj/machinery/rnd/production/techfab/department/engineering,
@@ -9697,6 +9712,15 @@
 /obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/dark/blue,
 /area/station/commons/toilet/locker)
+"Jr" = (
+/obj/structure/table/wood/fancy/red,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/engineering{
+	name = "Tchiko's Castle Quarters"
+	})
 "Jt" = (
 /obj/machinery/pdapainter/research,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -9760,11 +9784,21 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance/burnchamber)
+"JF" = (
+/turf/closed/wall/mineral/stone,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "JI" = (
 /obj/structure/sign/warning/gas_mask,
 /turf/closed/wall,
 /area/station/engineering/power_room{
 	has_gravity = 1
+	})
+"JJ" = (
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "JK" = (
 /obj/structure/cable,
@@ -9937,6 +9971,14 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
+"Km" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "Kn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -10043,8 +10085,8 @@
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "KF" = (
 /obj/machinery/chem_dispenser{
@@ -10095,6 +10137,12 @@
 /turf/open/floor/iron/green/side,
 /area/station/cargo/storage{
 	has_gravity = 1
+	})
+"KR" = (
+/obj/structure/table/reinforced/plasmarglass,
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "KS" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
@@ -10182,10 +10230,18 @@
 	has_gravity = 1
 	})
 "Ll" = (
-/obj/structure/flora/biolumi/flower,
-/turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/rack/shelf,
+/obj/machinery/power/apc/auto_name/directional/north{
+	arc_shielded = 1
+	},
+/obj/machinery/airalarm/directional/east,
+/obj/structure/cable,
+/turf/open/floor/iron/white/small,
+/area/mine/xenoarch/maintenance/east{
+	name = "Tchiko's Castle Restroom"
 	})
 "Lm" = (
 /obj/machinery/firealarm/directional/west,
@@ -10233,6 +10289,10 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
+"Lt" = (
+/obj/structure/marker_beacon/purple,
+/turf/open/floor/plating/snowed,
+/area/icemoon/surface/outdoors/nospawn)
 "Lv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
@@ -10437,13 +10497,19 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+	name = "Birdhouse Entry Hall"
 	})
 "Mj" = (
 /obj/machinery/modular_computer/console/preset/command,
 /turf/open/floor/iron,
 /area/station/command/bridge{
 	has_gravity = 1
+	})
+"Mk" = (
+/obj/machinery/processor,
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
 	})
 "Ml" = (
 /obj/structure/cable,
@@ -10667,12 +10733,14 @@
 	has_gravity = 1
 	})
 "Nc" = (
-/obj/machinery/power/apc/auto_name/directional/north,
+/obj/machinery/power/apc/auto_name/directional/north{
+	arc_shielded = 1
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "Nd" = (
@@ -10701,12 +10769,9 @@
 	has_gravity = 1
 	})
 "Nl" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/iron/kitchen,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
+/turf/closed/wall/mineral/stone,
+/area/mine/xenoarch/engineering{
+	name = "Tchiko's Castle Quarters"
 	})
 "No" = (
 /obj/structure/cable,
@@ -10724,7 +10789,7 @@
 /obj/item/bedsheet/purple/double,
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "Nv" = (
 /obj/structure/window/reinforced{
@@ -10846,6 +10911,14 @@
 "NI" = (
 /turf/closed/wall/r_wall,
 /area/station/science/cytology)
+"NJ" = (
+/obj/structure/chair/sofa/corp{
+	dir = 8
+	},
+/turf/open/floor/wood/large,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "NK" = (
 /turf/open/floor/engine/vacuum,
 /area/station/science/ordnance/burnchamber)
@@ -10933,7 +11006,7 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "Oe" = (
 /obj/machinery/light_switch/directional/south,
@@ -11065,6 +11138,14 @@
 /area/station/service/bar/atrium{
 	has_gravity = 1
 	})
+"Oz" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "OB" = (
 /turf/open/floor/engine,
 /area/station/science/cytology)
@@ -11128,10 +11209,6 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
-"OO" = (
-/obj/structure/marker_beacon/lime,
-/turf/open/floor/plating/snowed/icemoon,
-/area/icemoon/surface/outdoors/nospawn)
 "OP" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/grass/green/style_random,
@@ -11157,22 +11234,13 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"OU" = (
-/obj/structure/fence/door{
-	dir = 4
-	},
-/obj/structure/cable,
-/turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "OV" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "OW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11211,7 +11279,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet/royalblack,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "Pa" = (
@@ -11281,7 +11349,7 @@
 "Po" = (
 /obj/structure/chair/comfy/black,
 /turf/open/floor/wood/large,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "Pu" = (
@@ -11304,8 +11372,8 @@
 "Px" = (
 /obj/structure/fence,
 /turf/open/floor/grass,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "Py" = (
 /obj/machinery/door/airlock/medical{
@@ -11340,6 +11408,13 @@
 /turf/open/floor/wood/parquet,
 /area/station/service/bar/atrium{
 	has_gravity = 1
+	})
+"PC" = (
+/obj/structure/flora/biolumi,
+/obj/structure/flora/bush/flowers_yw/style_random,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "PD" = (
 /obj/structure/sign/directions/upload{
@@ -11474,6 +11549,26 @@
 	},
 /turf/open/floor/carpet/green,
 /area/station/commons/dorms)
+"Qd" = (
+/mob/living/simple_animal/hostile/asteroid/goliath/beast{
+	unique_name = 1;
+	name_archive = "Rilo";
+	real_name = "Rilo";
+	name = "Rilo";
+	can_have_ai = 0;
+	aggro_vision_range = 0;
+	vision_range = 0;
+	AIStatus = 0;
+	wander = 0;
+	move_force = 1;
+	move_resist = 1;
+	dir = 8;
+	desc = "Fierce."
+	},
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "Qe" = (
 /obj/structure/marker_beacon/burgundy,
 /turf/open/misc/asteroid/snow/icemoon,
@@ -11531,6 +11626,24 @@
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/station/tcommsat/server{
 	has_gravity = 1
+	})
+"Qm" = (
+/obj/structure/bed/pillow_large{
+	pillow1_color = "teal";
+	pillow2_color = "teal";
+	pillow3_color = "teal";
+	pillow1_color_changed = 1;
+	pillow1_form_changed = 1;
+	pillow2_color_changed = 1;
+	pillow2_form_changed = 1;
+	pillow3_color_changed = 1;
+	pillow3_form_changed = 1;
+	icon_state = "pillowpile_large_teal";
+	current_color = "teal"
+	},
+/turf/open/floor/grass/fairy,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "Qn" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -11973,13 +12086,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/research)
-"RL" = (
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
-/turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "RM" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -12040,7 +12146,7 @@
 	},
 /obj/structure/table/wood/fancy/green,
 /turf/open/floor/wood/large,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "RZ" = (
@@ -12056,7 +12162,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/wood/large,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "Sc" = (
@@ -12091,6 +12197,12 @@
 /obj/machinery/holopad,
 /turf/open/floor/iron/white,
 /area/station/science/robotics/mechbay)
+"Si" = (
+/obj/structure/flora/bush/jungle,
+/turf/open/floor/grass,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
+	})
 "Sj" = (
 /obj/machinery/power/apc/auto_name/directional/west{
 	arc_shielded = 1
@@ -12314,6 +12426,11 @@
 /area/station/medical/virology{
 	has_gravity = 1
 	})
+"SY" = (
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "SZ" = (
 /obj/machinery/atmospherics/components/tank,
 /turf/open/floor/iron/dark,
@@ -12346,7 +12463,7 @@
 /obj/item/bedsheet/orange/double,
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "Ti" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -12500,16 +12617,6 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
-"TM" = (
-/obj/structure/table/reinforced/plasmarglass,
-/turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
-"TN" = (
-/obj/structure/marker_beacon/bronze,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/nospawn)
 "TO" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -12533,7 +12640,7 @@
 "TS" = (
 /turf/closed/wall/mineral/wood,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+	name = "Birdhouse Entry Hall"
 	})
 "TT" = (
 /obj/machinery/computer/robotics{
@@ -12613,7 +12720,7 @@
 	},
 /turf/open/floor/wood,
 /area/mine/living_quarters{
-	name = "Tchiko's Castle Quarters"
+	name = "Birdhouse Snuggle Room"
 	})
 "Ud" = (
 /obj/effect/turf_decal/stripes/line{
@@ -12697,12 +12804,6 @@
 /turf/open/floor/iron/kitchen/diagonal,
 /area/station/service/kitchen{
 	has_gravity = 1
-	})
-"Uv" = (
-/obj/effect/spawner/liquids_spawner,
-/turf/open/floor/iron/pool,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
 	})
 "Uw" = (
 /obj/structure/table/reinforced/rglass,
@@ -12971,14 +13072,6 @@
 /area/station/cargo/storage{
 	has_gravity = 1
 	})
-"Vk" = (
-/obj/structure/chair/sofa/corp/left{
-	dir = 1
-	},
-/turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
 "Vm" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -12988,15 +13081,13 @@
 	has_gravity = 1
 	})
 "Vn" = (
-/obj/structure/railing{
-	dir = 1
-	},
-/obj/structure/toilet{
-	dir = 4
-	},
-/turf/open/floor/iron/white/small,
-/area/mine/medical{
-	name = "Tchiko's Castle Restrooms"
+/obj/structure/fans/tiny,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "Vo" = (
 /turf/closed/wall,
@@ -13004,23 +13095,9 @@
 	has_gravity = 1
 	})
 "Vp" = (
-/obj/structure/bed/pillow_large{
-	pillow1_color = "teal";
-	pillow2_color = "teal";
-	pillow3_color = "teal";
-	pillow1_color_changed = 1;
-	pillow1_form_changed = 1;
-	pillow2_color_changed = 1;
-	pillow2_form_changed = 1;
-	pillow3_color_changed = 1;
-	pillow3_form_changed = 1;
-	icon_state = "pillowpile_large_teal";
-	current_color = "teal"
-	},
-/turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
+/obj/structure/marker_beacon/lime,
+/turf/open/misc/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors/nospawn)
 "Vq" = (
 /turf/open/genturf{
 	planetary_atmos = 1
@@ -13032,10 +13109,6 @@
 /area/station/service/hydroponics{
 	has_gravity = 1
 	})
-"Vt" = (
-/obj/structure/marker_beacon/burgundy,
-/turf/open/misc/asteroid/snow/icemoon,
-/area/icemoon/surface/outdoors/unexplored/rivers/no_monsters)
 "Vu" = (
 /obj/structure/table,
 /obj/item/assembly/timer,
@@ -13076,7 +13149,7 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/wood/large,
 /area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+	name = "Birdhouse Entry Hall"
 	})
 "Vx" = (
 /obj/item/radio/intercom/directional/west,
@@ -13236,12 +13309,18 @@
 	has_gravity = 1
 	})
 "VY" = (
-/obj/structure/marker_beacon/bronze,
+/obj/machinery/oven,
+/obj/machinery/microwave{
+	pixel_y = 18;
+	pixel_x = -2
+	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
+/turf/open/floor/iron/kitchen,
+/area/mine/xenoarch/living{
+	name = "Tchiko's Castle Lounge"
+	})
 "VZ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/mech_bay_recharge_port,
@@ -13731,7 +13810,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/kitchen,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "XE" = (
@@ -13766,11 +13845,6 @@
 /area/station/medical/chemistry{
 	has_gravity = 1
 	})
-"XJ" = (
-/turf/open/floor/wood/large,
-/area/mine/lounge{
-	name = "Tchiko's Castle Lounge"
-	})
 "XK" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -13787,12 +13861,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
-"XR" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/plating/snowed,
-/area/icemoon/surface/outdoors/nospawn)
 "XS" = (
 /turf/open/floor/iron,
 /area/station/medical/treatment_center{
@@ -13939,7 +14007,7 @@
 /obj/structure/bed/double,
 /obj/item/bedsheet/red/double,
 /turf/open/floor/wood/large,
-/area/mine/living_quarters{
+/area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
 "Yv" = (
@@ -13967,13 +14035,13 @@
 	has_gravity = 1
 	})
 "Yz" = (
-/obj/structure/reagent_dispensers/watertank/high,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/glass_large{
+	name = "Tchiko's Castle"
 	},
-/turf/open/floor/wood/tile,
-/area/mine/maintenance{
-	name = "Tchiko's Castle Janitorial"
+/turf/open/floor/plating/cobblestone/planet,
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "YA" = (
 /obj/machinery/suit_storage_unit/hos,
@@ -13995,7 +14063,7 @@
 "YC" = (
 /obj/structure/table/rolling,
 /turf/open/floor/iron/kitchen,
-/area/mine/lounge{
+/area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
 	})
 "YE" = (
@@ -14055,6 +14123,12 @@
 /area/station/service/bar/backroom{
 	has_gravity = 1
 	})
+"YO" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/plating/snowed,
+/area/icemoon/surface/outdoors/nospawn)
 "YQ" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -14087,8 +14161,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating/cobblestone/planet,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "YU" = (
 /obj/structure/cable,
@@ -14134,12 +14208,6 @@
 /area/station/command/heads_quarters/cmo{
 	has_gravity = 1
 	})
-"Zf" = (
-/obj/structure/fence,
-/turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
-	})
 "Zg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -14177,6 +14245,13 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
+"Zq" = (
+/obj/structure/marker_beacon/bronze,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/plating/snowed,
+/area/icemoon/surface/outdoors/nospawn)
 "Zr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -14207,8 +14282,8 @@
 /obj/machinery/airalarm/directional/south,
 /obj/structure/cable,
 /turf/open/floor/grass/fairy,
-/area/mine/lobby{
-	name = "Tchiko's Castle: Garden"
+/area/mine/xenoarch/science/cytology{
+	name = "Tchiko's Castle Gardens"
 	})
 "Zw" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -14671,11 +14746,11 @@ mS
 mS
 mS
 mS
-Dr
-Dr
-Dr
-Dr
-Dr
+JF
+JF
+JF
+JF
+JF
 BT
 BT
 BT
@@ -14925,14 +15000,14 @@ BT
 BT
 BT
 mS
-rl
-aW
-pe
-FQ
-ho
-sZ
-BO
 Dr
+wG
+xq
+FX
+vX
+SY
+bj
+JF
 BT
 BT
 BT
@@ -15182,14 +15257,14 @@ BT
 BT
 BT
 mS
-vJ
-Yz
+jh
+AD
 mS
-lY
-Nl
-sZ
-Hb
-Dr
+uA
+Oz
+SY
+Mk
+JF
 BT
 BT
 BT
@@ -15431,22 +15506,22 @@ BT
 BT
 BT
 BT
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-ch
-sZ
-sZ
-jh
-Dr
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+VY
+SY
+SY
+Jh
+JF
 BT
 BT
 BT
@@ -15688,22 +15763,22 @@ BT
 BT
 BT
 BT
-bj
-pl
-uC
+EX
+ir
+gX
 zr
-bj
+EX
 mu
 wi
-bj
+EX
 jC
 yg
-bj
-bN
-sZ
-sZ
+EX
+DX
+SY
+SY
 mb
-Dr
+JF
 BT
 BT
 BT
@@ -15906,15 +15981,15 @@ Wx
 ay
 Wx
 Wx
-TN
+nz
 Wx
-uj
+Vp
 Wx
 Wx
 Wx
-OO
+HN
 Wx
-TN
+nz
 ay
 Wx
 Wx
@@ -15945,22 +16020,22 @@ BT
 BT
 BT
 BT
-bj
-uC
-hd
-uC
-bj
-ta
-uC
-bj
-Ll
-RL
-bj
+EX
+gX
+Cg
+gX
+EX
+ev
+gX
+EX
+GK
+bN
+EX
 sq
-sZ
-sZ
+SY
+SY
 YC
-Dr
+JF
 BT
 BT
 BT
@@ -16179,45 +16254,45 @@ Wx
 Wx
 Wx
 Wx
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-bj
-ta
-uC
-uC
-tp
-uC
-uC
-tp
-Vp
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+EX
+ev
+gX
+gX
+uV
+gX
+do
+uV
+Qm
 Zv
-bj
+EX
 XC
-sZ
-sZ
-sZ
-Dr
+SY
+SY
+SY
+JF
 BT
 BT
 BT
@@ -16436,30 +16511,30 @@ ay
 Wx
 Wx
 Wx
-sK
-sK
-sK
-sK
-sK
-Ew
-Ew
-Ew
-Ew
-Ew
-Vt
-sK
-sK
-sK
-sK
-sK
-sK
-Vt
-sK
-sK
-sK
-sK
-sK
-bj
+Wx
+Wx
+Wx
+Wx
+Wx
+hQ
+hQ
+hQ
+hQ
+hQ
+Qe
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Qe
+Wx
+Wx
+Wx
+Wx
+Wx
+EX
 Px
 KE
 Px
@@ -16467,14 +16542,14 @@ ns
 KE
 Px
 ns
-Zf
-OU
-bj
+ch
+CK
+EX
 Sb
-XJ
-XJ
-XJ
-Dr
+ai
+ai
+hK
+JF
 BT
 BT
 BT
@@ -16674,7 +16749,7 @@ Cj
 iA
 Wx
 Wx
-Wx
+Qe
 Wx
 ay
 ay
@@ -16693,45 +16768,45 @@ Wx
 Wx
 Wx
 Wx
-Vt
-Ew
-Ew
-Ew
-Ew
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-sK
-sK
-sK
-Ew
-Ew
-Ew
-Ew
-Ew
-Ew
-ny
-du
+Qe
+hQ
+hQ
+hQ
+hQ
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+Wx
+Wx
+Wx
+hQ
+hQ
+hQ
+hQ
+hQ
+hQ
+Yz
+Km
 OV
-GK
-GK
-GK
-GK
-GK
+zk
+zk
+zk
+zk
+zk
 OV
 za
 kT
 OZ
-XJ
-XJ
-aF
-Dr
+ai
+ai
+wR
+JF
 BT
 BT
 BT
@@ -16929,9 +17004,9 @@ Wx
 iA
 Cj
 iA
-Wx
-Wx
-Wx
+hQ
+hQ
+hQ
 Wx
 Wx
 Wx
@@ -16943,37 +17018,37 @@ Wx
 PK
 Wx
 Wx
-hI
-hI
-hI
-hI
-hI
-hI
-hI
-HN
-HN
-HN
-HN
-HN
-HN
-sK
-sK
-sK
-sK
-Ew
-Ew
-Ew
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-HN
-ys
+hQ
+hQ
+hQ
+hQ
+hQ
+hQ
+hQ
+jf
+jf
+jf
+jf
+jf
+jf
+Wx
+Wx
+Wx
+Wx
+hQ
+hQ
+hQ
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+Vn
 YT
 YT
 YT
@@ -16985,10 +17060,10 @@ YT
 YT
 rq
 OZ
-XJ
-XJ
-aF
-Dr
+ai
+ai
+wR
+JF
 BT
 BT
 BT
@@ -17183,69 +17258,69 @@ Wx
 Cj
 Wx
 Wx
-Wx
+Qe
 Cj
-Wx
-Wx
+hQ
+hQ
 ay
-Wx
-Wx
-Wx
-Wx
+hQ
+hQ
+hQ
+hQ
 Wx
 PK
 Wx
 Wx
 Wx
 Wx
-hI
-bl
-gX
-bl
-bl
-bl
-bl
-bl
-bl
-HN
-sK
-sK
-sK
-sK
-Vt
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-Ew
-Ew
-Ew
-Ew
-Ew
-sK
-sK
-sK
-Vt
-sK
-bj
+hQ
+jf
+qH
+jf
+jf
+jf
+jf
+jf
+jf
+jf
+Wx
+Wx
+Wx
+Wx
+Qe
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+hQ
+hQ
+hQ
+hQ
+hQ
+Wx
+Wx
+Wx
+Qe
+Wx
+EX
 Px
 KE
-Ig
-iK
+Px
+EW
 KE
 Px
-iK
+EW
 Px
 KE
-bj
+EX
 Nc
-XJ
-XJ
-XJ
-Dr
+ai
+ai
+ai
+JF
 BT
 BT
 BT
@@ -17442,67 +17517,67 @@ Cj
 Cj
 Cj
 Cj
-Wx
+hQ
 OY
 yF
 yF
 yF
 of
-Wx
-Wx
-Wx
+hQ
+hQ
+hQ
 Wx
 Wx
 Wx
 PK
-hI
-bl
-hI
+hQ
+jf
+hQ
 Qe
 Wx
-hI
-hI
-hI
+hQ
+hQ
+hQ
 Wx
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-Vt
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-sK
-bj
-uC
-hK
-aM
-tp
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Qe
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+Wx
+EX
+gX
+Si
+AK
+uV
 wi
 od
-tp
-uC
-CB
-bj
-Fp
-XJ
-XJ
-XJ
-Dr
+uV
+gX
+BO
+EX
+hT
+ai
+ai
+ai
+JF
 BT
 BT
 BT
@@ -17691,7 +17766,7 @@ BT
 BT
 Wx
 Cj
-Wx
+Qe
 Ow
 Ow
 Ow
@@ -17705,15 +17780,15 @@ Ow
 Ow
 rO
 Ow
-Wx
-Wx
-Wx
-hI
-hI
-hI
-hI
-hI
-bl
+hQ
+hQ
+hQ
+hQ
+hQ
+hQ
+hQ
+hQ
+jf
 Wx
 ay
 Wx
@@ -17744,22 +17819,22 @@ BT
 BT
 BT
 BT
-bj
-AU
-fd
-uC
-ce
+EX
+PC
+FG
+Qd
+xc
 BC
-ta
-ce
-ta
-Gl
-bj
-Fp
-XJ
-XJ
-XJ
-Dr
+eb
+xc
+ev
+yO
+EX
+hT
+ai
+ai
+ai
+JF
 BT
 BT
 BT
@@ -17965,12 +18040,12 @@ Ow
 Wx
 Wx
 PK
-hI
-hI
-hI
-hI
-hI
-bl
+hQ
+hQ
+hQ
+hQ
+hQ
+jf
 Wx
 Wx
 Wx
@@ -18001,22 +18076,22 @@ BT
 BT
 BT
 BT
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-bj
-Fp
-XJ
-TM
-Vk
-Dr
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+EX
+hT
+ai
+KR
+EL
+JF
 BT
 BT
 BT
@@ -18219,15 +18294,15 @@ sg
 pP
 Xt
 Ow
-TN
+nz
 Wx
-OO
-hI
-hI
+HN
+hQ
+hQ
 wZ
-Cg
-HZ
-VY
+fA
+qk
+Zq
 Wx
 Wx
 Wx
@@ -18258,22 +18333,22 @@ BT
 BT
 BT
 BT
-hz
-Uv
-Vn
-Jh
-IS
+fd
+AO
+Er
+tp
+Nl
 Ac
-dL
+Bw
 qf
 Po
-lU
-IS
-Fp
+Jr
+Nl
+hT
 sf
-TM
+KR
 kY
-Dr
+JF
 BT
 BT
 BT
@@ -18481,7 +18556,7 @@ KP
 JP
 NE
 KP
-ak
+sY
 nM
 KP
 Cj
@@ -18515,22 +18590,22 @@ BT
 BT
 BT
 BT
-hz
-ni
-vp
-bO
+fd
+ta
+JJ
+Bd
 fc
-AZ
-AZ
-AZ
-AZ
-AZ
+ny
+ny
+ny
+ny
+ny
 bA
-Fp
-Ah
-nv
+hT
+vR
+NJ
 sP
-Dr
+JF
 BT
 BT
 BT
@@ -18738,7 +18813,7 @@ KP
 aX
 Su
 Vj
-so
+sZ
 WM
 KP
 Cj
@@ -18772,22 +18847,22 @@ fn
 BT
 BT
 BT
-hz
-wG
-yO
-hG
-IS
+fd
+Ll
+ho
+aW
+Nl
 Yu
-qy
+nv
 RX
-Hf
-IS
-IS
-Dr
-Dr
-Dr
-Dr
-Dr
+ff
+Nl
+Nl
+JF
+JF
+JF
+JF
+JF
 BT
 BT
 BT
@@ -18995,7 +19070,7 @@ oH
 JP
 gP
 oH
-pp
+GL
 nM
 oH
 Cj
@@ -19029,16 +19104,16 @@ fn
 BT
 BT
 BT
-hz
-hz
-hz
-hz
-IS
-IS
-IS
-IS
-IS
-IS
+fd
+fd
+fd
+fd
+Nl
+Nl
+Nl
+Nl
+Nl
+Nl
 BT
 BT
 BT
@@ -19745,7 +19820,7 @@ BT
 BT
 BT
 BT
-Wx
+Qe
 Cj
 Wx
 Ow
@@ -22574,7 +22649,7 @@ BT
 BT
 la
 Cj
-Wx
+Qe
 Ow
 Nd
 bz
@@ -24372,9 +24447,9 @@ BT
 BT
 BT
 Wx
+hQ
 Wx
-Wx
-Wx
+Qe
 Wx
 Wx
 gk
@@ -25917,7 +25992,7 @@ Wx
 Cj
 Wx
 Wx
-Wx
+Fq
 Cj
 Wx
 Wx
@@ -26161,8 +26236,8 @@ BT
 BT
 BT
 BT
-Ob
-XR
+Lt
+YO
 As
 As
 As
@@ -26427,16 +26502,16 @@ iJ
 fz
 fz
 BT
-Wx
+Fq
 Cj
 Wx
 hB
 Wx
 Cj
+Qe
 Wx
 Wx
-Wx
-Wx
+Fq
 xL
 xL
 zg
@@ -26676,7 +26751,7 @@ UJ
 yy
 iC
 pd
-Gq
+TJ
 fz
 Sj
 aE
@@ -27190,7 +27265,7 @@ UJ
 FJ
 iC
 HH
-Gq
+TJ
 wy
 ut
 mK
@@ -27447,7 +27522,7 @@ UJ
 Kr
 iC
 uB
-Gq
+TJ
 fz
 qn
 dd
@@ -27704,7 +27779,7 @@ sT
 sT
 sT
 uB
-Gq
+TJ
 fz
 fz
 fz
@@ -27961,7 +28036,7 @@ CR
 pK
 Od
 rm
-Gq
+TJ
 DG
 Cv
 PZ
