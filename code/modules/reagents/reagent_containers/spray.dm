@@ -429,7 +429,7 @@
 						"Support" = "sprayer_blu_spt")
 
 /obj/item/reagent_containers/spray/bluespace/AltClick(mob/user)
-	if(unique_reskin && !current_skin && user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
+	if(unique_reskin && !current_skin && user.canUseTopic(src, be_close = TRUE, no_dexterity = TRUE))
 		reskin_obj(user)
 
 /obj/item/reagent_containers/spray/bluespace/reskin_obj(mob/M)

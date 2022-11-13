@@ -319,11 +319,11 @@
 
 /datum/reagent/toxin/mindbreaker/on_mob_metabolize(mob/living/metabolizer)
 	. = ..()
-	ADD_TRAIT(metabolizer, TRAIT_HALLUCINATION_SUPPRESSED, type)
+	ADD_TRAIT(metabolizer, TRAIT_RDS_SUPPRESSED, type)
 
 /datum/reagent/toxin/mindbreaker/on_mob_end_metabolize(mob/living/metabolizer)
 	. = ..()
-	REMOVE_TRAIT(metabolizer, TRAIT_HALLUCINATION_SUPPRESSED, type)
+	REMOVE_TRAIT(metabolizer, TRAIT_RDS_SUPPRESSED, type)
 
 /datum/reagent/toxin/mindbreaker/on_mob_life(mob/living/carbon/metabolizer, delta_time, times_fired)
 	// mindbreaker toxin assuages hallucinations in those plagued with it, mentally
@@ -560,7 +560,7 @@
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/toxin/mutetoxin/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
-	M.silent = max(M.silent, 3 * REM * normalise_creation_purity() * delta_time)
+	M.set_silence_if_lower(6 SECONDS * REM * normalise_creation_purity() * delta_time)
 	..()
 
 /datum/reagent/toxin/staminatoxin
@@ -1261,5 +1261,5 @@
 	health_required = 10
 
 /datum/reagent/toxin/viperspider/on_mob_life(mob/living/carbon/M, delta_time, times_fired)
-	M.hallucination += 5 * REM * delta_time
+	M.adjust_hallucinations(10 SECONDS * REM * delta_time)
 	return ..()
