@@ -7,8 +7,8 @@
 	category = EVENT_CATEGORY_FRIENDLY
 	description = "A colourful display can be seen through select windows. And the kitchen."
 
-/datum/round_event_control/aurora_caelus/canSpawnEvent(players)
-	if(!CONFIG_GET(flag/starlight)&&!(SSmapping.empty_space))
+/datum/round_event_control/aurora_caelus/can_spawn_event(players)
+	if(!CONFIG_GET(flag/starlight) && !(SSmapping.empty_space))
 		return FALSE
 	return ..()
 
@@ -25,7 +25,7 @@
 	sender_override = "Nanotrasen Meteorology Division")
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
-		if((M.client.prefs.toggles & SOUND_MIDI) && is_station_level(M.z))
+		if((M.client.prefs.read_preference(/datum/preference/toggle/sound_midi)) && is_station_level(M.z))
 			M.playsound_local(M, 'sound/ambience/aurora_caelus.ogg', 20, FALSE, pressure_affected = FALSE)
 
 /datum/round_event/aurora_caelus/start()
@@ -37,7 +37,7 @@
 		if(istype(affected_area, /area/station/service/kitchen))
 			for(var/turf/open/kitchen in affected_area)
 				kitchen.set_light(1, 0.75)
-			if(!prob(1) && !SSevents.holidays?[APRIL_FOOLS])
+			if(!prob(1) && !check_holidays(APRIL_FOOLS))
 				continue
 			var/obj/machinery/oven/roast_ruiner = locate() in affected_area
 			if(roast_ruiner)
@@ -83,5 +83,5 @@
 	var/new_light = initial(spess.light_range)
 	while(spess.light_range > new_light)
 		spess.set_light(spess.light_range - 0.2)
-		sleep(30)
+		sleep(3 SECONDS)
 	spess.set_light(new_light, initial(spess.light_power), initial(spess.light_color))

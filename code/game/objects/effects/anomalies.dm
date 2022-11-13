@@ -131,6 +131,13 @@
 	warp = null
 	return ..()
 
+/obj/effect/anomaly/grav/on_changed_z_level(turf/old_turf, turf/new_turf, same_z_layer, notify_contents)
+	. = ..()
+	if(same_z_layer)
+		return
+	if(warp)
+		SET_PLANE(warp, PLANE_TO_TRUE(warp.plane), new_turf)
+
 /obj/effect/anomaly/grav/anomalyEffect(delta_time)
 	..()
 	boing = 1
@@ -219,7 +226,7 @@
 
 /obj/effect/anomaly/flux/update_overlays()
 	. = ..()
-	. += emissive_appearance(icon, icon_state, alpha=src.alpha)
+	. += emissive_appearance(icon, icon_state, src, alpha=src.alpha)
 
 /obj/effect/anomaly/flux/proc/on_entered(datum/source, atom/movable/AM)
 	SIGNAL_HANDLER
@@ -454,13 +461,13 @@
 	if(!heads)
 		heads = typesof(/obj/item/bodypart/head)
 	if(!l_arms)
-		l_arms = typesof(/obj/item/bodypart/l_arm)
+		l_arms = typesof(/obj/item/bodypart/arm/left)
 	if(!r_arms)
-		r_arms = typesof(/obj/item/bodypart/r_arm)
+		r_arms = typesof(/obj/item/bodypart/arm/right)
 	if(!l_legs)
-		l_legs = typesof(/obj/item/bodypart/l_leg)
+		l_legs = typesof(/obj/item/bodypart/leg/left)
 	if(!r_legs)
-		r_legs = typesof(/obj/item/bodypart/r_leg)
+		r_legs = typesof(/obj/item/bodypart/leg/right)
 
 /obj/effect/anomaly/bioscrambler/anomalyEffect(delta_time)
 	. = ..()

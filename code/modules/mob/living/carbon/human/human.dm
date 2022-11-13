@@ -84,15 +84,13 @@
 
 /mob/living/carbon/human/get_status_tab_items()
 	. = ..()
-	if (internal)
-		var/datum/gas_mixture/internal_air = internal.return_air()
-		if (!internal_air)
-			QDEL_NULL(internal)
-		else
-			. += ""
-			. += "Internal Atmosphere Info: [internal.name]"
-			. += "Tank Pressure: [internal_air.return_pressure()]"
-			. += "Distribution Pressure: [internal.distribute_pressure]"
+	var/obj/item/tank/target_tank = internal || external
+	if(target_tank)
+		var/datum/gas_mixture/internal_air = target_tank.return_air()
+		. += ""
+		. += "Internal Atmosphere Info: [target_tank.name]"
+		. += "Tank Pressure: [internal_air.return_pressure()]"
+		. += "Distribution Pressure: [target_tank.distribute_pressure]"
 	if(istype(wear_suit, /obj/item/clothing/suit/space))
 		var/obj/item/clothing/suit/space/S = wear_suit
 		. += "Thermal Regulator: [S.thermal_on ? "on" : "off"]"
@@ -400,7 +398,7 @@
 				var/counter = 1
 				while(sec_record.fields[text("com_[]", counter)]) //SKYRAT EDIT CHANGE - EXAMINE RECORDS
 					counter++
-				sec_record.fields[text("com_[]", counter)] = text("Made by [] on [] [], []<BR>[]", allowed_access, station_time_timestamp(), time2text(world.realtime, "MMM DD"), GLOB.year_integer+540, t1) //SKYRAT EDIT CHANGE - EXAMINE RECORDS
+				sec_record.fields[text("com_[]", counter)] = text("Made by [] on [] [], []<BR>[]", allowed_access, station_time_timestamp(), time2text(world.realtime, "MMM DD"), CURRENT_STATION_YEAR, t1) //SKYRAT EDIT CHANGE - EXAMINE RECORDS
 				to_chat(human_user, span_notice("Successfully added comment."))
 				return
 
@@ -838,7 +836,7 @@
 			visible_message(span_warning("[src] dry heaves!"), \
 							span_userdanger("You try to throw up, but there's nothing in your stomach!"))
 		if(stun)
-			Paralyze(200)
+			Stun(20 SECONDS)
 		return 1
 	..()
 
@@ -887,6 +885,11 @@
 
 			if(initial(quirk_type.abstract_parent_type) == type)
 				continue
+
+			// SKYRAT EDIT ADDITION START
+			if(initial(quirk_type.erp_quirk) && CONFIG_GET(flag/disable_erp_preferences))
+				continue
+			// SKYRAT EDIT ADDITION END
 
 			var/qname = initial(quirk_type.name)
 			options[has_quirk(quirk_type) ? "[qname] (Remove)" : "[qname] (Add)"] = quirk_type
@@ -1016,8 +1019,13 @@
 			to_chat(target, span_danger("You accidentally crush [src]!"))
 		else
 			to_chat(src, span_danger("You hurt your [affecting.name] while trying to endure the weight of [target]!"))
-		apply_damage(oversized_piggydam, BRUTE, affecting, wound_bonus=wound_bon) //Try to lift a 2 centner creature. 
-		Knockdown(oversized_piggyknock)
+		apply_damage(oversized_piggydam, BRUTE, affecting, wound_bonus=wound_bon)
+		playsound(src, 'sound/effects/splat.ogg', 50, TRUE)
+		AddElement(/datum/element/squish, 20 SECONDS) // Totally not stolen from a vending machine code
+		Knockdown(oversized_piggyknock) // Knocking down the unlucky guy
+		target.Knockdown(1) // simply make the oversized one fall
+		if(get_turf(target) != get_turf(src))
+			target.throw_at(get_turf(src), 1, 1, spin=FALSE, quickstart=FALSE)
 		return
 		//SKYRAT EDIT END
 

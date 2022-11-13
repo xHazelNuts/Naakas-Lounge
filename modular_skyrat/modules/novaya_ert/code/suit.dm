@@ -12,7 +12,7 @@
 #define NRI_HEAL_AMOUNT 10
 #define NRI_BLOOD_REPLENISHMENT 20
 
-/obj/item/clothing/suit/armor/vest/russian
+/obj/item/clothing/suit/armor/vest/russian/nri
 	name = "\improper B42M combined armor vest"
 	desc = "A B42M combined body armor designed to protect the torso from bullets, shrapnel and blunt force. This vest performed well in the Border War against SolFed, but NRI required significant design changes due to the enemy's new and improved weaponry. These models were recently phased out and then quickly found their way onto the black market, now commonly seen in the hands (or on the bodies) of insurgents."
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/suits.dmi'
@@ -20,7 +20,7 @@
 	icon_state = "russian_green_armor"
 	armor = list(MELEE = 30, BULLET = 40, LASER = 20, ENERGY = 30, BOMB = 35, BIO = 0, FIRE = 50, ACID = 50, WOUND = 15)
 	supports_variations_flags = CLOTHING_NO_VARIATION
-	inhand_icon_state = "rus_armor"
+	inhand_icon_state = "armor"
 	uses_advanced_reskins = TRUE
 	unique_reskin = list(
 		"Basic" = list(
@@ -33,7 +33,7 @@
 		),
 	)
 
-/obj/item/clothing/suit/armor/vest/russian/mob_can_equip(mob/living/M, slot, disable_warning, bypass_equip_delay_self, ignore_equipped)
+/obj/item/clothing/suit/armor/vest/russian/nri/mob_can_equip(mob/living/M, slot, disable_warning, bypass_equip_delay_self, ignore_equipped)
 	if(is_species(M, /datum/species/teshari))
 		to_chat(M, span_warning("[src] is far too big for you!"))
 		return FALSE

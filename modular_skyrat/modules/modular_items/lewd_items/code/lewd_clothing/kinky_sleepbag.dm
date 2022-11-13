@@ -9,7 +9,6 @@
 	worn_icon_taur_hoof = 'modular_skyrat/modules/modular_items/lewd_items/icons/mob/lewd_clothing/lewd_suit/sleepbag_special.dmi'
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION|STYLE_TAUR_ALL
 	icon_state = "sleepbag"
-	inhand_icon_state = "sleepbag"
 	w_class = WEIGHT_CLASS_SMALL
 	var/bag_state = "deflated"
 	var/bag_fold = TRUE
@@ -27,8 +26,8 @@
 	var/list/bag_states = list("deflated" = "inflated", "inflated" = "deflated")
 	var/state_thing = "deflated"
 	var/mutable_appearance/bag_overlay
-	var/obj/item/bodypart/l_leg/legr
-	var/obj/item/bodypart/l_leg/legl
+	var/obj/item/bodypart/leg/left/legr
+	var/obj/item/bodypart/leg/left/legl
 	slowdown = 2
 	equip_delay_other = 300
 	equip_delay_self = NONE
@@ -103,7 +102,7 @@
 
 /obj/item/clothing/suit/straight_jacket/kinky_sleepbag/equipped(mob/user, slot)
 	var/mob/living/carbon/human/affected_human = user
-	if(ishuman(user) && slot == ITEM_SLOT_OCLOTHING)
+	if(ishuman(user) && (slot & ITEM_SLOT_OCLOTHING))
 		ADD_TRAIT(user, TRAIT_FLOORED, CLOTHING_TRAIT)
 
 		affected_human.cut_overlay(affected_human.overlays_standing[SHOES_LAYER])

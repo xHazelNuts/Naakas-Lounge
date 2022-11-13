@@ -6,7 +6,7 @@
 "bJ" = (
 /obj/item/relic,
 /turf/open/misc/asteroid/airless,
-/area/mine/explored)
+/area/lavaland/surface)
 "cm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/landmark/xeno_spawn,
@@ -70,18 +70,13 @@
 	},
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/lesser)
-"iM" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/event_spawn,
-/turf/open/floor/iron/smooth,
-/area/station/maintenance/starboard/lesser)
 "iW" = (
 /mob/living/simple_animal/hostile/lizard/space{
 	dir = 4;
 	name = "Stuck-In-Rock"
 	},
 /turf/open/misc/asteroid/airless,
-/area/mine/explored)
+/area/lavaland/surface)
 "jW" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -98,7 +93,7 @@
 /area/station/maintenance/starboard/lesser)
 "ku" = (
 /turf/open/misc/asteroid/airless,
-/area/mine/explored)
+/area/lavaland/surface)
 "kw" = (
 /turf/template_noop,
 /area/template_noop)
@@ -122,7 +117,7 @@
 /area/station/maintenance/starboard/lesser)
 "ot" = (
 /turf/closed/mineral/random/stationside/asteroid/porus,
-/area/mine/explored)
+/area/lavaland/surface)
 "qk" = (
 /obj/effect/spawner/random/trash/mess,
 /obj/effect/decal/cleanable/dirt,
@@ -131,7 +126,7 @@
 "qy" = (
 /obj/effect/spawner/random/trash/garbage,
 /turf/open/misc/asteroid,
-/area/mine/explored)
+/area/lavaland/surface)
 "qR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -194,6 +189,11 @@
 /obj/structure/cable,
 /turf/open/floor/catwalk_floor,
 /area/station/maintenance/starboard/lesser)
+"uR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/blobstart,
+/turf/open/floor/iron/smooth,
+/area/station/maintenance/starboard/lesser)
 "wj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -209,7 +209,7 @@
 /area/station/maintenance/starboard/lesser)
 "wJ" = (
 /turf/open/misc/asteroid,
-/area/mine/explored)
+/area/lavaland/surface)
 "wT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -264,15 +264,15 @@
 "AU" = (
 /obj/item/stack/ore/glass,
 /turf/open/misc/asteroid,
-/area/mine/explored)
+/area/lavaland/surface)
 "Bx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/girder,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/lesser)
-"Dp" = (
+"BC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/blobstart,
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/starboard/lesser)
 "Ew" = (
@@ -376,7 +376,7 @@
 "MF" = (
 /obj/item/shard,
 /turf/open/misc/asteroid,
-/area/mine/explored)
+/area/lavaland/surface)
 "MM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -522,7 +522,7 @@
 /area/station/maintenance/starboard/lesser)
 "XC" = (
 /turf/template_noop,
-/area/mine/explored)
+/area/lavaland/surface)
 "YO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -1271,7 +1271,7 @@ wT
 wT
 Ki
 Qy
-Dp
+uR
 Mu
 Ki
 wT
@@ -1298,7 +1298,7 @@ kw
 kw
 kw
 kw
-iM
+BC
 ra
 RG
 yb

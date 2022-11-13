@@ -393,9 +393,9 @@
 	volume = 100
 	list_reagents = list(/datum/reagent/toxin/plantbgone/weedkiller = 100)
 
-/obj/item/reagent_containers/spray/weedspray/suicide_act(mob/user)
+/obj/item/reagent_containers/spray/weedspray/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] is huffing [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
-	return (TOXLOSS)
+	return TOXLOSS
 
 /obj/item/reagent_containers/spray/pestspray // -- Skie
 	desc = "It's some pest eliminator spray! <I>Do not inhale!</I>"
@@ -409,9 +409,9 @@
 	volume = 100
 	list_reagents = list(/datum/reagent/toxin/pestkiller = 100)
 
-/obj/item/reagent_containers/spray/pestspray/suicide_act(mob/user)
+/obj/item/reagent_containers/spray/pestspray/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] is huffing [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
-	return (TOXLOSS)
+	return TOXLOSS
 
 /obj/item/cultivator
 	name = "cultivator"
@@ -430,9 +430,9 @@
 	attack_verb_simple = list("slash", "slice", "cut", "claw")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 
-/obj/item/cultivator/suicide_act(mob/user)
+/obj/item/cultivator/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] is scratching [user.p_their()] back as hard as [user.p_they()] can with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
-	return (BRUTELOSS)
+	return BRUTELOSS
 
 /obj/item/cultivator/rake
 	name = "rake"
@@ -492,10 +492,10 @@
 	effectiveness = 100, \
 	)
 
-/obj/item/hatchet/suicide_act(mob/user)
+/obj/item/hatchet/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] is chopping at [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	playsound(src, 'sound/weapons/bladeslice.ogg', 50, TRUE, -1)
-	return (BRUTELOSS)
+	return BRUTELOSS
 
 /obj/item/hatchet/wooden
 	desc = "A crude axe blade upon a short wooden handle."
@@ -506,6 +506,7 @@
 /* Skyrat Edit Start - Modularization and New Scythes
 /obj/item/scythe
 	icon_state = "scythe0"
+	inhand_icon_state = "scythe0"
 	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	name = "scythe"
@@ -530,7 +531,7 @@
 	effectiveness = 105, \
 	)
 
-/obj/item/scythe/suicide_act(mob/user)
+/obj/item/scythe/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] is beheading [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
@@ -538,7 +539,7 @@
 		if(BP)
 			BP.drop_limb()
 			playsound(src, SFX_DESECRATION ,50, TRUE, -1)
-	return (BRUTELOSS)
+	return BRUTELOSS
 
 /obj/item/scythe/pre_attack(atom/A, mob/living/user, params)
 	if(swiping || !istype(A, /obj/structure/spacevine) || get_turf(A) == get_turf(user))
@@ -561,7 +562,7 @@
 	desc = "It's a tool for cutting grafts off plants."
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "secateurs"
-	inhand_icon_state = "secateurs"
+	inhand_icon_state = null
 	worn_icon_state = "cutters"
 	lefthand_file = 'icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
@@ -584,7 +585,7 @@
 			to_chat(trimmer, span_warning("[pod] [pod.p_do()]n't have a head!"))
 			return
 		if(location == BODY_ZONE_HEAD && !trimmer.combat_mode)
-			if(!trimmer.canUseTopic(src, BE_CLOSE, FALSE, NO_TK))
+			if(!trimmer.canUseTopic(src, be_close = TRUE, no_dexterity = FALSE, no_tk = TRUE))
 				return
 			var/new_style = tgui_input_list(trimmer, "Select a hairstyle", "Grooming", GLOB.pod_hair_list)
 			if(isnull(new_style))
@@ -611,7 +612,7 @@
 	desc = "A high tech, high fidelity pair of plant shears, capable of cutting genetic traits out of a plant."
 	icon = 'icons/obj/hydroponics/equipment.dmi'
 	icon_state = "genesheers"
-	inhand_icon_state = "secateurs"
+	inhand_icon_state = null
 	worn_icon_state = "cutters"
 	lefthand_file = 'icons/mob/inhands/equipment/hydroponics_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'

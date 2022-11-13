@@ -2,7 +2,7 @@
 	name = "monkey mind magnification helmet"
 	desc = "A fragile, circuitry embedded helmet for boosting the intelligence of a monkey to a higher level. You see several warning labels..."
 	icon_state = "monkeymind"
-	inhand_icon_state = "monkeymind"
+	inhand_icon_state = null
 	strip_delay = 100
 	armor = list(MELEE = 5, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 25, BIO = 0, FIRE = 50, ACID = 50, WOUND = 0)
 	var/mob/living/carbon/human/magnification = null ///if the helmet is on a valid target (just works like a normal helmet if not (cargo please stop))
@@ -29,7 +29,7 @@
 
 /obj/item/clothing/head/helmet/monkey_sentience/equipped(mob/user, slot)
 	. = ..()
-	if(slot != ITEM_SLOT_HEAD)
+	if(!(slot & ITEM_SLOT_HEAD))
 		return
 	if(istype(user, /mob/living/carbon/human/dummy)) // Prevents ghosts from being polled when the helmet is put on a dummy.
 		return
@@ -97,6 +97,7 @@
 				if(3) // primal gene (gorilla)
 					magnification.gorillize()
 				if(4) // genetic mass susceptibility (gib)
+					magnification.investigate_log("has been gibbed by a sentience helmet being pulled off at the wrong time.", INVESTIGATE_DEATHS)
 					magnification.gib()
 	magnification = null
 
