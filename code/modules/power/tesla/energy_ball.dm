@@ -1,5 +1,6 @@
-#define TESLA_DEFAULT_POWER 1738260
-#define TESLA_MINI_POWER 869130
+//NAAKA'S LOUNGE EDIT: to make these consistent with engine powers on stations that still use tesla regularly, I have to slash teslaball power by about 40; 280MW from a T4 setup is absurd!
+#define TESLA_DEFAULT_POWER 1738260 / 40
+#define TESLA_MINI_POWER 869130 / 40
 //Zap constants, speeds up targeting
 #define BIKE (COIL + 1)
 #define COIL (ROD + 1)
@@ -356,15 +357,17 @@
 		power /= 1.5
 
 	else
+		//if(istype(closest_atom, /obj/machinery/power/energy_accumulator/tesla_coil))
+			//to_chat(world, "Zapped coil [closest_atom]")
 		power = closest_atom.zap_act(power, zap_flags)
 
 	if(prob(20))//I know I know
 		var/list/shocked_copy = shocked_targets.Copy()
-		tesla_zap(closest_atom, next_range, power * 0.5, zap_flags, shocked_copy)//Normally I'd copy here so grounding rods work properly, but it fucks with movement
-		tesla_zap(closest_atom, next_range, power * 0.5, zap_flags, shocked_targets)
+		tesla_zap(closest_atom, next_range, power * 0.5, zap_flags ^ ZAP_GENERATES_POWER, shocked_copy)//Normally I'd copy here so grounding rods work properly, but it fucks with movement
+		tesla_zap(closest_atom, next_range, power * 0.5, zap_flags ^ ZAP_GENERATES_POWER, shocked_targets)
 		shocked_targets += shocked_copy
 	else
-		tesla_zap(closest_atom, next_range, power, zap_flags, shocked_targets)
+		tesla_zap(closest_atom, next_range, power, zap_flags ^ ZAP_GENERATES_POWER, shocked_targets)
 
 #undef BIKE
 #undef COIL

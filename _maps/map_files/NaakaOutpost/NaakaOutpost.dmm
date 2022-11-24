@@ -15,7 +15,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "ad" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
@@ -137,7 +138,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "aB" = (
 /obj/machinery/firealarm/directional/west,
@@ -362,7 +364,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/violet/visible/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "bA" = (
 /obj/structure/mineral_door/wood,
@@ -545,6 +548,14 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/science/research)
+"cl" = (
+/obj/structure/particle_accelerator/particle_emitter/right{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "cm" = (
 /obj/machinery/door/airlock/medical{
 	name = "Primary Surgical Theatre"
@@ -663,17 +674,19 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "cG" = (
+/obj/machinery/door/airlock/engineering/glass/critical{
+	heat_proof = 1;
+	name = "Tesla Chamber"
+	},
+/obj/structure/fans/tiny,
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron,
-/area/station/hallway/secondary/entry{
-	has_gravity = 1
+/turf/open/floor/engine,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "cH" = (
 /obj/structure/cable,
@@ -711,10 +724,19 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
+"cR" = (
+/obj/structure/particle_accelerator/particle_emitter/left{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "cU" = (
 /turf/open/floor/plating/snowed,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "cX" = (
 /obj/machinery/vending/security,
@@ -733,7 +755,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "da" = (
 /obj/machinery/portable_atmospherics/canister/bz,
@@ -903,6 +926,12 @@
 /turf/open/floor/iron,
 /area/station/medical/virology{
 	has_gravity = 1
+	})
+"dP" = (
+/obj/structure/cable,
+/turf/open/floor/engine,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "dQ" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
@@ -1155,7 +1184,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "eM" = (
 /obj/machinery/door/airlock{
@@ -1268,7 +1298,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "fi" = (
 /obj/structure/cable,
@@ -1446,7 +1477,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "fP" = (
 /obj/machinery/door/airlock/security/glass{
@@ -1657,7 +1689,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "gE" = (
 /obj/structure/window/reinforced{
@@ -1695,7 +1728,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "gJ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
@@ -1983,6 +2017,12 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
+"hW" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "hX" = (
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/carpet/green,
@@ -2007,7 +2047,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "ic" = (
 /obj/docking_port/stationary{
@@ -2049,6 +2090,12 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos{
 	has_gravity = 1
+	})
+"io" = (
+/obj/structure/cable,
+/turf/closed/wall/r_wall,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "ip" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2246,7 +2293,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "ja" = (
 /obj/machinery/air_sensor/oxygen_tank,
@@ -2323,7 +2371,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible/layer1,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "jo" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2348,7 +2397,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible/layer1,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "jr" = (
 /obj/structure/chair{
@@ -2813,7 +2863,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "le" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -2830,6 +2881,15 @@
 /turf/open/floor/iron/dark,
 /area/station/tcommsat/server{
 	has_gravity = 1
+	})
+"lg" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/particle_emitter/center{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "lh" = (
 /obj/structure/sign/warning/gas_mask,
@@ -2914,7 +2974,8 @@
 /obj/machinery/portable_atmospherics/canister/proto_nitrate,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "ls" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3020,7 +3081,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "lL" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -3144,7 +3206,8 @@
 /obj/structure/sign/warning/radiation/directional/east,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "mh" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
@@ -3199,7 +3262,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "mp" = (
 /obj/machinery/door/airlock/command{
@@ -3220,6 +3284,15 @@
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
+"mt" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "mu" = (
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/floor/grass,
@@ -3236,7 +3309,8 @@
 /obj/structure/reflector/box/anchored,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "mx" = (
 /obj/machinery/computer/communications{
@@ -3397,7 +3471,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
+	})
+"nf" = (
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "nj" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -3626,7 +3706,8 @@
 /obj/machinery/light/floor,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "nV" = (
 /obj/machinery/light_switch/directional/south,
@@ -3976,6 +4057,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark/hidden,
 /turf/open/floor/iron/white,
 /area/station/science/cytology)
+"pj" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "pm" = (
 /obj/machinery/modular_computer/console/preset/cargochat/science,
 /turf/open/floor/iron/white,
@@ -4099,7 +4186,8 @@
 "pP" = (
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "pQ" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -4194,7 +4282,8 @@
 /obj/structure/cable,
 /turf/open/floor/plating/snowed,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "qn" = (
 /obj/structure/fireplace,
@@ -4413,6 +4502,11 @@
 /area/mine/cafeteria{
 	name = "Birdhouse Kitchen"
 	})
+"rh" = (
+/obj/machinery/dna_scannernew,
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/dark,
+/area/station/science/genetics)
 "ri" = (
 /obj/machinery/biogenerator,
 /turf/closed/wall,
@@ -4496,7 +4590,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "rx" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2{
@@ -4569,7 +4664,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible/layer1,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "rI" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -4615,7 +4711,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible/layer4,
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "rP" = (
 /obj/machinery/light/directional/south,
@@ -4659,7 +4756,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible/layer1,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "rV" = (
 /obj/structure/sign/warning/gas_mask,
@@ -4741,7 +4839,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "si" = (
 /obj/structure/cable,
@@ -5019,7 +5118,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "tl" = (
 /obj/machinery/modular_computer/console/preset/cargochat/engineering{
@@ -5222,6 +5322,12 @@
 /area/station/tcommsat/server{
 	has_gravity = 1
 	})
+"ud" = (
+/obj/machinery/the_singularitygen/tesla,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "ue" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
@@ -5258,6 +5364,13 @@
 /turf/open/floor/iron,
 /area/station/engineering/storage/tech{
 	has_gravity = 1
+	})
+"uj" = (
+/obj/structure/cable,
+/obj/machinery/power/energy_accumulator/grounding_rod/anchored,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "uk" = (
 /obj/machinery/ntnet_relay,
@@ -5550,7 +5663,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "vs" = (
 /obj/effect/spawner/random/engineering/material_cheap,
@@ -5724,7 +5838,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "vX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -5747,7 +5862,8 @@
 /obj/machinery/power/terminal,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "wb" = (
 /obj/machinery/door/window/right/directional/south{
@@ -5778,7 +5894,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "wf" = (
 /turf/open/floor/iron,
@@ -5947,7 +6064,8 @@
 /obj/structure/closet/secure_closet/engineering_electrical,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "wO" = (
 /obj/structure/flora/rock/icy/style_random,
@@ -5960,7 +6078,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "wR" = (
 /obj/structure/aquarium/prefilled,
@@ -6030,7 +6149,8 @@
 /obj/machinery/modular_computer/console/preset/engineering,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "xe" = (
 /obj/structure/window/reinforced{
@@ -6238,7 +6358,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "xU" = (
 /obj/structure/table/reinforced/rglass,
@@ -6445,6 +6566,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/white,
 /area/station/science/research)
+"yv" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "yw" = (
 /obj/machinery/stasis,
 /turf/open/floor/iron,
@@ -6528,7 +6655,8 @@
 /obj/structure/sign/warning/radiation/directional/west,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "yJ" = (
 /turf/open/floor/iron,
@@ -6627,6 +6755,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
+/turf/open/floor/iron,
 /area/station/medical/chemistry{
 	has_gravity = 1
 	})
@@ -6680,7 +6809,8 @@
 /obj/structure/cable,
 /turf/open/floor/plating/snowed,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "zk" = (
 /turf/open/floor/plating/cobblestone/planet,
@@ -6710,7 +6840,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "zy" = (
 /obj/structure/cable,
@@ -6756,6 +6887,15 @@
 	},
 /turf/open/floor/engine,
 /area/station/science/research)
+"zI" = (
+/obj/machinery/power/apc/sm_apc/directional/south{
+	arc_shielded = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "zJ" = (
 /turf/closed/wall,
 /area/station/command/meeting_room{
@@ -6989,7 +7129,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Ay" = (
 /mob/living/carbon/human/species/monkey,
@@ -7140,7 +7281,8 @@
 	},
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Bg" = (
 /obj/machinery/airalarm/directional/east,
@@ -7172,7 +7314,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Bl" = (
 /obj/structure/bodycontainer/morgue{
@@ -7198,7 +7341,8 @@
 /obj/structure/closet/radiation,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Br" = (
 /obj/structure/cable,
@@ -7214,7 +7358,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Bt" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
@@ -7227,7 +7372,8 @@
 /obj/machinery/computer/atmos_alert,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Bw" = (
 /obj/structure/bed/dogbed,
@@ -7629,7 +7775,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "CD" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -7884,7 +8031,8 @@
 /obj/machinery/computer/station_alert,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "DD" = (
 /obj/structure/table,
@@ -8029,6 +8177,12 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
+	})
+"Eb" = (
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "Ed" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -8193,7 +8347,8 @@
 /obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "ED" = (
 /obj/effect/mapping_helpers/airlock/access/any/medical/general,
@@ -8454,6 +8609,15 @@
 /area/station/command/heads_quarters/hos{
 	has_gravity = 1
 	})
+"FD" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/end_cap{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "FE" = (
 /obj/machinery/telecomms/server/presets/science,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -8518,7 +8682,8 @@
 /obj/structure/reflector/box/anchored,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "FR" = (
 /obj/structure/cable,
@@ -8608,7 +8773,8 @@
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Gj" = (
 /obj/machinery/door/airlock/research/glass{
@@ -8640,7 +8806,8 @@
 /obj/structure/reflector/box/anchored,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Gp" = (
 /obj/structure/bed/double{
@@ -8708,7 +8875,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber,
 /turf/open/floor/plating/snowed,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "GB" = (
 /obj/machinery/status_display/evac/directional/north,
@@ -8839,7 +9007,8 @@
 /obj/structure/closet/firecloset/full,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Hh" = (
 /obj/machinery/camera/directional/west{
@@ -8894,7 +9063,8 @@
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Ho" = (
 /obj/structure/table,
@@ -8978,11 +9148,9 @@
 	has_gravity = 1
 	})
 "HD" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/area/station/medical/chemistry{
-	has_gravity = 1
+/turf/closed/wall/r_wall,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "HF" = (
 /obj/structure/bed/double{
@@ -9172,6 +9340,12 @@
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
+"Ik" = (
+/obj/machinery/particle_accelerator/control_box,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "Il" = (
 /obj/machinery/module_duplicator,
 /turf/open/floor/iron/white,
@@ -9251,7 +9425,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "IB" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -9407,7 +9582,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Jd" = (
 /obj/machinery/chem_dispenser/drinks{
@@ -9579,7 +9755,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "JL" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
@@ -9631,7 +9808,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "JT" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input{
@@ -9717,7 +9895,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Kk" = (
 /obj/structure/sink/directional/east,
@@ -9746,7 +9925,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/violet/visible/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Ko" = (
 /turf/closed/wall,
@@ -9870,6 +10050,13 @@
 /area/station/medical/virology{
 	has_gravity = 1
 	})
+"KI" = (
+/obj/structure/cable,
+/obj/machinery/power/energy_accumulator/tesla_coil/anchored,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "KK" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/reagent_containers/cup/beaker/large{
@@ -9911,7 +10098,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "KT" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -9959,7 +10147,8 @@
 	},
 /turf/open/floor/plating/snowed,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Ld" = (
 /obj/machinery/smartfridge/extract/preloaded,
@@ -10135,7 +10324,8 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "LM" = (
 /obj/effect/spawner/random/engineering/tracking_beacon,
@@ -10173,7 +10363,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "LS" = (
 /turf/closed/wall/r_wall,
@@ -10189,7 +10380,8 @@
 /obj/item/clothing/head/utility/welding,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "LW" = (
 /obj/machinery/computer/operating{
@@ -10235,13 +10427,15 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Md" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Mh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible,
@@ -10307,7 +10501,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible/layer1,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Mr" = (
 /obj/structure/cable,
@@ -10377,6 +10572,15 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/engine,
 /area/station/science/research)
+"MF" = (
+/obj/machinery/power/emitter/welded{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "MG" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 10
@@ -10506,7 +10710,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Ni" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -10759,7 +10964,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Of" = (
 /obj/machinery/light/directional/west,
@@ -10859,7 +11065,8 @@
 "Ow" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Ox" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
@@ -10885,6 +11092,15 @@
 /turf/open/floor/iron/kitchen,
 /area/mine/xenoarch/living{
 	name = "Tchiko's Castle Lounge"
+	})
+"OA" = (
+/obj/machinery/power/emitter/welded{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "OB" = (
 /turf/open/floor/engine,
@@ -10941,6 +11157,12 @@
 "OL" = (
 /turf/open/floor/iron,
 /area/station/science/research)
+"OM" = (
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "ON" = (
 /obj/structure/sign/directions/supply{
 	pixel_y = 8
@@ -10948,6 +11170,15 @@
 /turf/closed/wall,
 /area/station/engineering/power_room{
 	has_gravity = 1
+	})
+"OO" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/fuel_chamber{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "OP" = (
 /obj/structure/window/reinforced,
@@ -11208,7 +11439,8 @@
 /obj/item/clothing/head/utility/welding,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "PO" = (
 /obj/machinery/light_switch/directional/north,
@@ -11228,7 +11460,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "PR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
@@ -11424,7 +11657,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Qx" = (
 /obj/effect/turf_decal/siding/white{
@@ -11568,7 +11802,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "QX" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -11636,14 +11871,14 @@
 	has_gravity = 1
 	})
 "Ri" = (
-/obj/machinery/field/generator,
 /obj/machinery/atmospherics/components/binary/volume_pump{
 	dir = 8
 	},
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Rl" = (
 /obj/machinery/light/directional/south,
@@ -11694,6 +11929,15 @@
 /turf/closed/wall,
 /area/station/engineering/atmos/project{
 	has_gravity = 1
+	})
+"Rs" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/power_box{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
 	})
 "Ru" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
@@ -11812,7 +12056,8 @@
 /obj/machinery/power/emitter/welded,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "RP" = (
 /obj/effect/turf_decal/siding/white{
@@ -11835,7 +12080,8 @@
 	},
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "RR" = (
 /obj/effect/turf_decal/stripes/red/line,
@@ -11897,6 +12143,12 @@
 /obj/machinery/meter,
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter)
+"Sf" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "Sg" = (
 /obj/structure/table/reinforced/rglass,
 /obj/structure/table/reinforced/rglass,
@@ -12003,7 +12255,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Sx" = (
 /obj/structure/sign/warning,
@@ -12025,7 +12278,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "SC" = (
 /obj/machinery/atmospherics/components/binary/valve/digital{
@@ -12037,7 +12291,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "SH" = (
 /obj/structure/cable,
@@ -12175,16 +12430,17 @@
 /area/mine/living_quarters{
 	name = "Birdhouse Snuggle Room"
 	})
+"Th" = (
+/obj/machinery/field/generator/anchored,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "Ti" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
-"Tj" = (
-/obj/machinery/dna_scannernew,
-/obj/machinery/light/directional/east,
-/turf/open/floor/iron/dark,
-/area/station/science/genetics)
 "Tl" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/iron,
@@ -12230,7 +12486,8 @@
 /obj/machinery/portable_atmospherics/canister/plasma,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Tr" = (
 /obj/machinery/door/airlock{
@@ -12923,7 +13180,8 @@
 /obj/machinery/meter/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "VQ" = (
 /obj/structure/window/reinforced{
@@ -13304,7 +13562,8 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Xi" = (
 /obj/effect/turf_decal/stripes/line,
@@ -13381,7 +13640,8 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible/layer4,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "Xu" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -13948,7 +14208,8 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
-	has_gravity = 1
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
 	})
 "ZB" = (
 /obj/structure/toilet{
@@ -21236,17 +21497,17 @@ Vq
 Vq
 "}
 (29,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 BT
 BT
 BT
@@ -21493,17 +21754,17 @@ Vq
 Vq
 "}
 (30,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+nf
+OA
+nf
+pj
+nf
+OA
+nf
+nf
+nf
+HD
 BT
 BT
 BT
@@ -21750,17 +22011,17 @@ Vq
 Vq
 "}
 (31,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+nf
+Eb
+nf
+nf
+nf
+Eb
+nf
+nf
+Sf
+HD
 BT
 BT
 BT
@@ -22007,20 +22268,20 @@ Vq
 Vq
 "}
 (32,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+uj
+Eb
+KI
+KI
+KI
+Eb
+uj
+nf
+nf
+HD
+HD
+HD
+HD
 la
 Cj
 yi
@@ -22264,20 +22525,20 @@ Vq
 Vq
 "}
 (33,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+KI
+Th
+nf
+nf
+nf
+Th
+KI
+nf
+nf
+nf
+nf
+OM
+HD
 la
 Cj
 Qe
@@ -22521,24 +22782,24 @@ Vq
 Vq
 "}
 (34,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-Wx
-Ob
-Wx
-Ow
+hW
+Eb
+nf
+nf
+nf
+nf
+nf
+Eb
+cl
+nf
+nf
+nf
+mt
+HD
+HD
+io
+HD
+HD
 Ax
 Kn
 cF
@@ -22778,24 +23039,24 @@ Vq
 Vq
 "}
 (35,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-Wx
-Ob
-Wx
-Ow
+hW
+Eb
+nf
+nf
+ud
+nf
+nf
+Eb
+lg
+Rs
+OO
+FD
+Eb
+cG
+dP
+dP
+dP
+cG
 Ri
 mn
 Md
@@ -23035,24 +23296,24 @@ Vq
 Vq
 "}
 (36,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-Wx
-Ob
-Wx
-Ow
+hW
+Eb
+nf
+nf
+nf
+nf
+nf
+Eb
+cR
+nf
+Ik
+nf
+zI
+HD
+HD
+io
+HD
+HD
 Zz
 LJ
 Bf
@@ -23292,22 +23553,22 @@ Vq
 Vq
 "}
 (37,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+KI
+Th
+nf
+nf
+nf
+Th
+KI
+nf
+nf
+nf
+nf
+nf
+HD
 Wx
-Ob
+Cj
 Wx
 GA
 qm
@@ -23549,22 +23810,22 @@ Vq
 Vq
 "}
 (38,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+uj
+Eb
+KI
+KI
+KI
+Eb
+uj
+nf
+nf
+HD
+HD
+HD
+HD
 Wx
-Ob
+Cj
 Wx
 GA
 qm
@@ -23806,17 +24067,17 @@ Vq
 Vq
 "}
 (39,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+nf
+Eb
+nf
+nf
+nf
+Eb
+nf
+nf
+Sf
+HD
 BT
 BT
 BT
@@ -24063,17 +24324,17 @@ Vq
 Vq
 "}
 (40,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+nf
+MF
+nf
+yv
+nf
+MF
+nf
+nf
+nf
+HD
 BT
 BT
 BT
@@ -24320,17 +24581,17 @@ Vq
 Vq
 "}
 (41,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 BT
 BT
 BT
@@ -25156,7 +25417,7 @@ sA
 kI
 si
 LT
-Tj
+rh
 yB
 st
 Zt
@@ -26936,7 +27197,7 @@ aS
 TP
 Ko
 qS
-HD
+sy
 XI
 EO
 Wm
@@ -27689,7 +27950,7 @@ LA
 kq
 Ko
 HM
-cG
+TP
 TP
 TP
 gi

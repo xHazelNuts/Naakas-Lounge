@@ -89,18 +89,22 @@
 	zap_sound_range = min(energy_to_joules(stored_energy)/4000000, 10)
 
 /obj/machinery/power/energy_accumulator/tesla_coil/zap_act(power, zap_flags)
+	//to_chat(world, "Coil has been zapped with power [power]")
 	if(!anchored || panel_open)
+		//to_chat(world, "Failed because unanchored or panel was open")
 		return ..()
 	ADD_TRAIT(src, TRAIT_BEING_SHOCKED, WAS_SHOCKED)
 	addtimer(TRAIT_CALLBACK_REMOVE(src, TRAIT_BEING_SHOCKED, WAS_SHOCKED), 1 SECONDS)
 	flick("coilhit", src)
 	if(!(zap_flags & ZAP_GENERATES_POWER)) //Prevent infinite recursive power
+		//to_chat(world, "Failed due to ZAP_GENERATES_POWER being false!")
 		return 0
 	if(zap_flags & ZAP_LOW_POWER_GEN)
 		power /= 10
 	zap_buckle_check(power)
 	var/power_removed = powernet ? power * input_power_multiplier : power
 	stored_energy += max(ZAP_TO_ENERGY(power_removed - TESLA_COIL_THRESHOLD), 0)
+	//to_chat(world, "Stored energy is up to [stored_energy]")
 	return max(power - power_removed, 0) //You get back the amount we didn't use
 
 /obj/machinery/power/energy_accumulator/tesla_coil/proc/zap()
