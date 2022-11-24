@@ -320,6 +320,7 @@
 	dir = 4
 	},
 /obj/machinery/status_display/evac/directional/west,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/science/genetics)
 "bu" = (
@@ -461,6 +462,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
 /area/station/commons/dorms)
 "bT" = (
 /obj/machinery/power/apc/auto_name/directional/north{
@@ -3207,6 +3209,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/turf/open/floor/iron/white,
 /area/station/command/heads_quarters/rd)
 "mr" = (
 /turf/closed/wall,
@@ -3761,6 +3764,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/dark,
 /area/station/commons/dorms)
 "os" = (
 /obj/machinery/power/terminal,
@@ -10721,6 +10725,7 @@
 "NX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/south,
 /turf/open/floor/grass,
 /area/station/science/genetics)
 "NY" = (
@@ -11440,6 +11445,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/dark,
 /area/station/commons/dorms)
 "Qz" = (
 /obj/machinery/light/directional/east,
@@ -12174,6 +12180,11 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
+"Tj" = (
+/obj/machinery/dna_scannernew,
+/obj/machinery/light/directional/east,
+/turf/open/floor/iron/dark,
+/area/station/science/genetics)
 "Tl" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/iron,
@@ -12558,6 +12569,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/landmark/navigate_destination/cargo,
 /obj/machinery/door/firedoor,
+/turf/open/floor/iron,
 /area/station/engineering/atmos{
 	has_gravity = 1
 	})
@@ -12804,6 +12816,7 @@
 /obj/effect/turf_decal/stripes/white/line,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/airalarm/directional/south,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
 "Vv" = (
@@ -13570,7 +13583,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/science/xenobio,
 /obj/machinery/door/firedoor,
 /obj/structure/fans/tiny,
-/turf/open/floor/engine,
+/turf/open/floor/iron,
 /area/station/science/cytology)
 "Ye" = (
 /obj/machinery/airalarm/directional/north,
@@ -25143,7 +25156,7 @@ sA
 kI
 si
 LT
-ee
+Tj
 yB
 st
 Zt
