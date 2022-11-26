@@ -18,6 +18,11 @@ map naakaoutpost
 	votable
 endmap
 
+map tinystation
+	votable
+	maxplayers 10
+endmap
+
 #map metastation
 #	minplayers 25
 #	#voteweight 0.5

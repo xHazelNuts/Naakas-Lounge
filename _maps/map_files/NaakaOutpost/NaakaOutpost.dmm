@@ -565,6 +565,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
+/turf/open/floor/iron,
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
@@ -854,6 +855,12 @@
 /turf/open/floor/iron/kitchen/diagonal,
 /area/station/service/kitchen{
 	has_gravity = 1
+	})
+"dw" = (
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
 	})
 "dy" = (
 /obj/structure/chair/sofa/corp/right,
@@ -1947,6 +1954,12 @@
 /area/station/commons/lounge{
 	has_gravity = 1
 	})
+"hF" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "hJ" = (
 /obj/machinery/mineral/ore_redemption,
 /obj/machinery/door/firedoor,
@@ -2093,7 +2106,12 @@
 	})
 "io" = (
 /obj/structure/cable,
-/turf/closed/wall/r_wall,
+/obj/machinery/door/airlock/engineering/glass/critical{
+	heat_proof = 1;
+	name = "Tesla Chamber"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/engine,
 /area/station/engineering/power_station{
 	name = "Tesla Engine"
 	})
@@ -2521,7 +2539,7 @@
 	has_gravity = 1
 	})
 "jH" = (
-/obj/machinery/smartfridge/food,
+/obj/machinery/smartfridge,
 /turf/closed/wall,
 /area/station/commons/lounge{
 	has_gravity = 1
@@ -2723,6 +2741,11 @@
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge{
 	has_gravity = 1
+	})
+"kx" = (
+/turf/closed/wall/r_wall,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
 	})
 "ky" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3204,6 +3227,7 @@
 	dir = 1
 	},
 /obj/structure/sign/warning/radiation/directional/east,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1;
@@ -3568,6 +3592,13 @@
 /area/mine/xenoarch/engineering{
 	name = "Tchiko's Castle Quarters"
 	})
+"nw" = (
+/obj/structure/cable,
+/obj/machinery/light/directional/south,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "ny" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -3793,6 +3824,13 @@
 /area/mine/xenoarch/science/cytology{
 	name = "Tchiko's Castle Gardens"
 	})
+"oe" = (
+/obj/structure/cable,
+/obj/machinery/power/rad_collector,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "of" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer4{
 	dir = 1
@@ -3985,6 +4023,12 @@
 /area/station/engineering/power_room{
 	has_gravity = 1
 	})
+"oV" = (
+/obj/machinery/field/generator/anchored,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "oX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/door/window/left/directional/south{
@@ -4081,6 +4125,12 @@
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/station/tcommsat/server{
 	has_gravity = 1
+	})
+"pp" = (
+/obj/effect/spawner/structure/window/reinforced/plasma,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
 	})
 "pr" = (
 /obj/machinery/door/airlock/engineering/glass{
@@ -5112,6 +5162,15 @@
 /area/station/service/kitchen{
 	has_gravity = 1
 	})
+"tg" = (
+/obj/machinery/power/apc/sm_apc/directional/south{
+	arc_shielded = 1
+	},
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "tk" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
 	dir = 4
@@ -5496,6 +5555,12 @@
 /area/mine/lobby{
 	name = "Birdhouse Entry Hall"
 	})
+"uD" = (
+/obj/machinery/light/directional/east,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "uE" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/pool,
@@ -5632,12 +5697,30 @@
 /area/station/hallway/secondary/command{
 	has_gravity = 1
 	})
+"vi" = (
+/obj/structure/cable,
+/obj/machinery/power/emitter/welded{
+	dir = 8
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "vj" = (
 /obj/structure/plaque/static_plaque/to_absent_friends_naakako{
 	pixel_y = -32
 	},
 /turf/open/floor/iron/dark,
 /area/station/service/chapel)
+"vk" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/end_cap{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "vl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/landmark/start/depsec/supply,
@@ -6053,6 +6136,13 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
+"wL" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room{
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
+	})
 "wM" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible/layer2,
 /obj/machinery/meter/layer2,
@@ -6356,6 +6446,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/south,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1;
@@ -6653,6 +6744,7 @@
 "yI" = (
 /obj/structure/cable,
 /obj/structure/sign/warning/radiation/directional/west,
+/obj/machinery/light/directional/west,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1;
@@ -7228,6 +7320,17 @@
 /area/mine/xenoarch/maintenance/east{
 	name = "Tchiko's Castle Restroom"
 	})
+"AP" = (
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
+"AQ" = (
+/obj/machinery/particle_accelerator/control_box,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "AT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -7793,6 +7896,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
+/turf/open/floor/iron,
 /area/station/command/heads_quarters/cmo{
 	has_gravity = 1
 	})
@@ -8537,6 +8641,15 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/ordnance)
+"Fn" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/fuel_chamber{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "Fo" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4
@@ -9005,6 +9118,7 @@
 "Hg" = (
 /obj/structure/cable,
 /obj/structure/closet/firecloset/full,
+/obj/machinery/light/directional/east,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room{
 	has_gravity = 1;
@@ -9381,6 +9495,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/testlab)
+"Iq" = (
+/obj/machinery/light/directional/south,
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "Ir" = (
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron,
@@ -9825,6 +9946,15 @@
 /area/station/medical/chemistry{
 	has_gravity = 1
 	})
+"JW" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light/directional/south,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room{
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
+	})
 "JY" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -9849,9 +9979,10 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "Kc" = (
-/turf/open/floor/iron,
-/area/station/medical/morgue{
-	has_gravity = 1
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
 	})
 "Kd" = (
 /obj/machinery/smartfridge/chemistry/virology/preloaded,
@@ -10169,6 +10300,17 @@
 /area/station/medical/morgue{
 	has_gravity = 1
 	})
+"Lj" = (
+/obj/machinery/door/airlock/engineering/glass/critical{
+	heat_proof = 1;
+	name = "Tesla Chamber"
+	},
+/obj/structure/fans/tiny,
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/power_station{
+	name = "Tesla Engine"
+	})
 "Lk" = (
 /obj/machinery/vending/boozeomat,
 /turf/closed/wall,
@@ -10259,6 +10401,15 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/ce)
+"LD" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "LE" = (
 /obj/machinery/autolathe/hacked,
 /obj/machinery/power/apc/auto_name/directional/north{
@@ -10628,6 +10779,15 @@
 /area/station/medical/cryo{
 	has_gravity = 1
 	})
+"MP" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/power_box{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "MR" = (
 /turf/closed/wall,
 /area/station/medical/chemistry{
@@ -10811,6 +10971,14 @@
 /area/station/service/hydroponics{
 	has_gravity = 1
 	})
+"NC" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
+/obj/machinery/light/directional/east,
+/turf/open/floor/engine,
+/area/station/engineering/supermatter/room{
+	has_gravity = 1;
+	name = "\improper Tesla Engine Room"
+	})
 "ND" = (
 /obj/machinery/medical_kiosk,
 /turf/open/floor/iron,
@@ -10871,6 +11039,14 @@
 "NK" = (
 /turf/open/floor/engine/vacuum,
 /area/station/science/ordnance/burnchamber)
+"NL" = (
+/obj/structure/particle_accelerator/particle_emitter/left{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "NN" = (
 /obj/machinery/power/apc/auto_name/directional/north{
 	arc_shielded = 1
@@ -11470,6 +11646,15 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos{
 	has_gravity = 1
+	})
+"PT" = (
+/obj/structure/cable,
+/obj/machinery/power/emitter/welded{
+	dir = 4
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
 	})
 "PU" = (
 /obj/structure/cable,
@@ -13781,6 +13966,12 @@
 /area/station/medical/treatment_center{
 	has_gravity = 1
 	})
+"XT" = (
+/obj/machinery/light/directional/west,
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "XU" = (
 /obj/effect/spawner/random/engineering/tracking_beacon,
 /turf/open/floor/iron,
@@ -14086,6 +14277,14 @@
 /area/station/engineering/atmos/project{
 	has_gravity = 1
 	})
+"Za" = (
+/obj/structure/particle_accelerator/particle_emitter/right{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
+	})
 "Zb" = (
 /turf/closed/wall,
 /area/station/commons/toilet/restrooms)
@@ -14103,6 +14302,15 @@
 /turf/open/floor/iron,
 /area/station/command/heads_quarters/cmo{
 	has_gravity = 1
+	})
+"Zf" = (
+/obj/structure/cable,
+/obj/structure/particle_accelerator/particle_emitter/center{
+	dir = 1
+	},
+/turf/open/floor/engine/airless,
+/area/station/engineering/gravity_generator{
+	name = "\improper Singularity Engine"
 	})
 "Zg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -17919,13 +18127,13 @@ Wx
 Ow
 pP
 PQ
-pP
+wL
 PQ
 pP
 PQ
 pP
 PQ
-pP
+wL
 pP
 fO
 Ow
@@ -18413,17 +18621,17 @@ Vq
 Vq
 "}
 (17,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+kx
+kx
+kx
+kx
+kx
+kx
+kx
+kx
+kx
+kx
 BT
 BT
 BT
@@ -18670,17 +18878,17 @@ Vq
 Vq
 "}
 (18,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+AP
+PT
+AP
+XT
+AP
+AP
+PT
+AP
+AP
+kx
 BT
 BT
 BT
@@ -18927,17 +19135,17 @@ Vq
 Vq
 "}
 (19,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+AP
+Kc
+AP
+AP
+AP
+AP
+Kc
+AP
+hF
+kx
 BT
 BT
 BT
@@ -19184,20 +19392,20 @@ Vq
 Vq
 "}
 (20,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+Kc
+Kc
+oe
+oe
+oe
+Kc
+Kc
+AP
+AP
+kx
+kx
+kx
+kx
 la
 Cj
 la
@@ -19441,20 +19649,20 @@ Vq
 Vq
 "}
 (21,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+oe
+oV
+AP
+AP
+AP
+oV
+oe
+AP
+AP
+AP
+AP
+AP
+kx
 la
 Cj
 la
@@ -19462,7 +19670,7 @@ Ow
 Kj
 SG
 pP
-cZ
+JW
 Gu
 Gu
 oy
@@ -19698,20 +19906,20 @@ Vq
 Vq
 "}
 (22,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+pp
+Kc
+AP
+AP
+AP
+AP
+AP
+Kc
+Za
+AP
+AP
+AP
+tg
+kx
 Qe
 Cj
 Wx
@@ -19955,20 +20163,20 @@ Vq
 Vq
 "}
 (23,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+pp
+Kc
+AP
+AP
+AP
+AP
+AP
+Kc
+Zf
+MP
+Fn
+vk
+nw
+kx
 la
 Cj
 la
@@ -20212,20 +20420,20 @@ Vq
 Vq
 "}
 (24,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+pp
+Kc
+AP
+AP
+AP
+AP
+AP
+Kc
+NL
+AP
+AQ
+AP
+LD
+kx
 la
 Cj
 la
@@ -20469,20 +20677,20 @@ Vq
 Vq
 "}
 (25,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+oe
+oV
+AP
+AP
+AP
+oV
+oe
+AP
+AP
+AP
+AP
+dw
+kx
 la
 Cj
 la
@@ -20726,20 +20934,20 @@ Vq
 Vq
 "}
 (26,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+Kc
+Kc
+oe
+oe
+oe
+Kc
+Kc
+Kc
+Kc
+kx
+kx
+kx
+kx
 la
 Cj
 la
@@ -20983,17 +21191,17 @@ Vq
 Vq
 "}
 (27,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+AP
+Kc
+AP
+AP
+AP
+AP
+Kc
+AP
+nw
+kx
 BT
 BT
 BT
@@ -21240,17 +21448,17 @@ Vq
 Vq
 "}
 (28,1,1) = {"
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
-BT
+kx
+AP
+vi
+AP
+uD
+AP
+AP
+vi
+AP
+Kc
+kx
 BT
 BT
 BT
@@ -21506,7 +21714,7 @@ HD
 HD
 HD
 HD
-HD
+Lj
 HD
 BT
 BT
@@ -21763,7 +21971,7 @@ nf
 OA
 nf
 nf
-nf
+Eb
 HD
 BT
 BT
@@ -22020,7 +22228,7 @@ nf
 Eb
 nf
 nf
-Sf
+Iq
 HD
 BT
 BT
@@ -22276,8 +22484,8 @@ KI
 KI
 Eb
 uj
-nf
-nf
+Eb
+Eb
 HD
 HD
 HD
@@ -23059,7 +23267,7 @@ dP
 cG
 Ri
 mn
-Md
+NC
 wN
 PN
 LV
@@ -24083,7 +24291,7 @@ BT
 BT
 Wx
 Cj
-Cj
+Ob
 zi
 zi
 cU
@@ -31571,7 +31779,7 @@ rE
 ct
 EY
 zL
-Kc
+zL
 ED
 LY
 zL
